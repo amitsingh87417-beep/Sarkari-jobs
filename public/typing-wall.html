@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Typing Test — Hard Wall, Backlog &amp; Unlimited</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: #f4f7fb;
+    color: #17233b;
+  }
+  .typing-box {
+    max-width: 980px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dce5f1;
+    border-radius: 16px;
+    padding: 20px;
+  }
+  h1 { margin: 0 0 6px; font-size: 22px; color: #102b5c; }
+  p.sub { margin: 0 0 14px; font-size: 13px; color: #5b6680; }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  select, button {
+    padding: 9px 12px;
+    border-radius: 9px;
+    border: 1px solid #cbd5e1;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  button.primary {
+    background: #155eef;
+    color: #ffffff;
+    border-color: #155eef;
+    font-weight: 700;
+  }
+  button.ghost {
+    background: #f8fafc;
+    color: #17233b;
+    font-weight: 600;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .stat-card {
+    background: #f3f7ff;
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .stat-card b { display: block; font-size: 20px; color: #155eef; }
+  .stat-card span { font-size: 12px; color: #64748b; }
+  .progress {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .progress > span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #155eef;
+  }
+  .passage {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px;
+    line-height: 1.75;
+    font-size: 14px;
+    max-height: 220px;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+  }
+  .status {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #475569;
+  }
+</style>
+</head>
+<body>
+  <section class="typing-box" id="typing">
+    <h1>Typing Test — Hard Wall, Backlog &amp; Unlimited</h1>
+    <p class="sub">1-minute (10,000-key target), 5-minute (500,000-character hard wall), backlog/error counter, and unlimited auto-extending passages.</p>
+
+    <div class="controls">
+      <select id="typingDuration">
+        <option value="1">1 minute (10,000 Key Target)</option>
+        <option value="5">5 minutes (500,000 Text Wall)</option>
+        <option value="10">10 minutes</option>
+        <option value="15" selected>15 minutes</option>
+      </select>
+      <select id="typingMode">
+        <option value="hard_wall" selected>Hard 500,000 Wall + Backlog</option>
+        <option value="unlimited_stream">Unlimited Auto-Extending Wall</option>
+        <option value="key_10k">1-Min 10,000 Key Drill</option>
+      </select>
+      <button class="primary" id="typingStart" type="button">Start typing test</button>
+      <button class="ghost" id="typingReset" type="button">Reset</button>
+      <button class="ghost" id="typingNextWall" type="button">New Hard Wall &#8635;</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card"><b id="timeLeft">15:00</b><span>Time left</span></div>
+      <div class="stat-card"><b id="wpm">0</b><span>Words / minute</span></div>
+      <div class="stat-card"><b id="accuracy">100%</b><span>Accuracy</span></div>
+    </div>
+
+    <div class="progress"><span id="typingProgress"></span></div>
+    <div class="passage" id="typingPassage">Loading hard typing wall...</div>
+    <textarea id="typingInput" placeholder="Press Start, then type the passage here..." disabled></textarea>
+    <div class="status" id="typingResult">Press Start to begin your timed practice.</div>
+  </section>
+
+  <script src="./typing-wall.js"></script>
+</body>
+</html>
