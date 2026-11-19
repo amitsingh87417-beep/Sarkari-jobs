@@ -1,7 +1,0 @@
-Sarkari Job Universe v5.0.0 Complete Edition
-- Preserves all v3.7.0 / v4.0.0 core features, Admin Studio, 100+ Practice PDFs, and AI Mock Test.
-- Includes Admin Live Notice Ticker & Daily Updates Control.
-- Includes Daily Quiz + Toppers Leaderboard, Student Poll + Demand Inbox, Exam Countdown Radar, and WhatsApp Share.
-- Includes Real Photo & Signature KB Checker + Resizer, Image to PDF Converter, Study Timer, Marks & DOB Category Age Calculator.
-- Includes Present Form / Result / Admit Card Quick Status Filter, Official Source Proof Links, Unlimited Mock Test & Question Bank.
-- New in v5.0.0: Digital OMR Sheet & Negative Marking Calculator, Exam Syllabus & Pattern Guide, Qualification Matcher, and Printable Study Summary.
