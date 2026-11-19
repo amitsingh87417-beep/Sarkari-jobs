@@ -1,0 +1,4 @@
+Sarkari Job Universe v3.9.0 Import-Ready package
+Based on supplied v3.8.0; existing application files preserved.
+Added GitHub/Render deployment, persistent storage, AI-key safety, backup and growth guide.
+External services, official feeds, API credentials and persistent storage require account-side setup.
