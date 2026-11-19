@@ -1,0 +1,13 @@
+{
+  "name": "sarkari-job-universe-final",
+  "version": "8.0.0",
+  "description": "Sarkari Job Universe v7.0.0 - Real-Time Jobs, CBT Mock Tests, File Upload Manager & Persistent Data Sync",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
