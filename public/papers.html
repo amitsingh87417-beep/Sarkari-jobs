@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Papers Repository - Sarkari Job Universe v6.0 Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-header">
+        <h1>MODEL PAPERS & PDF REPOSITORY</h1>
+        <p>Previous Year Solved Papers for JKSSB, SSC GD, SSC CHSL & Army Recruitment</p>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="mock-test.html">📝 CBT Mock Tests</a></li>
+        <li><a href="papers.html" class="active">📄 Model Papers</a></li>
+        <li><a href="student-hub.html">📚 Study Hub</a></li>
+        <li><a href="admin.html">⚙️ Admin Studio</a></li>
+    </ul>
+    <div class="container">
+        <div class="search-filter-bar">
+            <input type="text" id="paperSearch" class="search-input" placeholder="🔍 Search papers by exam name (JKSSB, SSC GD, CHSL, AOC)...">
+        </div>
+        <div id="papersGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.4rem;">
+            <p>Loading model papers...</p>
+        </div>
+    </div>
+    <footer><p>&copy; 2026 Sarkari Job Universe Model Papers Repository.</p></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const grid = document.getElementById('papersGrid');
+            const searchInput = document.getElementById('paperSearch');
+            let papers = [];
+
+            function renderPapers() {
+                const q = searchInput.value.trim().toLowerCase();
+                const list = papers.filter(p => (p.title + ' ' + p.exam).toLowerCase().includes(q));
+                grid.innerHTML = list.map(p => `
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); border-top: 4px solid var(--secondary-blue);">
+                        <span class="badge badge-cat">${p.exam} • ${p.year}</span>
+                        <h3 style="margin: 0.7rem 0 0.4rem 0; font-size:1.05rem;">${p.title}</h3>
+                        <p style="color: var(--text-muted); font-size:0.88rem; margin-bottom: 1rem;">📄 ${p.pages}</p>
+                        <a href="${p.url}" target="_blank" class="btn">📥 Download / View Paper</a>
+                    </div>
+                `).join('');
+            }
+
+            try {
+                const res = await fetch('/api/papers');
+                papers = await res.json();
+                renderPapers();
+                searchInput.addEventListener('input', renderPapers);
+            } catch (e) {
+                grid.innerHTML = '<p>Failed to load papers.</p>';
+            }
+        });
+    </script>
+</body>
+</html>

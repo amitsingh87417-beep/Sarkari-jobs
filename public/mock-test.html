@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Mock Test & Leaderboard - Sarkari Job Universe v6.0 Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-header">
+        <h1>CBT MOCK TEST ARENA & LEADERBOARD</h1>
+        <p>Real SSC / JKSSB Exam Simulator with Timer, Palette, Top Scorers & Printable Scorecard</p>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="mock-test.html" class="active">📝 CBT Mock Tests</a></li>
+        <li><a href="papers.html">📄 Model Papers</a></li>
+        <li><a href="student-hub.html">📚 Study Hub</a></li>
+        <li><a href="admin.html">⚙️ Admin Studio</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- Setup Screen -->
+        <div id="test-setup" style="background: var(--card-bg); padding: 2rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); max-width: 640px; margin: 1.2rem auto;">
+            <h2 style="color: var(--secondary-blue); margin-bottom: 0.8rem; text-align:center;">🚀 Configure Your CBT Mock Test</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; text-align:center;">Select subject and marking scheme just like TCS iON / SSC CBT exams.</p>
+
+            <label><strong>Select Subject / Exam Focus:</strong></label>
+            <select id="subjectSelect" class="form-control">
+                <option value="ALL">Full Mock Test (All Subjects Mixed)</option>
+                <option value="J&K General Knowledge">J&K General Knowledge (JKSSB)</option>
+                <option value="Indian Polity">Indian Polity & Constitution</option>
+                <option value="Quantitative Aptitude">Quantitative Aptitude (Maths)</option>
+                <option value="Reasoning">General Intelligence & Reasoning</option>
+                <option value="General Science">General Science</option>
+            </select>
+
+            <label><strong>Negative Marking Rule:</strong></label>
+            <select id="negativeMarking" class="form-control">
+                <option value="0.25">SSC / JKSSB Standard (+1 Correct, -0.25 Wrong)</option>
+                <option value="0">Practice Mode (+1 Correct, No Negative Marking)</option>
+            </select>
+
+            <button id="startTestBtn" class="btn" style="width:100%; font-size: 1.05rem; padding: 0.8rem;">Start CBT Exam Now</button>
+        </div>
+
+        <!-- Active Exam Screen -->
+        <div id="test-container" style="display: none; background: var(--card-bg); padding: 1.5rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); max-width: 850px; margin: 1.2rem auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.8rem;">
+                <span id="question-counter" style="font-weight: 700;">Question 1</span>
+                <span id="timer" style="font-weight: 800; color: var(--accent-red); font-size: 1.1rem; background: #fee2e2; padding: 0.25rem 0.7rem; border-radius: 6px;">⏱️ 10:00</span>
+            </div>
+
+            <div id="question-palette" style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1.2rem;"></div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <h3 id="question-text" style="font-size: 1.15rem; margin-bottom: 1rem;">Loading question...</h3>
+                <div id="options-list" style="display: flex; flex-direction: column; gap: 0.7rem;"></div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.6rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+                <div>
+                    <button id="prevBtn" class="btn" style="background: #6b7280;">⬅️ Previous</button>
+                    <button id="clearBtn" class="btn" style="background: #f59e0b;">Clear</button>
+                </div>
+                <div>
+                    <button id="nextBtn" class="btn">Save & Next ➡️</button>
+                    <button id="submitEarlyBtn" class="btn" style="background: var(--accent-green);">Submit Test ✅</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result & Detailed Review Screen -->
+        <div id="result-container" style="display: none; background: var(--card-bg); padding: 2rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); max-width: 850px; margin: 1.2rem auto;">
+            <h2 style="color: var(--accent-green); text-align:center; margin-bottom: 0.5rem;">🎉 CBT Exam Scorecard</h2>
+            <div id="score-card" style="font-size: 1.5rem; font-weight: 800; text-align:center; margin: 1rem 0; color: var(--secondary-blue);"></div>
+            <div id="stats-breakdown" style="display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem; font-weight:600;"></div>
+
+            <div id="leaderboard-submit-box" style="background: rgba(0,86,179,0.06); padding:1rem; border-radius:8px; margin-bottom:1.2rem; display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center;">
+                <input type="text" id="aspirantName" class="form-control" placeholder="Enter your name for Leaderboard..." style="margin:0; flex:1; min-width:180px;">
+                <button id="saveScoreBtn" class="btn" style="background:var(--accent-purple);">🏆 Post to Leaderboard</button>
+                <button onclick="window.print()" class="btn" style="background:#374151;">🖨️ Print Scorecard</button>
+                <a href="mock-test.html" class="btn">🔄 Test Again</a>
+            </div>
+
+            <h3 style="margin-bottom:1rem; border-bottom:1px solid var(--border-color); padding-bottom:0.5rem;">📋 Detailed Answer Key & Explanations</h3>
+            <div id="review-list" style="display:flex; flex-direction:column; gap:1rem;"></div>
+        </div>
+
+        <!-- Live Aspirant Leaderboard -->
+        <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); max-width: 850px; margin: 1.5rem auto;">
+            <h3 style="color: var(--secondary-blue); margin-bottom: 0.8rem;">🏆 Recent CBT Mock Scorers Leaderboard</h3>
+            <div id="leaderboardList">Loading leaderboard...</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sarkari Job Universe CBT Mock Test Engine.</p>
+    </footer>
+
+    <script src="mock-test.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspirant Student Hub - Sarkari Job Universe v6.0 Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-header">
+        <h1>ASPIRANT STUDENT HUB</h1>
+        <p>Daily Study Checklist, Exam Age Calculator, Percentage Tool & Roadmaps</p>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="mock-test.html">📝 CBT Mock Tests</a></li>
+        <li><a href="papers.html">📄 Model Papers</a></li>
+        <li><a href="student-hub.html" class="active">📚 Study Hub</a></li>
+        <li><a href="admin.html">⚙️ Admin Studio</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- Daily Study Checklist -->
+        <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); margin-top: 1.2rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;">
+                <h3 style="color: var(--accent-green);">✅ Daily Aspirant Study Target Checklist</h3>
+                <span id="checklistProgress" class="badge badge-cat">0 / 4 Completed</span>
+            </div>
+            <div id="checklistItems" style="display:flex; flex-direction:column; gap:0.6rem;"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+            <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <h3 style="color: var(--secondary-blue); margin-bottom: 0.8rem;">🎂 Govt Exam Age Calculator</h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem;">Check exact age as on cut-off date for SSC, JKSSB & Army forms.</p>
+                <label>Date of Birth (DOB)</label>
+                <input type="date" id="dobInput" class="form-control" value="2008-03-05">
+                <label>Age As On (Cut-off Date)</label>
+                <input type="date" id="asOnInput" class="form-control" value="2026-08-01">
+                <button id="calcAgeBtn" class="btn" style="width:100%;">Calculate Exact Age</button>
+                <div id="ageResult" style="margin-top:1rem; font-weight:700; color:var(--accent-green);"></div>
+            </div>
+
+            <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <h3 style="color: var(--accent-purple); margin-bottom: 0.8rem;">📊 10th / 12th / ITI Percentage Calculator</h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem;">Quickly calculate exact percentage up to 2 decimal places for online forms.</p>
+                <label>Obtained Marks</label>
+                <input type="number" id="obtMarks" class="form-control" placeholder="e.g. 297">
+                <label>Maximum Total Marks</label>
+                <input type="number" id="maxMarks" class="form-control" placeholder="e.g. 500">
+                <button id="calcPctBtn" class="btn" style="width:100%; background:var(--accent-purple);">Calculate Percentage</button>
+                <div id="pctResult" style="margin-top:1rem; font-weight:700; color:var(--secondary-blue);"></div>
+            </div>
+        </div>
+
+        <div style="background: var(--card-bg); padding: 1.8rem; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); margin-top: 1.5rem;">
+            <h2 style="color: var(--secondary-blue); margin-bottom: 1rem;">📖 High-Scoring Preparation Roadmaps</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+                <div style="padding:1rem; border:1px solid var(--border-color); border-radius:8px;">
+                    <h4>🇮🇳 SSC GD & CHSL (10+2)</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.4rem;">Focus on Reasoning, Elementary Maths, GK/Current Affairs, and English/Hindi. Attempt 1 CBT Mock daily.</p>
+                </div>
+                <div style="padding:1rem; border:1px solid var(--border-color); border-radius:8px;">
+                    <h4>🏔️ JKSSB District / UT Cadre</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.4rem;">Master J&K Reorganization Act 2019, J&K History/Geography, Computer Applications, and General English.</p>
+                </div>
+                <div style="padding:1rem; border:1px solid var(--border-color); border-radius:8px;">
+                    <h4>🎓 IGNOU BA Study Strategy</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.4rem;">Submit handwritten assignments before deadline at your study center and revise previous Term-End Exam papers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer><p>&copy; 2026 Sarkari Job Universe Student Hub.</p></footer>
+
+    <script>
+        const tasks = [
+            "Read 30 mins Daily Current Affairs & J&K / National GK",
+            "Solve 25 Reasoning + 25 Quantitative Aptitude Questions",
+            "Attempt 1 Full CBT Mock Test & Analyze Wrong Answers",
+            "Revise Notes / Model Paper PDF for 45 mins"
+        ];
+        let checkedState = JSON.parse(localStorage.getItem('sju_daily_tasks') || '[]');
+
+        function renderChecklist() {
+            const container = document.getElementById('checklistItems');
+            container.innerHTML = tasks.map((t, i) => `
+                <label style="display:flex; align-items:center; gap:0.7rem; padding:0.65rem; border:1px solid var(--border-color); border-radius:6px; cursor:pointer;">
+                    <input type="checkbox" class="task-cb" data-idx="${i}" ${checkedState.includes(i) ? 'checked' : ''} style="width:18px; height:18px;">
+                    <span style="text-decoration:${checkedState.includes(i) ? 'line-through' : 'none'}; opacity:${checkedState.includes(i) ? '0.65' : '1'};">${t}</span>
+                </label>
+            `).join('');
+
+            document.getElementById('checklistProgress').innerText = `${checkedState.length} / ${tasks.length} Completed`;
+
+            container.querySelectorAll('.task-cb').forEach(cb => {
+                cb.addEventListener('change', () => {
+                    const idx = parseInt(cb.getAttribute('data-idx'), 10);
+                    if (cb.checked && !checkedState.includes(idx)) checkedState.push(idx);
+                    if (!cb.checked) checkedState = checkedState.filter(x => x !== idx);
+                    localStorage.setItem('sju_daily_tasks', JSON.stringify(checkedState));
+                    renderChecklist();
+                });
+            });
+        }
+        renderChecklist();
+
+        document.getElementById('calcAgeBtn').addEventListener('click', () => {
+            const dob = new Date(document.getElementById('dobInput').value);
+            const asOn = new Date(document.getElementById('asOnInput').value);
+            if (isNaN(dob) || isNaN(asOn) || dob > asOn) {
+                document.getElementById('ageResult').innerText = '⚠️ Please select valid dates.';
+                return;
+            }
+            let years = asOn.getFullYear() - dob.getFullYear();
+            let months = asOn.getMonth() - dob.getMonth();
+            let days = asOn.getDate() - dob.getDate();
+            if (days < 0) { months--; days += new Date(asOn.getFullYear(), asOn.getMonth(), 0).getDate(); }
+            if (months < 0) { years--; months += 12; }
+            document.getElementById('ageResult').innerText = `✅ Exact Age: ${years} Years, ${months} Months, ${days} Days`;
+        });
+
+        document.getElementById('calcPctBtn').addEventListener('click', () => {
+            const obt = parseFloat(document.getElementById('obtMarks').value);
+            const max = parseFloat(document.getElementById('maxMarks').value);
+            if (!obt || !max || max <= 0 || obt > max) {
+                document.getElementById('pctResult').innerText = '⚠️ Enter valid obtained and maximum marks.';
+                return;
+            }
+            const pct = ((obt / max) * 100).toFixed(2);
+            document.getElementById('pctResult').innerText = `✅ Percentage: ${pct}% (${obt} / ${max})`;
+        });
+    </script>
+</body>
+</html>

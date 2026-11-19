@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarkari Job Universe v6.0 Final - India & J&K Govt Jobs, Admit Cards & CBT Mock Tests</title>
+    <meta name="description" content="Latest JKSSB, SSC GD, SSC CHSL, Railway, Army Recruitment Notifications, Admit Cards, Results and Free CBT Mock Tests.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-header">
+        <button id="themeToggle" class="theme-toggle">🌙 Dark</button>
+        <h1>SARKARI JOB UNIVERSE</h1>
+        <p>India & J&K's Complete Real-Time Job, Admit Card & Exam Portal (v6.0 Final)</p>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html" class="active">🏠 Home</a></li>
+        <li><a href="mock-test.html">📝 CBT Mock Tests</a></li>
+        <li><a href="papers.html">📄 Model Papers</a></li>
+        <li><a href="student-hub.html">📚 Study Hub</a></li>
+        <li><a href="admin.html">⚙️ Admin Studio</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="live-ticker" id="liveTicker">
+            🔴 LIVE: Loading latest JKSSB, SSC & Railway notifications...
+        </div>
+
+        <!-- Live Application Closing Countdown Strip -->
+        <div class="countdown-strip" id="countdownStrip"></div>
+
+        <!-- Search, Qualification & Category Filter -->
+        <div class="search-filter-bar">
+            <input type="text" id="jobSearchInput" class="search-input" placeholder="🔍 Search jobs (e.g. JKSSB, SSC, Constable, Police)...">
+            <select id="qualFilter" class="qual-select">
+                <option value="ALL">🎓 All Qualifications</option>
+                <option value="10th">10th Pass</option>
+                <option value="12th">12th Pass (10+2)</option>
+                <option value="ITI">ITI Pass</option>
+                <option value="Graduate">Graduate</option>
+            </select>
+            <div class="filter-pills" id="categoryPills">
+                <button class="pill-btn active" data-cat="ALL">All</button>
+                <button class="pill-btn" data-cat="JKSSB">J&K / JKSSB</button>
+                <button class="pill-btn" data-cat="SSC">SSC</button>
+                <button class="pill-btn" data-cat="Defence">Army / Defence</button>
+                <button class="pill-btn" data-cat="Railway">Railway</button>
+                <button class="pill-btn" data-cat="SAVED">⭐ Saved (<span id="savedCount">0</span>)</button>
+            </div>
+        </div>
+
+        <!-- Quick Action Boxes -->
+        <div class="quick-boxes">
+            <a href="mock-test.html" class="q-box">🚀 CBT Mock & Leaderboard</a>
+            <a href="papers.html" class="q-box blue">📥 Solved Model Papers</a>
+            <a href="student-hub.html" class="q-box purple">✅ Daily Target & Calculators</a>
+            <a href="admin.html" class="q-box green">⚙️ Admin Studio</a>
+        </div>
+
+        <!-- 3 Main Sarkari Columns -->
+        <div class="sections-grid">
+            <div class="section-card">
+                <div class="section-header">
+                    <span>🔥 Latest Jobs</span>
+                    <span class="badge badge-cat" id="latestBadge">0</span>
+                </div>
+                <ul id="latest-jobs-list" class="link-list">
+                    <li>Loading latest jobs...</li>
+                </ul>
+            </div>
+
+            <div class="section-card red">
+                <div class="section-header">
+                    <span>🎟️ Admit Card</span>
+                    <span class="badge badge-new" id="admitBadge">0</span>
+                </div>
+                <ul id="admit-card-list" class="link-list">
+                    <li>Loading admit cards...</li>
+                </ul>
+            </div>
+
+            <div class="section-card green">
+                <div class="section-header">
+                    <span>📊 Results / Answer Key</span>
+                    <span class="badge badge-date" id="resultBadge">0</span>
+                </div>
+                <ul id="results-list" class="link-list">
+                    <li>Loading results...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Details Modal -->
+    <div id="jobModal" class="modal-overlay">
+        <div class="modal-box">
+            <div style="display:flex; justify-content:space-between; align-items:start; gap:1rem;">
+                <h3 id="modalTitle" style="color: var(--secondary-blue);">Job Title</h3>
+                <button id="closeModalBtn" style="background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-dark);">&times;</button>
+            </div>
+            <p id="modalDept" style="color: var(--text-muted); font-size:0.9rem; margin-top:0.2rem;"></p>
+
+            <table class="detail-table">
+                <tr><th>Category</th><td id="modalCategory">-</td></tr>
+                <tr><th>Total Vacancies</th><td id="modalVacancies">-</td></tr>
+                <tr><th>Qualification</th><td id="modalQual">-</td></tr>
+                <tr><th>Age Limit</th><td id="modalAge">-</td></tr>
+                <tr><th>Application Fee</th><td id="modalFee">-</td></tr>
+                <tr><th>Last Date</th><td id="modalLastDate" style="color:#d9534f; font-weight:bold;">-</td></tr>
+            </table>
+
+            <p id="modalDesc" style="font-size:0.92rem; margin-bottom:1.2rem;"></p>
+
+            <div style="display:flex; flex-wrap:wrap; gap:0.7rem;">
+                <a id="modalApplyLink" href="#" target="_blank" class="btn">🌐 Apply / Official Link</a>
+                <button id="modalSaveBtn" class="btn" style="background:#f59e0b;">⭐ Save Job</button>
+                <a id="modalWhatsappBtn" href="#" target="_blank" class="btn btn-whatsapp">📲 Share on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sarkari Job Universe v6.0 Final Edition. Built for Aspirants in Jammu & Kashmir and Across India.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
