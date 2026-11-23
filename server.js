@@ -1,0 +1,1454 @@
+const express = require("express");
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+const multer = require("multer");
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+const SESSION_SECRET = process.env.SESSION_SECRET;
+function resolveWritableDir(preferredPath, fallbackPath) {
+  try {
+    fs.mkdirSync(preferredPath, { recursive: true });
+    fs.accessSync(preferredPath, fs.constants.W_OK);
+    return preferredPath;
+  } catch {
+    fs.mkdirSync(fallbackPath, { recursive: true });
+    return fallbackPath;
+  }
+}
+
+const DATA_DIR = resolveWritableDir(
+  process.env.DATA_DIR || path.join(__dirname, "data"),
+  path.join(__dirname, "data")
+);
+const DATA_FILE = path.join(DATA_DIR, "jobs.json");
+const QUEUE_FILE = path.join(DATA_DIR, "review-queue.json");
+const RESOURCES_FILE = path.join(DATA_DIR, "resources.json");
+const TESTS_FILE = path.join(DATA_DIR, "admin-tests.json");
+const TRASH_FILE = path.join(DATA_DIR, "trash.json");
+const UPLOAD_DIR = resolveWritableDir(
+  process.env.UPLOAD_DIR || path.join(DATA_DIR, "uploads"),
+  path.join(__dirname, "data", "uploads")
+);
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, UPLOAD_DIR),
+  filename: (req, file, cb) => {
+    const ext = path.extname(file.originalname).toLowerCase();
+    cb(null, Date.now() + "-" + crypto.randomBytes(6).toString("hex") + ext);
+  }
+});
+
+const upload = multer({
+  storage,
+  limits: { fileSize: 25 * 1024 * 1024 },
+  fileFilter: (req, file, cb) => {
+    const ok = ["application/pdf", "image/jpeg", "image/png", "image/webp"].includes(file.mimetype);
+    cb(ok ? null : new Error("Only PDF, JPG, PNG and WEBP files are allowed"), ok);
+  }
+});
+
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "";
+const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
+
+// Default real Indian Govt Job RSS feeds (can be extended or overridden via OFFICIAL_RSS_FEEDS env var)
+const DEFAULT_GOVT_JOB_FEEDS = [
+  "https://www.freejobalert.com/feed/",
+  "https://www.sarkariexam.com/feed/",
+  "https://www.indgovtjobs.in/feeds/posts/default?alt=rss"
+];
+const CUSTOM_FEEDS = (process.env.OFFICIAL_RSS_FEEDS || "").split(";").map((x) => x.trim()).filter(Boolean);
+const FEEDS = CUSTOM_FEEDS.length ? CUSTOM_FEEDS : DEFAULT_GOVT_JOB_FEEDS;
+const AUTO_PUBLISH_JOBS = String(process.env.AUTO_PUBLISH_JOBS || "true").toLowerCase() !== "false";
+
+const ALL_STATES_UTS = [
+  "All India", "India", "Jammu & Kashmir",
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh",
+  "Dadra & Nagar Haveli and Daman & Diu", "Delhi", "Goa", "Gujarat", "Haryana",
+  "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Ladakh", "Lakshadweep",
+  "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland",
+  "Odisha", "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
+  "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman & Nicobar Islands"
+];
+
+if (!ADMIN_PASSWORD || !SESSION_SECRET) {
+  console.warn("Set ADMIN_PASSWORD and SESSION_SECRET in your hosting environment before using the admin panel.");
+}
+
+app.use(helmet({ contentSecurityPolicy: false }));
+app.use(express.json({ limit: "2mb" }));
+app.use("/api/", rateLimit({ windowMs: 15 * 60 * 1000, max: 300, standardHeaders: true, legacyHeaders: false }));
+
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 8,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many login attempts. Try again later." }
+});
+
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/uploads", express.static(UPLOAD_DIR, { fallthrough: false, maxAge: "1h" }));
+
+function readJobsPayload() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+    if (Array.isArray(raw)) {
+      return { jobs: raw, updatedAt: new Date().toISOString() };
+    }
+    if (raw && Array.isArray(raw.jobs)) {
+      return { jobs: raw.jobs, updatedAt: raw.updatedAt || new Date().toISOString() };
+    }
+    return { jobs: [], updatedAt: new Date().toISOString() };
+  } catch {
+    return { jobs: [], updatedAt: new Date().toISOString() };
+  }
+}
+
+function readJobs() {
+  return readJobsPayload().jobs;
+}
+
+function writeJobs(jobs, updatedAt = new Date().toISOString()) {
+  fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
+  const tmp = DATA_FILE + ".tmp";
+  const payload = { updatedAt, jobs };
+  fs.writeFileSync(tmp, JSON.stringify(payload, null, 2));
+  fs.renameSync(tmp, DATA_FILE);
+}
+
+function safeEqual(a, b) {
+  const x = Buffer.from(String(a));
+  const y = Buffer.from(String(b));
+  return x.length === y.length && crypto.timingSafeEqual(x, y);
+}
+
+function sign(value) {
+  return crypto.createHmac("sha256", SESSION_SECRET || "missing-secret").update(value).digest("hex");
+}
+
+function requireAdmin(req, res, next) {
+  const token = (req.headers.authorization || "").replace(/^Bearer /, "");
+  if (!token) return res.status(401).json({ error: "Admin login required" });
+  const parts = token.split(".");
+  if (parts.length !== 2 || !safeEqual(parts[1], sign(parts[0]))) {
+    return res.status(401).json({ error: "Session expired. Sign in again." });
+  }
+  try {
+    const payload = JSON.parse(Buffer.from(parts[0], "base64url").toString());
+    if (payload.exp < Date.now()) return res.status(401).json({ error: "Session expired. Sign in again." });
+  } catch {
+    return res.status(401).json({ error: "Invalid session" });
+  }
+  next();
+}
+
+app.get("/api/health", (req, res) => res.json({ ok: true, service: "Sarkari Job Universe" }));
+
+app.get("/robots.txt", (req, res) => {
+  res.type("text/plain").send(
+    "User-agent: *\nAllow: /\nDisallow: /admin.html\nDisallow: /api/\nSitemap: " +
+      (process.env.SITE_URL || `${req.protocol}://${req.get("host")}`) +
+      "/sitemap.xml\n"
+  );
+});
+
+app.get("/sitemap.xml", (req, res) => {
+  const base = (process.env.SITE_URL || `${req.protocol}://${req.get("host")}`).replace(/\/$/, "");
+  res.type("application/xml").send(
+    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${base}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url><url><loc>${base}/mock-test.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>${base}/papers.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url></urlset>`
+  );
+});
+
+app.get("/api/jobs", (req, res) => {
+  const payload = readJobsPayload();
+  const jobs = payload.jobs
+    .filter((j) => !j.status || j.status === "published")
+    .map((j) => ({ ...j, status: j.status || "published" }));
+  res.json({ jobs, updatedAt: payload.updatedAt || new Date().toISOString() });
+});
+
+app.post("/api/admin/login", loginLimiter, (req, res) => {
+  if (!ADMIN_PASSWORD || !SESSION_SECRET) {
+    return res.status(503).json({ error: "Admin is not configured. Set ADMIN_PASSWORD and SESSION_SECRET." });
+  }
+  if (!safeEqual(req.body.password || "", ADMIN_PASSWORD)) {
+    return res.status(401).json({ error: "Incorrect password" });
+  }
+  const payload = Buffer.from(JSON.stringify({ exp: Date.now() + 8 * 60 * 60 * 1000 })).toString("base64url");
+  res.json({ token: payload + "." + sign(payload), expiresIn: 28800 });
+});
+
+app.get("/api/admin/jobs", requireAdmin, (req, res) => res.json({ jobs: readJobs() }));
+
+app.post("/api/admin/jobs", requireAdmin, (req, res) => {
+  const j = validateJob(req.body);
+  if (j.error) return res.status(400).json({ error: j.error });
+  const jobs = readJobs();
+  jobs.unshift({ ...j.value, id: crypto.randomUUID(), sourceType: "admin", createdAt: new Date().toISOString() });
+  writeJobs(jobs);
+  res.status(201).json({ job: jobs[0] });
+});
+
+app.put("/api/admin/jobs/:id", requireAdmin, (req, res) => {
+  const j = validateJob(req.body);
+  if (j.error) return res.status(400).json({ error: j.error });
+  const jobs = readJobs();
+  const i = jobs.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Job not found" });
+  jobs[i] = { ...jobs[i], ...j.value, updatedAt: new Date().toISOString() };
+  writeJobs(jobs);
+  res.json({ job: jobs[i] });
+});
+
+app.delete("/api/admin/jobs/:id", requireAdmin, (req, res) => {
+  const jobs = readJobs();
+  const i = jobs.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Job not found" });
+  const [removed] = jobs.splice(i, 1);
+  removed.deletedAt = new Date().toISOString();
+  const trash = readJson(TRASH_FILE, []);
+  trash.unshift({ kind: "job", item: removed });
+  writeJson(TRASH_FILE, trash);
+  writeJobs(jobs);
+  res.json({ ok: true });
+});
+
+function validateJob(b) {
+  const title = String(b.title || "").trim();
+  const organization = String(b.organization || "").trim();
+  const url = String(b.officialUrl || "").trim();
+  if (!title || !organization) return { error: "Title and organization are required" };
+  try {
+    const u = new URL(url);
+    if (!["https:", "http:"].includes(u.protocol)) throw 0;
+  } catch {
+    return { error: "Enter a valid official notification URL" };
+  }
+  const regionVal = String(b.region || "All India").trim();
+  const validRegion = ALL_STATES_UTS.includes(regionVal) ? regionVal : "All India";
+  let pdfUrl = String(b.pdfUrl || "").trim().slice(0, 500);
+  if (pdfUrl) {
+    try {
+      const pu = new URL(pdfUrl);
+      if (!["https:", "http:"].includes(pu.protocol)) pdfUrl = "";
+    } catch {
+      pdfUrl = "";
+    }
+  }
+  return {
+    value: {
+      title: title.slice(0, 160),
+      organization: organization.slice(0, 120),
+      category: String(b.category || "Other").slice(0, 50),
+      region: validRegion,
+      district: String(b.district || "").trim().slice(0, 80),
+      notificationNo: String(b.notificationNo || "").slice(0, 80),
+      ageLimit: String(b.ageLimit || "See notification").slice(0, 80),
+      applicationFee: String(b.applicationFee || "See notification").slice(0, 80),
+      applyUrl: String(b.applyUrl || "").slice(0, 500),
+      pdfUrl,
+      qualification: String(b.qualification || "See notification").slice(0, 100),
+      vacancies: String(b.vacancies || "Not specified").slice(0, 40),
+      lastDate: String(b.lastDate || "").slice(0, 30),
+      examDate: String(b.examDate || "").slice(0, 30),
+      status: ["published", "draft"].includes(b.status) ? b.status : "published",
+      type: ["Job", "Admit Card", "Result", "Answer Key", "Exam Date", "Syllabus"].includes(b.type) ? b.type : "Job",
+      officialUrl: url.slice(0, 500),
+      description: String(b.description || "").slice(0, 1200)
+    }
+  };
+}
+
+const seed = [
+  { id: "sample-ssc-gd", title: "SSC Constable (GD) — check latest notice", organization: "Staff Selection Commission", category: "SSC", region: "All India", district: "", qualification: "10th Pass", vacancies: "As notified", lastDate: "Check official site", examDate: "To be announced", status: "published", type: "Job", officialUrl: "https://ssc.gov.in/", description: "Reference listing only. Check SSC for the current recruitment notice, eligibility, dates and application status." },
+  { id: "sample-jkssb", title: "JKSSB recruitment updates", organization: "Jammu & Kashmir Services Selection Board", category: "JKSSB", region: "Jammu & Kashmir", district: "All Districts", qualification: "10th / 12th / Graduate", vacancies: "As notified", lastDate: "Check official site", examDate: "Check notices", status: "published", type: "Job", officialUrl: "https://jkssb.nic.in/", description: "Reference listing only. Verify advertisement number, domicile rules, eligibility and dates on the JKSSB website." }
+];
+if (!fs.existsSync(DATA_FILE)) writeJobs(seed);
+
+function readJson(file, fallback = []) {
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
+    return parsed ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+function writeJson(file, value) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const tmp = file + ".tmp";
+  fs.writeFileSync(tmp, JSON.stringify(value, null, 2));
+  fs.renameSync(tmp, file);
+}
+function stripHtml(s) {
+  return String(s || "")
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#0?39;/g, "'")
+    .replace(/&#x27;/gi, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+function tag(xml, name) {
+  const m = xml.match(new RegExp("<" + name + "(?:\\s[^>]*)?>([\\s\\S]*?)</" + name + ">", "i"));
+  return m ? stripHtml(m[1]) : "";
+}
+
+// ==================== SMART AUTO-CLASSIFIERS FOR REAL GOVT JOBS ====================
+function detectStateFromText(text) {
+  const t = String(text || "").toLowerCase();
+  const stateRules = [
+    ["Jammu & Kashmir", /\b(jkssb|jkpsc|jammu|kashmir|j&k|j & k|srinagar|rajouri|poonch|kathua|udhampur|baramulla|anantnag|kupwara|doda|samba|reasi|ramban|kishtwar|pulwama|budgam)\b/],
+    ["Uttar Pradesh", /\b(uppsc|upsssc|up police|uttar pradesh|lucknow|prayagraj|kanpur|varanasi|agra|noida|meerut)\b/],
+    ["Bihar", /\b(bpsc|bssc|csbc|bihar|patna|gaya|muzaffarpur|bhagalpur)\b/],
+    ["Rajasthan", /\b(rpsc|rssb|rsmssb|rajasthan|jaipur|jodhpur|udaipur|kota|ajmer)\b/],
+    ["Maharashtra", /\b(mpsc|maharashtra|mumbai|pune|nagpur|nashik|thane|mahagenco|mahadiscom)\b/],
+    ["Delhi", /\b(dsssb|delhi police|delhi|new delhi|aiims delhi|dtu)\b/],
+    ["Haryana", /\b(hssc|hpsc|haryana|gurugram|faridabad|hisar|rohtak|ambala|panipat)\b/],
+    ["Punjab", /\b(psssb|ppsc|punjab|amritsar|ludhiana|jalandhar|patiala|mohali)\b/],
+    ["Madhya Pradesh", /\b(mppsc|mpesb|mp vyapam|madhya pradesh|bhopal|indore|gwalior|jabalpur)\b/],
+    ["West Bengal", /\b(wbpsc|wbcs|wbssc|west bengal|kolkata|howrah|siliguri|durgapur)\b/],
+    ["Tamil Nadu", /\b(tnpsc|trb tn|tamil nadu|chennai|coimbatore|madurai|salem)\b/],
+    ["Karnataka", /\b(kpsc|kea|karnataka|bengaluru|bangalore|mysuru|hubli)\b/],
+    ["Gujarat", /\b(gpsc|gsssb|gujarat|ahmedabad|surat|vadodara|rajkot|gandhinagar)\b/],
+    ["Kerala", /\b(kerala psc|kerala|thiruvananthapuram|kochi|kozhikode)\b/],
+    ["Andhra Pradesh", /\b(appsc|andhra pradesh|vijayawada|visakhapatnam|tirupati|guntur)\b/],
+    ["Telangana", /\b(tspsc|tgpsc|telangana|hyderabad|warangal)\b/],
+    ["Odisha", /\b(opsc|ossc|osssc|odisha|bhubaneswar|cuttack)\b/],
+    ["Assam", /\b(apsc|slprc|assam|guwahati|dibrugarh)\b/],
+    ["Jharkhand", /\b(jpsc|jssc|jharkhand|ranchi|jamshedpur|dhanbad)\b/],
+    ["Chhattisgarh", /\b(cgpsc|cg vyapam|chhattisgarh|raipur|bilaspur)\b/],
+    ["Uttarakhand", /\b(ukpsc|uksssc|uttarakhand|dehradun|haridwar|haldwani)\b/],
+    ["Himachal Pradesh", /\b(hppsc|hprca|himachal pradesh|shimla|kangra|mandi)\b/],
+    ["Ladakh", /\b(ladakh|leh|kargil)\b/],
+    ["Chandigarh", /\b(chandigarh)\b/],
+    ["Goa", /\b(goa psc|goa|panaji)\b/],
+    ["Tripura", /\b(tpsc|tripura|agartala)\b/],
+    ["Manipur", /\b(manipur|imphal)\b/],
+    ["Meghalaya", /\b(meghalaya|shillong)\b/],
+    ["Mizoram", /\b(mizoram|aizawl)\b/],
+    ["Nagaland", /\b(nagaland|kohima)\b/],
+    ["Arunachal Pradesh", /\b(arunachal pradesh|itanagar)\b/],
+    ["Sikkim", /\b(sikkim|gangtok)\b/],
+    ["Puducherry", /\b(puducherry|pondicherry)\b/]
+  ];
+  for (const [state, rx] of stateRules) {
+    if (rx.test(t)) return state;
+  }
+  return "All India";
+}
+
+function detectDistrictFromText(text) {
+  const t = String(text || "");
+  const districts = [
+    "Rajouri", "Jammu", "Srinagar", "Poonch", "Kathua", "Udhampur", "Baramulla", "Anantnag",
+    "Kupwara", "Doda", "Samba", "Reasi", "Ramban", "Kishtwar", "Pulwama", "Budgam", "Shopian",
+    "Kulgam", "Bandipora", "Ganderbal", "Leh", "Kargil",
+    "Lucknow", "Patna", "Jaipur", "Mumbai", "Pune", "Nagpur", "New Delhi", "Bhopal", "Indore",
+    "Kolkata", "Chennai", "Bengaluru", "Hyderabad", "Ahmedabad", "Surat", "Chandigarh", "Dehradun",
+    "Shimla", "Ranchi", "Raipur", "Bhubaneswar", "Guwahati", "Amritsar", "Ludhiana", "Gurugram",
+    "Faridabad", "Kanpur", "Varanasi", "Prayagraj", "Agra", "Noida", "Gaya", "Jodhpur", "Udaipur"
+  ];
+  for (const d of districts) {
+    if (new RegExp("\\b" + d.replace(/\s+/g, "\\s+") + "\\b", "i").test(t)) return d;
+  }
+  return "";
+}
+
+function detectQualificationFromText(text) {
+  const t = String(text || "").toLowerCase();
+  const found = [];
+  if (/\b10th\b|matric|high school|class 10/.test(t)) found.push("10th Pass");
+  if (/\b12th\b|10\+2|intermediate|higher secondary/.test(t)) found.push("12th Pass");
+  if (/\biti\b|ncvt|scvt|trade certificate/.test(t)) found.push("ITI");
+  if (/diploma|polytechnic/.test(t)) found.push("Diploma");
+  if (/b\.tech|\bb\.e\b|engineering/.test(t)) found.push("B.Tech / Engineering");
+  if (/mbbs|b\.sc nursing|gnm|anm|medical|pharmacist/.test(t)) found.push("Medical / Nursing");
+  if (/post graduate|\bpg\b|master degree|\bm\.sc\b|\bm\.a\b|\bmba\b/.test(t)) found.push("Post Graduate");
+  if (/graduate|any degree|graduation|bachelor/.test(t)) found.push("Graduate");
+  return found.length ? [...new Set(found)].slice(0, 3).join(" / ") : "See official notice";
+}
+
+function detectCategoryFromText(text) {
+  const t = String(text || "").toLowerCase();
+  if (/jkssb|jkpsc/.test(t)) return "JKSSB";
+  if (/\bssc\b|staff selection/.test(t)) return "SSC";
+  if (/\bupsc\b|union public service/.test(t)) return "UPSC";
+  if (/\brrb\b|\brrc\b|railway|railways|metro rail/.test(t)) return "Railway";
+  if (/\bibps\b|\bsbi\b|\brbi\b|\bbank\b|nabard/.test(t)) return "Banking";
+  if (/army|navy|air force|agniveer|bsf|crpf|cisf|itbp|ssb|defence|drdo|nda|cds/.test(t)) return "Defence";
+  if (/police|constable|sub inspector|\bsi\b|home guard/.test(t)) return "Police";
+  if (/teacher|tgt|pgt|prt|tet|ctet|professor|lecturer|kvs|nvs|school/.test(t)) return "Teaching";
+  if (/aiims|doctor|nurse|staff nurse|medical|hospital|health|pharmacist/.test(t)) return "Medical";
+  if (/apprentice|act apprentice/.test(t)) return "Apprentice";
+  if (/\biti\b|technician|trainee/.test(t)) return "ITI / Trainee";
+  if (/engineer|\bje\b|\bae\b|gate/.test(t)) return "Engineering";
+  if (/\bmts\b|clerk|ldc|udc|stenographer|peon|data entry/.test(t)) return "Clerical / MTS";
+  if (/ongc|ntpc|bhel|gail|sail|ioc|coal india|psu/.test(t)) return "PSU / Executive";
+  return "Other";
+}
+
+function extractLastDate(text) {
+  const s = String(text || "");
+  const patterns = [
+    /last\s*date[^0-9a-zA-Z]{0,12}(\d{1,2}[-\/]\d{1,2}[-\/]\d{4})/i,
+    /last\s*date[^0-9a-zA-Z]{0,12}(\d{4}[-\/]\d{1,2}[-\/]\d{1,2})/i,
+    /last\s*date[^0-9a-zA-Z]{0,12}(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\s+\d{4})/i,
+    /apply\s*(?:before|by|till|upto)[^0-9a-zA-Z]{0,10}(\d{1,2}[-\/]\d{1,2}[-\/]\d{4}|\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\s+\d{4})/i
+  ];
+  for (const rx of patterns) {
+    const m = s.match(rx);
+    if (m && m[1]) return m[1].trim().slice(0, 30);
+  }
+  return "Check official site";
+}
+
+function extractVacancies(text) {
+  const m = String(text || "").match(/\b(\d{1,6})\s*(?:\+?\s*)?(?:posts?|vacancies|vacancy|seats)\b/i);
+  return m ? `${m[1]} Posts` : "As notified";
+}
+
+function extractPdfUrl(rawXml, fallbackLink) {
+  const pdfMatch = String(rawXml || "").match(/https?:\/\/[^\s"'<>]+\.pdf(?:\?[^\s"'<>]*)?/i);
+  if (pdfMatch) return pdfMatch[0].slice(0, 500);
+  if (/\.pdf(\?|$)/i.test(String(fallbackLink || ""))) return String(fallbackLink).slice(0, 500);
+  return "";
+}
+
+async function checkOfficialFeeds() {
+  if (!FEEDS.length) {
+    return { checked: 0, added: 0, published: 0, message: "No RSS feeds configured." };
+  }
+  let queue = readJson(QUEUE_FILE, []);
+  let jobs = readJobs();
+  let added = 0;
+  let published = 0;
+  let checked = 0;
+
+  for (const feedUrl of FEEDS) {
+    try {
+      const u = new URL(feedUrl);
+      if (!["https:", "http:"].includes(u.protocol)) continue;
+      const response = await fetch(u, {
+        headers: { "User-Agent": "SarkariJobUniverseBot/2.0 (official notice monitor)" },
+        signal: AbortSignal.timeout(12000)
+      });
+      if (!response.ok) continue;
+      const xml = await response.text();
+      checked++;
+      const items = [...xml.matchAll(/<(item|entry)\b[\s\S]*?<\/\1>/gi)].map((x) => x[0]).slice(0, 30);
+
+      for (const item of items) {
+        const title = tag(item, "title");
+        const link = tag(item, "link") || ((item.match(/<link[^>]+href=["']([^"']+)/i) || [])[1] || "");
+        const desc = tag(item, "description") || tag(item, "summary") || tag(item, "content");
+        if (!title || !link || title.length < 10) continue;
+
+        let parsed;
+        try { parsed = new URL(link, u.href); } catch { continue; }
+        if (!["https:", "http:"].includes(parsed.protocol)) continue;
+
+        const normTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+        const id = crypto.createHash("sha256").update(parsed.href).digest("hex").slice(0, 20);
+        const dupInJobs = jobs.some((x) =>
+          x.sourceUrl === parsed.href ||
+          x.officialUrl === parsed.href ||
+          String(x.title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim() === normTitle
+        );
+        const dupInQueue = queue.some((x) => x.id === id || x.sourceUrl === parsed.href);
+        if (dupInJobs || dupInQueue) continue;
+
+        const combined = title + " " + desc;
+        const jobRecord = {
+          id: AUTO_PUBLISH_JOBS ? "auto-" + id : id,
+          title: title.slice(0, 160),
+          organization: u.hostname.replace(/^www\./, "").toUpperCase(),
+          category: detectCategoryFromText(combined),
+          region: detectStateFromText(combined),
+          district: detectDistrictFromText(combined),
+          qualification: detectQualificationFromText(combined),
+          vacancies: extractVacancies(combined),
+          lastDate: extractLastDate(combined),
+          examDate: "Check official site",
+          ageLimit: "See notification",
+          applicationFee: "See notification",
+          type: /admit|call letter/i.test(title) ? "Admit Card"
+            : /result/i.test(title) ? "Result"
+            : /answer key/i.test(title) ? "Answer Key"
+            : /syllabus/i.test(title) ? "Syllabus"
+            : /exam date|schedule/i.test(title) ? "Exam Date"
+            : "Job",
+          status: AUTO_PUBLISH_JOBS ? "published" : "pending",
+          officialUrl: parsed.href.slice(0, 500),
+          applyUrl: parsed.href.slice(0, 500),
+          pdfUrl: extractPdfUrl(item, parsed.href),
+          description: (desc || title).slice(0, 600),
+          sourceUrl: parsed.href,
+          sourceFeed: u.href,
+          sourceType: "auto",
+          createdAt: new Date().toISOString()
+        };
+
+        if (AUTO_PUBLISH_JOBS) {
+          jobs.unshift(jobRecord);
+          published++;
+        } else {
+          queue.unshift({ ...jobRecord, foundAt: new Date().toISOString() });
+        }
+        added++;
+      }
+    } catch (e) {
+      console.warn("Feed check skipped:", feedUrl, e.message);
+    }
+  }
+
+  if (published > 0) {
+    jobs = jobs.slice(0, 400);
+    writeJobs(jobs);
+  }
+  if (!AUTO_PUBLISH_JOBS) {
+    writeJson(QUEUE_FILE, queue);
+  }
+
+  return {
+    checked,
+    added,
+    published,
+    autoPublish: AUTO_PUBLISH_JOBS,
+    message: AUTO_PUBLISH_JOBS
+      ? `Synced ${checked} feed(s) and auto-published ${published} new real job(s).`
+      : `Synced ${checked} feed(s); ${added} item(s) added to admin review queue.`
+  };
+}
+
+app.get("/api/automation/status", (req, res) => {
+  const autoMeta = readJson(path.join(DATA_DIR, "automation.json"), {});
+  res.json({
+    enabled: FEEDS.length > 0,
+    autoPublish: AUTO_PUBLISH_JOBS,
+    feedsConfigured: FEEDS.length,
+    lastRun: autoMeta.lastRun || null,
+    lastAdded: autoMeta.added || 0,
+    nextRun: FEEDS.length ? "Every 2 hours" : "Not scheduled",
+    note: AUTO_PUBLISH_JOBS
+      ? "Auto Real Govt Jobs Engine is active and publishing new jobs automatically."
+      : "Feed discoveries require admin review before publishing."
+  });
+});
+
+app.post("/api/admin/jobs/auto-sync", requireAdmin, async (req, res) => {
+  const result = await checkOfficialFeeds().catch((e) => ({ checked: 0, added: 0, published: 0, message: e.message }));
+  writeJson(path.join(DATA_DIR, "automation.json"), { lastRun: new Date().toISOString(), ...result });
+  res.json({ ok: true, ...result });
+});
+
+app.get("/api/daily-question", (req, res) => {
+  const questions = [
+    { q: "Which gas is most abundant in Earth's atmosphere?", options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"], answer: 1, explanation: "Nitrogen makes up about 78% of dry air." },
+    { q: "What is the SI unit of force?", options: ["Joule", "Watt", "Newton", "Pascal"], answer: 2, explanation: "Force is measured in newtons (N)." },
+    { q: "Which part of a cell contains most of its genetic material?", options: ["Cell wall", "Nucleus", "Cytoplasm", "Ribosome"], answer: 1, explanation: "The nucleus contains most of a eukaryotic cell's DNA." },
+    { q: "Who appoints the Prime Minister of India?", options: ["Chief Justice", "President", "Lok Sabha Speaker", "Governor"], answer: 1, explanation: "The President appoints the Prime Minister under the Constitution." },
+    { q: "What is the capital of Jammu and Kashmir during the winter secretariat?", options: ["Srinagar", "Jammu", "Leh", "Kargil"], answer: 1, explanation: "Jammu is the winter capital/seat of the seasonal secretariat." }
+  ];
+  const day = Math.floor(Date.now() / 86400000);
+  res.json({ ...questions[day % questions.length], date: new Date().toISOString().slice(0, 10) });
+});
+
+app.post("/api/mock-test", async (req, res) => {
+  const topic = String(req.body.topic || "General Knowledge").slice(0, 100);
+  const exam = String(req.body.exam || "SSC GD").slice(0, 80);
+  const difficulty = ["Easy", "Medium", "Hard"].includes(req.body.difficulty) ? req.body.difficulty : "Medium";
+  const unlimited = String(req.body.count || "").toLowerCase() === "all";
+  const requested = unlimited ? 0 : Number(req.body.count) || 10;
+  const count = Math.max(1, Math.min(2000, requested));
+
+  if (OPENAI_API_KEY && !unlimited) {
+    try {
+      const r = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: { Authorization: "Bearer " + OPENAI_API_KEY, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: OPENAI_MODEL,
+          temperature: 0.4,
+          response_format: { type: "json_object" },
+          messages: [
+            { role: "system", content: "Create accurate educational multiple-choice practice questions. Return JSON only: {questions:[{question,options:[four strings],answerIndex:0,explanation}]}. Exactly requested count. One correct answer. Do not invent current affairs." },
+            { role: "user", content: `Create ${count} ${difficulty} difficulty ${exam} practice MCQs on ${topic}. Include concise explanations. Use English.` }
+          ]
+        })
+      });
+      const d = await r.json();
+      if (!r.ok) throw Error(d.error?.message || "AI request failed");
+      const parsed = JSON.parse(d.choices[0].message.content);
+      if (!Array.isArray(parsed.questions) || parsed.questions.length < count) throw Error("AI returned an incomplete test");
+      return res.json({
+        source: "AI-generated",
+        topic,
+        exam,
+        difficulty,
+        questions: parsed.questions.slice(0, count).map((q) => ({
+          question: String(q.question),
+          options: q.options.slice(0, 4).map(String),
+          answerIndex: Math.max(0, Math.min(3, Number(q.answerIndex) || 0)),
+          explanation: String(q.explanation || "")
+        }))
+      });
+    } catch (e) {
+      console.error("AI mock test fallback:", e.message);
+    }
+  }
+
+  const bank = [
+    ["Which is the largest planet in our Solar System?", ["Earth", "Jupiter", "Saturn", "Mars"], 1, "Jupiter is the largest planet."],
+    ["What is the chemical symbol for Sodium?", ["So", "S", "Na", "N"], 2, "Na comes from the Latin name natrium."],
+    ["Which Article of the Indian Constitution deals with equality before law?", ["Article 14", "Article 19", "Article 21", "Article 32"], 0, "Article 14 guarantees equality before law and equal protection of laws."],
+    ["Who is known as the Father of the Indian Constitution?", ["Mahatma Gandhi", "B. R. Ambedkar", "Jawaharlal Nehru", "Sardar Patel"], 1, "Dr. B. R. Ambedkar chaired the Drafting Committee."],
+    ["What is 15% of 200?", ["20", "25", "30", "35"], 2, "200 × 15/100 = 30."],
+    ["Choose the correctly spelled word.", ["Accomodation", "Accommodation", "Acommodation", "Accommadation"], 1, "Accommodation has double c and double m."],
+    ["Which blood cells help fight infection?", ["Red blood cells", "White blood cells", "Platelets", "Plasma"], 1, "White blood cells are part of the immune system."],
+    ["The SI unit of electric current is:", ["Volt", "Ohm", "Ampere", "Watt"], 2, "Electric current is measured in amperes."],
+    ["Which river is often called the Dakshin Ganga?", ["Narmada", "Godavari", "Krishna", "Kaveri"], 1, "The Godavari is also called the Dakshin Ganga."],
+    ["A train travels 120 km in 2 hours. Its average speed is:", ["40 km/h", "50 km/h", "60 km/h", "80 km/h"], 2, "Speed = distance ÷ time = 120 ÷ 2 = 60 km/h."]
+  ];
+
+  const savedBank = readJson(path.join(DATA_DIR, "practice-question-bank.json"), []);
+  let pool = savedBank.length
+    ? savedBank.map((q) => ({ question: q.question, options: q.options, answerIndex: q.answer, explanation: q.explanation, category: q.category }))
+    : bank.map((q) => ({ question: q[0], options: q[1], answerIndex: q[2], explanation: q[3], category: "General" }));
+
+  const topicKey = topic.toLowerCase().trim();
+  const categoryRules = [
+    ["math", ["Mathematics"]], ["quant", ["Mathematics"]], ["reason", ["Reasoning"]],
+    ["english", ["English"]], ["grammar", ["English"]], ["science", ["Science"]],
+    ["computer", ["Computer"]], ["jammu", ["Jammu & Kashmir GK"]], ["kashmir", ["Jammu & Kashmir GK"]], ["jk gk", ["Jammu & Kashmir GK"]],
+    ["polity", ["GK"]], ["history", ["GK"]], ["geography", ["GK", "Jammu & Kashmir GK"]]
+  ];
+  const rule = categoryRules.find(([key]) => topicKey.includes(key));
+  if (rule) {
+    const filtered = pool.filter((q) => rule[1].includes(q.category));
+    if (filtered.length) pool = filtered;
+  }
+
+  const shuffled = pool.slice().sort(() => Math.random() - 0.5);
+  const selected = unlimited ? shuffled : shuffled.slice(0, Math.min(count, shuffled.length));
+  const questions = selected.map((q) => ({
+    question: q.question,
+    options: q.options.slice(0, 4).map(String),
+    answerIndex: Math.max(0, Math.min(3, Number(q.answerIndex) || 0)),
+    explanation: String(q.explanation || "")
+  }));
+
+  res.json({
+    source: savedBank.length ? "Question bank" : "Built-in practice bank",
+    topic,
+    exam,
+    difficulty,
+    questions,
+    note: unlimited
+      ? `Unlimited mode: loaded all ${questions.length} questions currently available in this question bank.`
+      : OPENAI_API_KEY
+        ? "AI temporarily unavailable; using the reviewed offline practice bank."
+        : "Offline mode: questions are selected from the built-in practice bank. Add OPENAI_API_KEY privately on Render to enable AI-generated topic-specific tests."
+  });
+});
+
+app.post("/api/study-assistant", async (req, res) => {
+  const question = String(req.body.question || "").trim().slice(0, 2500);
+  if (!question) return res.status(400).json({ error: "Enter a study question." });
+  if (OPENAI_API_KEY) {
+    try {
+      const r = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: { Authorization: "Bearer " + OPENAI_API_KEY, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: OPENAI_MODEL,
+          temperature: 0.3,
+          messages: [
+            { role: "system", content: "You are a careful Indian competitive-exam study tutor. Explain clearly for a student, use simple English or Hindi according to the question, show steps for calculations, distinguish stable facts from current affairs, and never invent official dates or vacancies. Keep the answer structured and concise." },
+            { role: "user", content: question }
+          ]
+        })
+      });
+      const d = await r.json();
+      if (!r.ok) throw Error(d.error?.message || "AI request failed");
+      const answer = d.choices?.[0]?.message?.content;
+      if (!answer) throw Error("Empty AI response");
+      return res.json({ source: "AI study assistant", answer: String(answer).slice(0, 12000) });
+    } catch (e) {
+      console.error("Study assistant fallback:", e.message);
+    }
+  }
+  res.json({
+    source: "Offline study guide",
+    answer: "Study guide (offline mode)\n\n1. Identify the exact concept and write its definition in one sentence.\n2. Break it into 3–5 key points and note important terms.\n3. Work through one example or previous-year style question.\n4. Recall the points without looking, then check your notes.\n5. Finish with 5 practice MCQs and review every incorrect answer.\n\nYour server does not currently have OPENAI_API_KEY configured, so personalised AI explanations are unavailable. Add the key privately in your hosting environment to enable AI answers. Do not paste API keys into this page."
+  });
+});
+
+app.get("/api/admin/review-queue", requireAdmin, (req, res) => res.json({ items: readJson(QUEUE_FILE, []) }));
+
+app.post("/api/admin/review-queue/:id/approve", requireAdmin, (req, res) => {
+  const queue = readJson(QUEUE_FILE, []);
+  const i = queue.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Queue item not found" });
+  const item = queue.splice(i, 1)[0];
+  const j = validateJob({ ...item, ...req.body, status: "published" });
+  if (j.error) return res.status(400).json({ error: j.error });
+  const jobs = readJobs();
+  jobs.unshift({ ...j.value, id: crypto.randomUUID(), createdAt: new Date().toISOString(), sourceUrl: item.sourceUrl });
+  writeJobs(jobs);
+  writeJson(QUEUE_FILE, queue);
+  res.json({ ok: true, job: jobs[0] });
+});
+
+app.delete("/api/admin/review-queue/:id", requireAdmin, (req, res) => {
+  const q = readJson(QUEUE_FILE, []);
+  const n = q.filter((x) => x.id !== req.params.id);
+  writeJson(QUEUE_FILE, n);
+  res.json({ ok: true });
+});
+
+function readArray(file) { return readJson(file, []); }
+function writeArray(file, data) { writeJson(file, data); }
+
+app.get("/api/resources", (req, res) => res.json({ resources: readArray(RESOURCES_FILE).filter((x) => x.status === "published" && !x.deletedAt) }));
+app.get("/api/admin/resources", requireAdmin, (req, res) => res.json({ resources: readArray(RESOURCES_FILE) }));
+
+app.get("/api/admin/file-manager", requireAdmin, (req, res) => {
+  const q = String(req.query.q || "").toLowerCase();
+  const folder = String(req.query.folder || "");
+  const all = readArray(RESOURCES_FILE).filter((x) => !x.deletedAt);
+  const resources = all.filter((x) => (!folder || x.folder === folder) && (!q || [x.title, x.fileName, x.category, x.description, x.folder].join(" ").toLowerCase().includes(q)));
+  res.json({ resources, folders: [...new Set(all.map((x) => x.folder || "General"))].sort() });
+});
+
+app.post("/api/admin/resources/bulk", requireAdmin, upload.array("files", 20), (req, res) => {
+  const files = req.files || [];
+  if (!files.length) return res.status(400).json({ error: "Choose at least one file" });
+  const titles = String(req.body.titles || "").split("\n");
+  const folder = String(req.body.folder || "General").trim().slice(0, 80) || "General";
+  const category = String(req.body.category || "Study Material").slice(0, 60);
+  const status = req.body.status === "draft" ? "draft" : "published";
+  const all = readArray(RESOURCES_FILE);
+  const created = files.map((f, i) => ({
+    id: crypto.randomUUID(),
+    title: (titles[i] || path.parse(f.originalname).name).trim().slice(0, 160),
+    category,
+    folder,
+    description: String(req.body.description || "").slice(0, 600),
+    fileName: f.originalname.slice(0, 180),
+    url: "/uploads/" + f.filename,
+    mimeType: f.mimetype,
+    size: f.size,
+    status,
+    createdAt: new Date().toISOString()
+  }));
+  writeArray(RESOURCES_FILE, [...created, ...all]);
+  res.status(201).json({ resources: created, count: created.length });
+});
+
+app.post("/api/admin/resources/:id/replace", requireAdmin, upload.single("file"), (req, res) => {
+  if (!req.file) return res.status(400).json({ error: "Choose replacement file" });
+  const all = readArray(RESOURCES_FILE);
+  const i = all.findIndex((x) => x.id === req.params.id);
+  if (i < 0) {
+    fs.unlinkSync(req.file.path);
+    return res.status(404).json({ error: "Resource not found" });
+  }
+  const old = all[i];
+  if (old.url) {
+    const oldPath = path.join(UPLOAD_DIR, path.basename(old.url));
+    if (fs.existsSync(oldPath)) fs.unlinkSync(oldPath);
+  }
+  all[i] = { ...old, fileName: req.file.originalname.slice(0, 180), url: "/uploads/" + req.file.filename, mimeType: req.file.mimetype, size: req.file.size, updatedAt: new Date().toISOString() };
+  writeArray(RESOURCES_FILE, all);
+  res.json({ resource: all[i] });
+});
+
+app.get("/api/admin/backup", requireAdmin, (req, res) => {
+  const snapshot = { createdAt: new Date().toISOString(), jobs: readJobs(), resources: readArray(RESOURCES_FILE), tests: readArray(TESTS_FILE), trash: readArray(TRASH_FILE), reviewQueue: readJson(QUEUE_FILE, []) };
+  res.setHeader("Content-Disposition", 'attachment; filename="sarkari-job-universe-backup.json"');
+  res.type("application/json").send(JSON.stringify(snapshot, null, 2));
+});
+
+app.post("/api/admin/resources", requireAdmin, upload.single("file"), (req, res) => {
+  if (!req.file) return res.status(400).json({ error: "Choose a PDF or image file" });
+  const title = String(req.body.title || "").trim();
+  if (!title) {
+    fs.unlinkSync(req.file.path);
+    return res.status(400).json({ error: "Resource title is required" });
+  }
+  const item = {
+    id: crypto.randomUUID(),
+    title: title.slice(0, 160),
+    folder: String(req.body.folder || "General").slice(0, 80),
+    category: String(req.body.category || "Study Material").slice(0, 60),
+    description: String(req.body.description || "").slice(0, 600),
+    fileName: req.file.originalname.slice(0, 180),
+    url: "/uploads/" + req.file.filename,
+    mimeType: req.file.mimetype,
+    size: req.file.size,
+    status: req.body.status === "draft" ? "draft" : "published",
+    createdAt: new Date().toISOString()
+  };
+  const all = readArray(RESOURCES_FILE);
+  all.unshift(item);
+  writeArray(RESOURCES_FILE, all);
+  res.status(201).json({ resource: item });
+});
+
+app.put("/api/admin/resources/:id", requireAdmin, (req, res) => {
+  const all = readArray(RESOURCES_FILE);
+  const i = all.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Resource not found" });
+  all[i] = { ...all[i], title: String(req.body.title || all[i].title).slice(0, 160), category: String(req.body.category || all[i].category).slice(0, 60), folder: String(req.body.folder || all[i].folder || "General").slice(0, 80), description: String(req.body.description || "").slice(0, 600), status: req.body.status === "draft" ? "draft" : "published", updatedAt: new Date().toISOString() };
+  writeArray(RESOURCES_FILE, all);
+  res.json({ resource: all[i] });
+});
+
+app.delete("/api/admin/resources/:id", requireAdmin, (req, res) => {
+  const all = readArray(RESOURCES_FILE);
+  const i = all.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Resource not found" });
+  all[i].deletedAt = new Date().toISOString();
+  const t = readArray(TRASH_FILE);
+  t.unshift({ kind: "resource", item: all[i] });
+  writeArray(TRASH_FILE, t);
+  writeArray(RESOURCES_FILE, all);
+  res.json({ ok: true });
+});
+
+app.get("/api/tests", (req, res) => res.json({ tests: readArray(TESTS_FILE).filter((x) => x.status === "published" && !x.deletedAt).map(({ questions, ...x }) => ({ ...x, questionCount: questions.length })) }));
+app.get("/api/tests/:id", (req, res) => {
+  const t = readArray(TESTS_FILE).find((x) => x.id === req.params.id && x.status === "published" && !x.deletedAt);
+  if (!t) return res.status(404).json({ error: "Test not found" });
+  res.json({ test: t });
+});
+app.get("/api/admin/tests", requireAdmin, (req, res) => res.json({ tests: readArray(TESTS_FILE) }));
+
+// Unlimited / high-capacity question support for Mock Tests (up to 2000 questions)
+app.post("/api/admin/tests", requireAdmin, (req, res) => {
+  const title = String(req.body.title || "").trim();
+  let questions = req.body.questions;
+  if (typeof questions === "string") {
+    try { questions = JSON.parse(questions); } catch { return res.status(400).json({ error: "Questions must be valid JSON" }); }
+  }
+  if (!title || !Array.isArray(questions) || !questions.length || questions.length > 2000) {
+    return res.status(400).json({ error: "Add a title and 1–2000 questions" });
+  }
+  for (const q of questions) {
+    if (!q.question || !Array.isArray(q.options) || q.options.length < 2 || !Number.isInteger(q.answerIndex) || q.answerIndex < 0 || q.answerIndex >= q.options.length) {
+      return res.status(400).json({ error: "Each question needs question, options array and valid answerIndex" });
+    }
+  }
+  const item = {
+    id: crypto.randomUUID(),
+    title: title.slice(0, 160),
+    exam: String(req.body.exam || "General Practice").slice(0, 80),
+    duration: Number(req.body.duration) || 30,
+    status: req.body.status === "draft" ? "draft" : "published",
+    questions: questions.map((q) => ({ question: String(q.question).slice(0, 1000), options: q.options.slice(0, 6).map((x) => String(x).slice(0, 300)), answerIndex: q.answerIndex, explanation: String(q.explanation || "").slice(0, 1000) })),
+    createdAt: new Date().toISOString()
+  };
+  const all = readArray(TESTS_FILE);
+  all.unshift(item);
+  writeArray(TESTS_FILE, all);
+  res.status(201).json({ test: { ...item, questionCount: item.questions.length } });
+});
+
+app.put("/api/admin/tests/:id", requireAdmin, (req, res) => {
+  const all = readArray(TESTS_FILE);
+  const i = all.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Test not found" });
+  if (req.body.status) all[i].status = req.body.status === "draft" ? "draft" : "published";
+  if (req.body.title) all[i].title = String(req.body.title).slice(0, 160);
+  writeArray(TESTS_FILE, all);
+  res.json({ ok: true, test: all[i] });
+});
+
+app.delete("/api/admin/tests/:id", requireAdmin, (req, res) => {
+  const all = readArray(TESTS_FILE);
+  const i = all.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Test not found" });
+  all[i].deletedAt = new Date().toISOString();
+  const t = readArray(TRASH_FILE);
+  t.unshift({ kind: "test", item: all[i] });
+  writeArray(TRASH_FILE, t);
+  writeArray(TESTS_FILE, all);
+  res.json({ ok: true });
+});
+
+app.get("/api/admin/trash", requireAdmin, (req, res) => res.json({ items: readArray(TRASH_FILE) }));
+
+app.post("/api/admin/trash/:id/restore", requireAdmin, (req, res) => {
+  const t = readArray(TRASH_FILE);
+  const i = t.findIndex((x) => x.item.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Trash item not found" });
+  const entry = t.splice(i, 1)[0];
+  const file = entry.kind === "job" ? DATA_FILE : entry.kind === "resource" ? RESOURCES_FILE : TESTS_FILE;
+  const all = readArray(file);
+  delete entry.item.deletedAt;
+  all.unshift(entry.item);
+  writeArray(file, all);
+  writeArray(TRASH_FILE, t);
+  res.json({ ok: true });
+});
+
+app.delete("/api/admin/trash/:id", requireAdmin, (req, res) => {
+  const t = readArray(TRASH_FILE);
+  const i = t.findIndex((x) => x.item.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Trash item not found" });
+  const entry = t.splice(i, 1)[0];
+  if (entry.kind === "resource" && entry.item.url) {
+    const f = path.join(UPLOAD_DIR, path.basename(entry.item.url));
+    if (fs.existsSync(f)) fs.unlinkSync(f);
+  }
+  writeArray(TRASH_FILE, t);
+  res.json({ ok: true });
+});
+
+app.use((err, req, res, next) => {
+  if (err instanceof multer.MulterError) return res.status(400).json({ error: err.message });
+  if (err) return res.status(400).json({ error: err.message || "Upload failed" });
+  next();
+});
+
+const DAILY_UPDATES_FILE = path.join(DATA_DIR, "daily-updates.json");
+app.get("/api/daily-updates", (req, res) => {
+  const all = readArray(DAILY_UPDATES_FILE);
+  res.json({ items: all.filter((x) => x.status === "published") });
+});
+app.get("/api/admin/daily-updates", requireAdmin, (req, res) => {
+  res.json({ items: readArray(DAILY_UPDATES_FILE) });
+});
+app.post("/api/admin/daily-updates", requireAdmin, (req, res) => {
+  const title = String(req.body.title || "").trim();
+  if (!title) return res.status(400).json({ error: "Title is required" });
+  const item = {
+    id: crypto.randomUUID(),
+    title: title.slice(0, 160),
+    tag: String(req.body.tag || "Breaking Alert").slice(0, 60),
+    body: String(req.body.body || "").slice(0, 1000),
+    link: String(req.body.link || "").trim().slice(0, 500),
+    status: req.body.status === "draft" ? "draft" : "published",
+    createdAt: new Date().toISOString()
+  };
+  const all = readArray(DAILY_UPDATES_FILE);
+  all.unshift(item);
+  writeArray(DAILY_UPDATES_FILE, all);
+  res.status(201).json({ item });
+});
+app.put("/api/admin/daily-updates/:id", requireAdmin, (req, res) => {
+  const all = readArray(DAILY_UPDATES_FILE);
+  const i = all.findIndex((x) => x.id === req.params.id);
+  if (i < 0) return res.status(404).json({ error: "Update not found" });
+  if (req.body.title !== undefined) all[i].title = String(req.body.title).trim().slice(0, 160);
+  if (req.body.tag !== undefined) all[i].tag = String(req.body.tag).slice(0, 60);
+  if (req.body.body !== undefined) all[i].body = String(req.body.body).slice(0, 1000);
+  if (req.body.link !== undefined) all[i].link = String(req.body.link).trim().slice(0, 500);
+  if (req.body.status !== undefined) all[i].status = req.body.status === "draft" ? "draft" : "published";
+  all[i].updatedAt = new Date().toISOString();
+  writeArray(DAILY_UPDATES_FILE, all);
+  res.json({ item: all[i] });
+});
+app.delete("/api/admin/daily-updates/:id", requireAdmin, (req, res) => {
+  const all = readArray(DAILY_UPDATES_FILE).filter((x) => x.id !== req.params.id);
+  writeArray(DAILY_UPDATES_FILE, all);
+  res.json({ ok: true });
+});
+
+const ENGAGE_SUITE_FILE = path.join(DATA_DIR, "engage-suite.json");
+function buildAutoDailyQuiz(dateStr) {
+  const bank = readJson(path.join(DATA_DIR, "practice-question-bank.json"), []);
+  const valid = Array.isArray(bank) ? bank.filter((q) => q && q.question && Array.isArray(q.options) && q.options.length >= 4) : [];
+  if (!valid.length) {
+    return {
+      title: "Aaj Ka Live SSC & Exam Quiz (" + dateStr + ")",
+      questions: [
+        { question: "Jammu & Kashmir ki winter capital kaunsi hai?", options: ["Srinagar", "Jammu", "Leh", "Anantnag"], answerIndex: 1, explanation: "Jammu winter capital hai aur Srinagar summer capital hai." },
+        { question: "Indian Constitution ka kaunsa Article Right to Equality deta hai?", options: ["Article 14", "Article 19", "Article 21", "Article 32"], answerIndex: 0, explanation: "Article 14 sabhi ko kanoon ke samne barabari deta hai." },
+        { question: "Bharat mein 'Iron Man of India' kise kaha jata hai?", options: ["Subhas Chandra Bose", "Sardar Vallabhbhai Patel", "Bhagat Singh", "Lal Bahadur Shastri"], answerIndex: 1, explanation: "Sardar Vallabhbhai Patel ko Iron Man of India kaha jata hai." }
+      ]
+    };
+  }
+  const dayNum = Math.floor(Date.now() / 86400000);
+  const count = Math.min(5, valid.length);
+  const start = (dayNum * count) % valid.length;
+  const picked = [];
+  for (let i = 0; i < count; i++) {
+    const item = valid[(start + i) % valid.length];
+    picked.push({
+      question: String(item.question),
+      options: item.options.slice(0, 4).map(String),
+      answerIndex: Math.max(0, Math.min(3, Number(item.answer ?? item.answerIndex ?? 0))),
+      explanation: String(item.explanation || ("Category: " + (item.category || "SSC / GK")))
+    });
+  }
+  return {
+    title: "Aaj Ka Auto SSC & Exam Quiz (" + dateStr + ")",
+    autoGenerated: true,
+    questions: picked
+  };
+}
+
+function readEngageSuite() {
+  const def = {
+    quiz: {
+      title: "Aaj Ka Live GK & Exam Quiz",
+      questions: [
+        { question: "Jammu & Kashmir ki winter capital kaunsi hai?", options: ["Srinagar", "Jammu", "Leh", "Anantnag"], answerIndex: 1, explanation: "Jammu winter capital hai aur Srinagar summer capital hai." },
+        { question: "Indian Constitution ka kaunsa Article Right to Equality deta hai?", options: ["Article 14", "Article 19", "Article 21", "Article 32"], answerIndex: 0, explanation: "Article 14 sabhi ko kanoon ke samne barabari deta hai." },
+        { question: "Bharat mein 'Iron Man of India' kise kaha jata hai?", options: ["Subhas Chandra Bose", "Sardar Vallabhbhai Patel", "Bhagat Singh", "Lal Bahadur Shastri"], answerIndex: 1, explanation: "Sardar Vallabhbhai Patel ko Iron Man of India kaha jata hai." }
+      ]
+    },
+    leaderboard: [],
+    poll: {
+      id: "poll-default-1",
+      question: "Aap abhi kis exam ki taiyari kar rahe hain?",
+      options: [
+        { label: "JKSSB Exams", votes: 14 },
+        { label: "SSC GD / CHSL", votes: 22 },
+        { label: "Army GD / Police", votes: 18 },
+        { label: "Railway / Banking", votes: 11 }
+      ]
+    },
+    countdowns: [
+      { id: "cd-1", title: "SSC GD Constable Exam Preparation Target", examDate: "2026-12-20", tag: "Mission 2026", link: "/mock-test.html" },
+      { id: "cd-2", title: "JKSSB Upcoming CBT Practice Drive", examDate: "2026-12-15", tag: "J&K Special", link: "/papers.html" }
+    ],
+    demands: []
+  };
+  return readJson(ENGAGE_SUITE_FILE, def);
+}
+
+app.get("/api/engage-suite", (req, res) => {
+  const s = readEngageSuite();
+  res.json({ quiz: s.quiz, leaderboard: (s.leaderboard || []).slice(0, 10), poll: s.poll, countdowns: s.countdowns || [] });
+});
+
+app.post("/api/engage-suite/quiz-score", (req, res) => {
+  const s = readEngageSuite();
+  const name = String(req.body.name || "Student").trim().slice(0, 40) || "Student";
+  const city = String(req.body.city || "").trim().slice(0, 40);
+  const totalQs = Math.max(1, (s.quiz && Array.isArray(s.quiz.questions) && s.quiz.questions.length) || 5);
+  const score = Math.max(0, Math.min(2000, Number(req.body.score) || 0));
+  const total = Math.max(1, Math.min(2000, Number(req.body.total) || totalQs));
+  s.leaderboard = Array.isArray(s.leaderboard) ? s.leaderboard : [];
+  s.leaderboard.push({ name, city, score, total, at: new Date().toISOString() });
+  s.leaderboard.sort((a, b) => (b.score / b.total) - (a.score / a.total) || new Date(a.at) - new Date(b.at));
+  s.leaderboard = s.leaderboard.slice(0, 25);
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.json({ leaderboard: s.leaderboard.slice(0, 10) });
+});
+
+app.post("/api/engage-suite/poll-vote", (req, res) => {
+  const s = readEngageSuite();
+  const idx = Number(req.body.optionIndex);
+  if (s.poll && Array.isArray(s.poll.options) && s.poll.options[idx]) {
+    s.poll.options[idx].votes = (Number(s.poll.options[idx].votes) || 0) + 1;
+    writeJson(ENGAGE_SUITE_FILE, s);
+  }
+  res.json({ poll: s.poll });
+});
+
+app.post("/api/engage-suite/demand", (req, res) => {
+  const message = String(req.body.message || "").trim();
+  if (!message) return res.status(400).json({ error: "Message required" });
+  const s = readEngageSuite();
+  s.demands = Array.isArray(s.demands) ? s.demands : [];
+  s.demands.unshift({
+    id: crypto.randomUUID(),
+    name: String(req.body.name || "Student").trim().slice(0, 50) || "Student",
+    exam: String(req.body.exam || "General").trim().slice(0, 50),
+    message: message.slice(0, 300),
+    createdAt: new Date().toISOString()
+  });
+  s.demands = s.demands.slice(0, 100);
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.status(201).json({ ok: true });
+});
+
+app.get("/api/admin/engage-suite", requireAdmin, (req, res) => res.json(readEngageSuite()));
+
+// No upper question cap (up to 2000 questions) for Daily Live Quiz
+app.post("/api/admin/engage-suite/quiz", requireAdmin, (req, res) => {
+  const title = String(req.body.title || "").trim();
+  const questions = req.body.questions;
+  if (!title || !Array.isArray(questions) || !questions.length || questions.length > 2000) {
+    return res.status(400).json({ error: "Add title and at least 1 valid question (up to 2000)" });
+  }
+  for (const q of questions) {
+    if (!q.question || !Array.isArray(q.options) || q.options.length < 2 || !Number.isInteger(q.answerIndex) || q.answerIndex < 0 || q.answerIndex >= q.options.length) {
+      return res.status(400).json({ error: "Invalid question format" });
+    }
+  }
+  const s = readEngageSuite();
+  s.quiz = {
+    title: title.slice(0, 140),
+    questions: questions.map((q) => ({
+      question: String(q.question).slice(0, 800),
+      options: q.options.slice(0, 6).map((o) => String(o).slice(0, 250)),
+      answerIndex: q.answerIndex,
+      explanation: String(q.explanation || "").slice(0, 600)
+    }))
+  };
+  if (req.body.resetBoard) s.leaderboard = [];
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.json({ ok: true });
+});
+
+app.post("/api/admin/engage-suite/poll", requireAdmin, (req, res) => {
+  const question = String(req.body.question || "").trim();
+  const options = req.body.options;
+  if (!question || !Array.isArray(options) || options.length < 2) {
+    return res.status(400).json({ error: "Question and at least 2 options required" });
+  }
+  const s = readEngageSuite();
+  s.poll = {
+    id: "poll-" + Date.now(),
+    question: question.slice(0, 180),
+    options: options.slice(0, 6).map((lbl) => ({ label: String(lbl).slice(0, 80), votes: 0 }))
+  };
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.json({ ok: true });
+});
+
+app.post("/api/admin/engage-suite/countdown", requireAdmin, (req, res) => {
+  const title = String(req.body.title || "").trim();
+  const examDate = String(req.body.examDate || "").trim();
+  if (!title || !examDate) return res.status(400).json({ error: "Title and date required" });
+  const s = readEngageSuite();
+  s.countdowns = Array.isArray(s.countdowns) ? s.countdowns : [];
+  s.countdowns.unshift({
+    id: crypto.randomUUID(),
+    title: title.slice(0, 120),
+    examDate: examDate.slice(0, 20),
+    tag: String(req.body.tag || "Upcoming").slice(0, 50),
+    link: String(req.body.link || "").trim().slice(0, 400)
+  });
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.json({ ok: true });
+});
+
+app.delete("/api/admin/engage-suite/countdown/:id", requireAdmin, (req, res) => {
+  const s = readEngageSuite();
+  s.countdowns = (s.countdowns || []).filter((x) => x.id !== req.params.id);
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.json({ ok: true });
+});
+
+app.delete("/api/admin/engage-suite/demand/:id", requireAdmin, (req, res) => {
+  const s = readEngageSuite();
+  s.demands = (s.demands || []).filter((x) => x.id !== req.params.id);
+  writeJson(ENGAGE_SUITE_FILE, s);
+  res.json({ ok: true });
+});
+
+// ==================== CURRENT AFFAIRS MODULE (AUTO + ADMIN) ====================
+const CURRENT_AFFAIRS_FILE = path.join(DATA_DIR, "current-affairs.json");
+const CURRENT_AFFAIRS_META_FILE = path.join(DATA_DIR, "current-affairs-meta.json");
+const CA_RSS_FEEDS = (process.env.CURRENT_AFFAIRS_RSS_FEEDS || "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3;https://www.newsonair.gov.in/feed/")
+  .split(";").map((x) => x.trim()).filter(Boolean);
+
+function readCurrentAffairs() {
+  try {
+    const arr = JSON.parse(fs.readFileSync(CURRENT_AFFAIRS_FILE, "utf8"));
+    return Array.isArray(arr) ? arr : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeCurrentAffairs(items) {
+  fs.mkdirSync(path.dirname(CURRENT_AFFAIRS_FILE), { recursive: true });
+  const tmp = CURRENT_AFFAIRS_FILE + ".tmp";
+  fs.writeFileSync(tmp, JSON.stringify(items, null, 2));
+  fs.renameSync(tmp, CURRENT_AFFAIRS_FILE);
+}
+
+function classifyCurrentAffair(text) {
+  const t = String(text || "").toLowerCase();
+  if (/jammu|kashmir|jkssb|srinagar|ladakh|gulmarg|rajouri|poonch/.test(t)) return "Jammu & Kashmir";
+  if (/army|navy|air force|drdo|defence|missile|border|bsf|crpf/.test(t)) return "Defence & National";
+  if (/rbi|bank|gdp|economy|budget|tax|gst|inflation|export/.test(t)) return "Economy & Banking";
+  if (/sport|cricket|olympic|khelo|medal|award|padma|nobel|championship/.test(t)) return "Sports & Awards";
+  if (/isro|space|ai|satellite|science|tech|digital|cyber/.test(t)) return "Science & Tech";
+  return "National & Polity";
+}
+
+function isExamImportantCA(text) {
+  const t = String(text || "").toLowerCase();
+  return /scheme|yojana|policy|summit|award|medal|isro|drdo|rbi|constitution|bill|act|jammu|kashmir|army|defence|index|report|mission|treaty|appointment|governor|chief justice/.test(t);
+}
+
+async function syncAutoCurrentAffairs() {
+  let list = readCurrentAffairs();
+  let added = 0;
+  let checked = 0;
+
+  for (const feedUrl of CA_RSS_FEEDS) {
+    try {
+      const u = new URL(feedUrl);
+      if (!["https:", "http:"].includes(u.protocol)) continue;
+      const resp = await fetch(u, {
+        headers: { "User-Agent": "SarkariJobUniverse-CA-Bot/1.0" },
+        signal: AbortSignal.timeout(10000)
+      });
+      if (!resp.ok) continue;
+      const xml = await resp.text();
+      checked++;
+      const entries = [...xml.matchAll(/<(item|entry)\b[\s\S]*?<\/\1>/gi)].map((m) => m[0]).slice(0, 25);
+      for (const entry of entries) {
+        const title = tag(entry, "title");
+        const link = tag(entry, "link") || ((entry.match(/<link[^>]+href=["']([^"']+)/i) || [])[1] || "");
+        const desc = tag(entry, "description") || tag(entry, "summary") || tag(entry, "content");
+        const pubDateRaw = tag(entry, "pubDate") || tag(entry, "updated") || tag(entry, "published");
+        if (!title || title.length < 12) continue;
+
+        const normTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+        const exists = list.some((x) => String(x.title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim() === normTitle);
+        if (exists) continue;
+
+        let parsedDate = new Date().toISOString().slice(0, 10);
+        if (pubDateRaw) {
+          const d = new Date(pubDateRaw);
+          if (!isNaN(d.getTime())) parsedDate = d.toISOString().slice(0, 10);
+        }
+
+        let safeUrl = "";
+        try {
+          const pu = new URL(link, u.href);
+          if (["https:", "http:"].includes(pu.protocol)) safeUrl = pu.href;
+        } catch {}
+
+        const combined = title + " " + desc;
+        const important = isExamImportantCA(combined);
+        if (!important && added >= 5) continue;
+
+        list.unshift({
+          id: "ca-" + crypto.randomBytes(6).toString("hex"),
+          title: title.slice(0, 180),
+          summary: (desc || title).slice(0, 500),
+          category: classifyCurrentAffair(combined),
+          date: parsedDate,
+          source: u.hostname.replace(/^www\./, ""),
+          sourceUrl: safeUrl,
+          isImportant: important || true,
+          addedBy: "auto",
+          createdAt: new Date().toISOString()
+        });
+        added++;
+        if (added >= 12) break;
+      }
+    } catch (err) {
+      console.warn("Current affairs feed check skipped:", feedUrl, err.message);
+    }
+  }
+
+  list.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || String(b.createdAt || "").localeCompare(String(a.createdAt || "")));
+  list = list.slice(0, 250);
+  writeCurrentAffairs(list);
+
+  const meta = { lastSync: new Date().toISOString(), checked, added, total: list.length };
+  writeJson(CURRENT_AFFAIRS_META_FILE, meta);
+  return meta;
+}
+
+app.get("/api/current-affairs", (req, res) => {
+  let items = readCurrentAffairs();
+  const cat = String(req.query.category || "").trim();
+  const q = String(req.query.q || "").trim().toLowerCase();
+  const importantOnly = req.query.important === "1";
+
+  if (cat && cat !== "All") items = items.filter((x) => x.category === cat);
+  if (importantOnly) items = items.filter((x) => Boolean(x.isImportant));
+  if (q) items = items.filter((x) => (x.title + " " + x.summary + " " + x.category).toLowerCase().includes(q));
+
+  const meta = readJson(CURRENT_AFFAIRS_META_FILE, { lastSync: null });
+  res.json({ items, lastSync: meta.lastSync || null });
+});
+
+app.get("/api/admin/current-affairs", requireAdmin, (req, res) => {
+  const items = readCurrentAffairs();
+  const meta = readJson(CURRENT_AFFAIRS_META_FILE, { lastSync: null });
+  res.json({ items, meta });
+});
+
+app.post("/api/admin/current-affairs", requireAdmin, (req, res) => {
+  const title = String(req.body.title || "").trim();
+  const summary = String(req.body.summary || "").trim();
+  if (!title || !summary) return res.status(400).json({ error: "Title and exam summary are required" });
+
+  let sourceUrl = String(req.body.sourceUrl || "").trim();
+  if (sourceUrl) {
+    try {
+      const u = new URL(sourceUrl);
+      if (!["https:", "http:"].includes(u.protocol)) sourceUrl = "";
+    } catch {
+      sourceUrl = "";
+    }
+  }
+
+  const item = {
+    id: "ca-" + crypto.randomBytes(6).toString("hex"),
+    title: title.slice(0, 180),
+    summary: summary.slice(0, 800),
+    category: String(req.body.category || "National & Polity").slice(0, 50),
+    date: String(req.body.date || new Date().toISOString().slice(0, 10)).slice(0, 20),
+    source: String(req.body.source || "Admin Desk").trim().slice(0, 80) || "Admin Desk",
+    sourceUrl: sourceUrl.slice(0, 400),
+    isImportant: req.body.isImportant !== false,
+    addedBy: "admin",
+    createdAt: new Date().toISOString()
+  };
+
+  const list = readCurrentAffairs();
+  list.unshift(item);
+  list.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || String(b.createdAt || "").localeCompare(String(a.createdAt || "")));
+  writeCurrentAffairs(list);
+  res.status(201).json({ ok: true, item });
+});
+
+app.patch("/api/admin/current-affairs/:id/important", requireAdmin, (req, res) => {
+  const list = readCurrentAffairs();
+  const idx = list.findIndex((x) => x.id === req.params.id);
+  if (idx === -1) return res.status(404).json({ error: "Item not found" });
+  list[idx].isImportant = !list[idx].isImportant;
+  writeCurrentAffairs(list);
+  res.json({ ok: true, item: list[idx] });
+});
+
+app.delete("/api/admin/current-affairs/:id", requireAdmin, (req, res) => {
+  const list = readCurrentAffairs().filter((x) => x.id !== req.params.id);
+  writeCurrentAffairs(list);
+  res.json({ ok: true });
+});
+
+app.post("/api/admin/current-affairs/auto-sync", requireAdmin, async (req, res) => {
+  const result = await syncAutoCurrentAffairs();
+  res.json({ ok: true, ...result });
+});
+
+setTimeout(() => { syncAutoCurrentAffairs().catch(() => {}); }, 20000);
+setInterval(() => { syncAutoCurrentAffairs().catch(() => {}); }, 12 * 60 * 60 * 1000);
+// ==================== END CURRENT AFFAIRS MODULE ====================
+
+// ==================== ALL EXPLAIN WALL (AI-CONNECTED) ====================
+app.get("/api/ai-explain-wall/status", (req, res) => {
+  res.json({
+    connected: Boolean(OPENAI_API_KEY),
+    model: OPENAI_API_KEY ? OPENAI_MODEL : "offline-study-engine"
+  });
+});
+
+app.post("/api/ai-explain-wall", async (req, res) => {
+  const mode = String(req.body.mode || "solve").slice(0, 40);
+  const exam = String(req.body.exam || "SSC / JKSSB / General").slice(0, 80);
+  const promptText = String(req.body.prompt || "").trim().slice(0, 3000);
+  const count = Math.max(1, Math.min(200, Number(req.body.count) || 10));
+
+  if (!promptText) {
+    return res.status(400).json({ error: "Kripya apna sawal, topic, ya math/reasoning problem likhein." });
+  }
+
+  if (OPENAI_API_KEY) {
+    try {
+      const systemMsg = mode === "mcqs"
+        ? "You are an expert Indian competitive-exam tutor (SSC, JKSSB, Railway, Army, Banking). Return JSON only: {title: string, summary: string, mcqs: [{question: string, options: [four strings], answerIndex: 0, explanation: string}]}. Generate exact requested count. Do not invent fake job dates."
+        : "You are an expert Indian competitive-exam tutor (SSC, JKSSB, Railway, Army, Banking). Solve or explain the user's query step-by-step in clear Hinglish/English with formulas, shortcuts, and 3 quick practice MCQs at the end. Return JSON only: {title: string, explanation: string, steps: [strings], shortcut: string, mcqs: [{question: string, options: [four strings], answerIndex: 0, explanation: string}]}.";
+
+      const userMsg = mode === "mcqs"
+        ? `Exam: ${exam}. Generate ${count} unique practice MCQs with 4 options, answerIndex (0-3), and concise explanation on: ${promptText}`
+        : `Exam: ${exam}. Solve/Explain in detail with step-by-step solution, shortcut trick, and 3 practice MCQs: ${promptText}`;
+
+      const r = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          Authorization: "Bearer " + OPENAI_API_KEY,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          model: OPENAI_MODEL,
+          temperature: 0.35,
+          response_format: { type: "json_object" },
+          messages: [
+            { role: "system", content: systemMsg },
+            { role: "user", content: userMsg }
+          ]
+        })
+      });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.error?.message || "OpenAI request failed");
+      const parsed = JSON.parse(d.choices?.[0]?.message?.content || "{}");
+      return res.json({
+        source: "AI Connected (" + OPENAI_MODEL + ")",
+        connected: true,
+        title: String(parsed.title || promptText.slice(0, 80)),
+        explanation: String(parsed.explanation || parsed.summary || ""),
+        steps: Array.isArray(parsed.steps) ? parsed.steps.map(String) : [],
+        shortcut: String(parsed.shortcut || ""),
+        mcqs: Array.isArray(parsed.mcqs) ? parsed.mcqs.map((q) => ({
+          question: String(q.question || ""),
+          options: Array.isArray(q.options) ? q.options.slice(0, 4).map(String) : ["Option A", "Option B", "Option C", "Option D"],
+          answerIndex: Math.max(0, Math.min(3, Number(q.answerIndex) || 0)),
+          explanation: String(q.explanation || "")
+        })) : []
+      });
+    } catch (err) {
+      console.error("All Explain Wall AI fallback:", err.message);
+    }
+  }
+
+  const savedBank = readJson(path.join(DATA_DIR, "practice-question-bank.json"), []);
+  const key = promptText.toLowerCase();
+  let matched = savedBank.filter((q) =>
+    (q.question + " " + q.category + " " + (q.explanation || "")).toLowerCase().includes(key)
+  );
+  if (!matched.length) {
+    matched = savedBank.slice().sort(() => Math.random() - 0.5);
+  }
+  const picked = matched.slice(0, mode === "mcqs" ? count : 3).map((q) => ({
+    question: q.question,
+    options: (q.options || []).slice(0, 4).map(String),
+    answerIndex: Math.max(0, Math.min(3, Number(q.answer) || 0)),
+    explanation: String(q.explanation || "")
+  }));
+
+  return res.json({
+    source: "Offline Practice Engine (Add OPENAI_API_KEY on server for live AI)",
+    connected: false,
+    title: "Topic Guide: " + promptText.slice(0, 80),
+    explanation: "1. Pehle concept ki basic definition aur formula samjhein.\n2. Har step ko alag-alag likh kar solve karein taaki calculation mistake na ho.\n3. Neeche diye gaye practice MCQs solve karke apni accuracy check karein.",
+    steps: [
+      "Step 1: Diye gaye data aur keywords ko note karein.",
+      "Step 2: Relevant formula ya rule apply karein.",
+      "Step 3: Answer verify karke neeche MCQs attempt karein."
+    ],
+    shortcut: "Key concepts aur formulas ko short notes mein likh kar daily revise karein.",
+    mcqs: picked
+  });
+});
+// ==================== END ALL EXPLAIN WALL ====================
+
+app.get("*", (req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
+
+async function autoJobsRun() {
+  const result = await checkOfficialFeeds().catch((e) => ({ checked: 0, added: 0, published: 0, message: e.message }));
+  writeJson(path.join(DATA_DIR, "automation.json"), { lastRun: new Date().toISOString(), ...result });
+  console.log("Auto Real Govt Jobs Engine:", result);
+}
+
+if (FEEDS.length) {
+  setTimeout(autoJobsRun, 12000);
+  setInterval(autoJobsRun, 2 * 60 * 60 * 1000);
+}
+
+app.listen(PORT, () => console.log(`Sarkari Job Universe running on ${PORT}`));
