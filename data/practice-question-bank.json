@@ -1,0 +1,6002 @@
+[
+  {
+    "category": "GK",
+    "question": "Which Article of the Indian Constitution guarantees equality before law?",
+    "options": [
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 32"
+    ],
+    "answer": 0,
+    "explanation": "Article 14 provides equality before law and equal protection of laws."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the first President of India?",
+    "options": [
+      "Dr. Rajendra Prasad",
+      "Dr. S. Radhakrishnan",
+      "Zakir Husain",
+      "V. V. Giri"
+    ],
+    "answer": 0,
+    "explanation": "Dr. Rajendra Prasad was the first President of India."
+  },
+  {
+    "category": "GK",
+    "question": "The Battle of Plassey was fought in which year?",
+    "options": [
+      "1756",
+      "1757",
+      "1761",
+      "1764"
+    ],
+    "answer": 1,
+    "explanation": "The Battle of Plassey took place in 1757."
+  },
+  {
+    "category": "GK",
+    "question": "Who wrote the Indian national song Vande Mataram?",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee",
+      "Sarojini Naidu",
+      "Subramania Bharati"
+    ],
+    "answer": 1,
+    "explanation": "Bankim Chandra Chatterjee wrote Vande Mataram."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the largest Indian state by area?",
+    "options": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "answer": 2,
+    "explanation": "Rajasthan is the largest Indian state by area."
+  },
+  {
+    "category": "GK",
+    "question": "The Tropic of Cancer passes through how many Indian states?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "The Tropic of Cancer passes through eight Indian states."
+  },
+  {
+    "category": "GK",
+    "question": "Who is known as the Iron Man of India?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Sardar Vallabhbhai Patel",
+      "B. R. Ambedkar",
+      "Lal Bahadur Shastri"
+    ],
+    "answer": 1,
+    "explanation": "Sardar Vallabhbhai Patel is popularly known as the Iron Man of India."
+  },
+  {
+    "category": "GK",
+    "question": "Which House of Parliament is called the Council of States?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "Vidhan Sabha",
+      "Gram Sabha"
+    ],
+    "answer": 1,
+    "explanation": "Rajya Sabha is the Council of States."
+  },
+  {
+    "category": "GK",
+    "question": "The Dandi March was associated with which movement?",
+    "options": [
+      "Quit India Movement",
+      "Non-Cooperation Movement",
+      "Civil Disobedience Movement",
+      "Swadeshi Movement"
+    ],
+    "answer": 2,
+    "explanation": "The 1930 Salt March marked the launch of the Civil Disobedience Movement."
+  },
+  {
+    "category": "GK",
+    "question": "Which river is known as the Dakshin Ganga?",
+    "options": [
+      "Narmada",
+      "Godavari",
+      "Krishna",
+      "Mahanadi"
+    ],
+    "answer": 1,
+    "explanation": "The Godavari is often called the Dakshin Ganga."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the first Indian to win a Nobel Prize?",
+    "options": [
+      "C. V. Raman",
+      "Rabindranath Tagore",
+      "Amartya Sen",
+      "Mother Teresa"
+    ],
+    "answer": 1,
+    "explanation": "Rabindranath Tagore received the Nobel Prize in Literature in 1913."
+  },
+  {
+    "category": "GK",
+    "question": "The headquarters of the Reserve Bank of India is in which city?",
+    "options": [
+      "New Delhi",
+      "Kolkata",
+      "Mumbai",
+      "Chennai"
+    ],
+    "answer": 2,
+    "explanation": "The RBI headquarters is in Mumbai."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the highest civilian award in India?",
+    "options": [
+      "Padma Shri",
+      "Padma Bhushan",
+      "Padma Vibhushan",
+      "Bharat Ratna"
+    ],
+    "answer": 3,
+    "explanation": "Bharat Ratna is India’s highest civilian award."
+  },
+  {
+    "category": "GK",
+    "question": "The Constitution of India was adopted on which date?",
+    "options": [
+      "15 August 1947",
+      "26 November 1949",
+      "26 January 1950",
+      "2 October 1950"
+    ],
+    "answer": 1,
+    "explanation": "The Constituent Assembly adopted the Constitution on 26 November 1949."
+  },
+  {
+    "category": "GK",
+    "question": "Who appoints the Governor of an Indian state?",
+    "options": [
+      "Prime Minister",
+      "Chief Minister",
+      "President of India",
+      "Chief Justice of India"
+    ],
+    "answer": 2,
+    "explanation": "The President appoints state Governors."
+  },
+  {
+    "category": "Science",
+    "question": "What is the SI unit of force?",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": 1,
+    "explanation": "Force is measured in newtons (N)."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is the most abundant in Earth’s atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "answer": 1,
+    "explanation": "Nitrogen makes up about 78% of dry air."
+  },
+  {
+    "category": "Science",
+    "question": "Which vitamin deficiency causes scurvy?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B1",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": 2,
+    "explanation": "Scurvy is caused by vitamin C deficiency."
+  },
+  {
+    "category": "Science",
+    "question": "What is the normal pH value of pure water at room temperature, approximately?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Pure water is neutral, with pH approximately 7 at 25°C."
+  },
+  {
+    "category": "Science",
+    "question": "Which organelle is called the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi body"
+    ],
+    "answer": 1,
+    "explanation": "Mitochondria generate much of the cell’s usable energy."
+  },
+  {
+    "category": "Science",
+    "question": "Which blood cells help the body fight infection?",
+    "options": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Plasma"
+    ],
+    "answer": 1,
+    "explanation": "White blood cells are key components of the immune system."
+  },
+  {
+    "category": "Science",
+    "question": "What is the chemical symbol of sodium?",
+    "options": [
+      "So",
+      "S",
+      "Na",
+      "N"
+    ],
+    "answer": 2,
+    "explanation": "Na comes from the Latin name natrium."
+  },
+  {
+    "category": "Science",
+    "question": "Which instrument measures atmospheric pressure?",
+    "options": [
+      "Thermometer",
+      "Barometer",
+      "Ammeter",
+      "Hygrometer"
+    ],
+    "answer": 1,
+    "explanation": "A barometer measures atmospheric pressure."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of the human eye controls the amount of light entering?",
+    "options": [
+      "Retina",
+      "Iris",
+      "Cornea",
+      "Optic nerve"
+    ],
+    "answer": 1,
+    "explanation": "The iris changes pupil size to regulate incoming light."
+  },
+  {
+    "category": "Science",
+    "question": "Which metal is liquid at ordinary room temperature?",
+    "options": [
+      "Iron",
+      "Aluminium",
+      "Mercury",
+      "Copper"
+    ],
+    "answer": 2,
+    "explanation": "Mercury is liquid at ordinary room temperature."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is released during photosynthesis?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Methane"
+    ],
+    "answer": 1,
+    "explanation": "Plants release oxygen during photosynthesis."
+  },
+  {
+    "category": "Science",
+    "question": "What is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere",
+      "Watt"
+    ],
+    "answer": 2,
+    "explanation": "Electric current is measured in amperes."
+  },
+  {
+    "category": "Science",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": 1,
+    "explanation": "Iron oxide on Mars gives it a reddish appearance."
+  },
+  {
+    "category": "Science",
+    "question": "Which vitamin is produced in skin in response to sunlight?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin K"
+    ],
+    "answer": 2,
+    "explanation": "Sunlight enables the skin to synthesise vitamin D."
+  },
+  {
+    "category": "Science",
+    "question": "Which blood group is commonly called the universal red-cell donor type?",
+    "options": [
+      "AB positive",
+      "O negative",
+      "A positive",
+      "B negative"
+    ],
+    "answer": 1,
+    "explanation": "O negative red cells lack A, B and Rh(D) antigens; transfusion still requires clinical compatibility checks."
+  },
+  {
+    "category": "Computer",
+    "question": "Which memory is volatile?",
+    "options": [
+      "ROM",
+      "RAM",
+      "SSD",
+      "DVD"
+    ],
+    "answer": 1,
+    "explanation": "RAM generally loses its stored data when power is removed."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut is commonly used to undo an action?",
+    "options": [
+      "Ctrl+C",
+      "Ctrl+X",
+      "Ctrl+Z",
+      "Ctrl+Y"
+    ],
+    "answer": 2,
+    "explanation": "Ctrl+Z is the common Undo shortcut."
+  },
+  {
+    "category": "Computer",
+    "question": "What does URL stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Record Link",
+      "Unified Reference Language",
+      "User Route Location"
+    ],
+    "answer": 0,
+    "explanation": "URL means Uniform Resource Locator."
+  },
+  {
+    "category": "Computer",
+    "question": "Which device is primarily used to convert a paper document into a digital image?",
+    "options": [
+      "Plotter",
+      "Scanner",
+      "Speaker",
+      "Joystick"
+    ],
+    "answer": 1,
+    "explanation": "A scanner captures a digital representation of a document."
+  },
+  {
+    "category": "Computer",
+    "question": "Which of these is an operating system?",
+    "options": [
+      "Linux",
+      "HTML",
+      "HTTP",
+      "SQL"
+    ],
+    "answer": 0,
+    "explanation": "Linux is an operating system."
+  },
+  {
+    "category": "Computer",
+    "question": "What is the full form of CPU?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Primary Utility",
+      "Core Program Unit",
+      "Central Print Utility"
+    ],
+    "answer": 0,
+    "explanation": "CPU stands for Central Processing Unit."
+  },
+  {
+    "category": "Computer",
+    "question": "Which number system uses only 0 and 1?",
+    "options": [
+      "Decimal",
+      "Octal",
+      "Binary",
+      "Hexadecimal"
+    ],
+    "answer": 2,
+    "explanation": "Binary is a base-2 number system."
+  },
+  {
+    "category": "Computer",
+    "question": "Which protocol is commonly used for secure web browsing?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "SMTP",
+      "Telnet"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS uses TLS to secure communication with websites."
+  },
+  {
+    "category": "Computer",
+    "question": "Which key is commonly used to refresh a webpage in desktop browsers?",
+    "options": [
+      "F1",
+      "F2",
+      "F5",
+      "F12"
+    ],
+    "answer": 2,
+    "explanation": "F5 commonly refreshes the current webpage."
+  },
+  {
+    "category": "Computer",
+    "question": "Which of these is an example of an output device?",
+    "options": [
+      "Keyboard",
+      "Mouse",
+      "Monitor",
+      "Microphone"
+    ],
+    "answer": 2,
+    "explanation": "A monitor displays output from a computer."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Jhelum River originates at which place?",
+    "options": [
+      "Verinag",
+      "Dal Lake",
+      "Wular Lake",
+      "Mansar Lake"
+    ],
+    "answer": 0,
+    "explanation": "The Jhelum originates from the Verinag spring in Anantnag district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Wular Lake is located mainly in which district?",
+    "options": [
+      "Bandipora",
+      "Jammu",
+      "Kathua",
+      "Kishtwar"
+    ],
+    "answer": 0,
+    "explanation": "Wular Lake is in Bandipora district of Jammu and Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Zoji La Pass connects the Kashmir Valley with which region?",
+    "options": [
+      "Punjab",
+      "Ladakh",
+      "Himachal Pradesh",
+      "Jammu plains"
+    ],
+    "answer": 1,
+    "explanation": "Zoji La lies on the Srinagar–Leh route connecting Kashmir and Ladakh."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Mughal Road connects the Kashmir Valley with which area?",
+    "options": [
+      "Poonch-Rajouri",
+      "Doda-Kishtwar",
+      "Kathua-Pathankot",
+      "Leh-Kargil"
+    ],
+    "answer": 0,
+    "explanation": "The Mughal Road links Shopian in Kashmir with the Rajouri-Poonch region."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Pahalgam, a major route for the Amarnath Yatra, is in which district?",
+    "options": [
+      "Anantnag",
+      "Udhampur",
+      "Samba",
+      "Rajouri"
+    ],
+    "answer": 0,
+    "explanation": "Pahalgam is in Anantnag district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Dal Lake is located in which city?",
+    "options": [
+      "Jammu",
+      "Srinagar",
+      "Anantnag",
+      "Baramulla"
+    ],
+    "answer": 1,
+    "explanation": "Dal Lake is a well-known lake in Srinagar."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which is a major traditional handicraft of Kashmir?",
+    "options": [
+      "Pashmina shawl weaving",
+      "Blue pottery of Jaipur",
+      "Channapatna toys",
+      "Madhubani painting"
+    ],
+    "answer": 0,
+    "explanation": "Kashmir is renowned for Pashmina shawls and related crafts."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Gulmarg is especially known as a destination for which activity?",
+    "options": [
+      "Desert safari",
+      "Skiing",
+      "Scuba diving",
+      "Tea plantation"
+    ],
+    "answer": 1,
+    "explanation": "Gulmarg is a prominent winter sports and skiing destination."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Chenab River is formed by the confluence of which rivers?",
+    "options": [
+      "Chandra and Bhaga",
+      "Jhelum and Kishanganga",
+      "Ravi and Beas",
+      "Tawi and Ujh"
+    ],
+    "answer": 0,
+    "explanation": "The Chandra and Bhaga rivers meet at Tandi to form the Chenab."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which region is famous for the saffron fields around Pampore?",
+    "options": [
+      "Kashmir Valley",
+      "Ladakh plateau",
+      "Chenab valley only",
+      "Pir Panjal foothills"
+    ],
+    "answer": 0,
+    "explanation": "Pampore in the Kashmir Valley is known for saffron cultivation."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct spelling.",
+    "options": [
+      "Accomodation",
+      "Accommodation",
+      "Acommodation",
+      "Accommadation"
+    ],
+    "answer": 1,
+    "explanation": "Accommodation has double c and double m."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct article: He is ___ honest man.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer": 1,
+    "explanation": "Use “an” before the vowel sound in “honest”."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct passive voice: They are repairing the road.",
+    "options": [
+      "The road is repaired by them.",
+      "The road is being repaired by them.",
+      "The road has repaired by them.",
+      "The road was repaired by them."
+    ],
+    "answer": 1,
+    "explanation": "Present continuous passive uses is/am/are + being + past participle."
+  },
+  {
+    "category": "English",
+    "question": "A person who can speak two languages is called:",
+    "options": [
+      "Monolingual",
+      "Bilingual",
+      "Trilingual",
+      "Illiterate"
+    ],
+    "answer": 1,
+    "explanation": "Bilingual means able to use two languages."
+  },
+  {
+    "category": "English",
+    "question": "Choose the antonym of “Ancient”.",
+    "options": [
+      "Old",
+      "Historic",
+      "Modern",
+      "Antique"
+    ],
+    "answer": 2,
+    "explanation": "Modern is the opposite of ancient."
+  },
+  {
+    "category": "English",
+    "question": "Choose the synonym of “Rapid”.",
+    "options": [
+      "Slow",
+      "Swift",
+      "Weak",
+      "Late"
+    ],
+    "answer": 1,
+    "explanation": "Swift means fast or rapid."
+  },
+  {
+    "category": "English",
+    "question": "Fill in the blank: Neither of the boys ___ present.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have"
+    ],
+    "answer": 2,
+    "explanation": "In standard exam grammar, neither is treated as singular here."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct plural of “Criterion”.",
+    "options": [
+      "Criterions",
+      "Criteria",
+      "Criterias",
+      "Criteriones"
+    ],
+    "answer": 1,
+    "explanation": "Criteria is the plural form of criterion."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 2, 4, 8, 16, __.",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Each term is multiplied by 2."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 5, 10, 17, 26, 37, __.",
+    "options": [
+      "48",
+      "50",
+      "52",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Differences are 5, 7, 9, 11; next difference is 13, giving 50."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If CAT is coded as DBU by shifting each letter one step forward, DOG is coded as:",
+    "options": [
+      "EPH",
+      "EOG",
+      "CNG",
+      "FPH"
+    ],
+    "answer": 0,
+    "explanation": "D→E, O→P and G→H."
+  },
+  {
+    "category": "Reasoning",
+    "question": "A is taller than B. B is taller than C. Who is the shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "Cannot be determined"
+    ],
+    "answer": 2,
+    "explanation": "A > B > C, so C is shortest."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd one out.",
+    "options": [
+      "Square",
+      "Triangle",
+      "Circle",
+      "Cube"
+    ],
+    "answer": 3,
+    "explanation": "Cube is three-dimensional; the others are plane figures."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If today is Monday, what day will it be after 10 days?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "answer": 1,
+    "explanation": "Ten days after Monday is Thursday."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the letter series: A, C, F, J, O, __.",
+    "options": [
+      "T",
+      "U",
+      "V",
+      "W"
+    ],
+    "answer": 1,
+    "explanation": "Letter gaps are +2, +3, +4, +5; next is +6, giving U."
+  },
+  {
+    "category": "Reasoning",
+    "question": "A person walks 4 km east and then 4 km west. How far is the person from the starting point?",
+    "options": [
+      "0 km",
+      "4 km east",
+      "4 km west",
+      "8 km"
+    ],
+    "answer": 0,
+    "explanation": "Equal opposite movements cancel; displacement is zero."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Book is to Read as Food is to:",
+    "options": [
+      "Cook",
+      "Eat",
+      "Buy",
+      "Serve"
+    ],
+    "answer": 1,
+    "explanation": "A book is read; food is eaten."
+  },
+  {
+    "category": "Reasoning",
+    "question": "How many sides do three triangles have in total?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Each triangle has 3 sides; 3 × 3 = 9."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 25% of 360?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "120"
+    ],
+    "answer": 1,
+    "explanation": "25% is one-fourth; 360 ÷ 4 = 90."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The average of 12, 18 and 24 is:",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "(12 + 18 + 24) ÷ 3 = 18."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A train covers 150 km in 3 hours. Its average speed is:",
+    "options": [
+      "40 km/h",
+      "45 km/h",
+      "50 km/h",
+      "60 km/h"
+    ],
+    "answer": 2,
+    "explanation": "Speed = distance ÷ time = 150 ÷ 3 = 50 km/h."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A product costs ₹800 and is sold for ₹920. Find the profit percentage.",
+    "options": [
+      "10%",
+      "12%",
+      "15%",
+      "20%"
+    ],
+    "answer": 2,
+    "explanation": "Profit = 120; profit percentage = 120/800 × 100 = 15%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The ratio 3:5 has a total of 64. What is the smaller number?",
+    "options": [
+      "18",
+      "24",
+      "30",
+      "40"
+    ],
+    "answer": 1,
+    "explanation": "Total parts = 8; one part = 8; smaller number = 3 × 8 = 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹2,000 at 5% per annum for 2 years.",
+    "options": [
+      "₹100",
+      "₹150",
+      "₹200",
+      "₹250"
+    ],
+    "answer": 2,
+    "explanation": "SI = P×R×T/100 = 2000×5×2/100 = ₹200."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 8 workers complete a task in 6 days, how many worker-days are required?",
+    "options": [
+      "14",
+      "24",
+      "36",
+      "48"
+    ],
+    "answer": 3,
+    "explanation": "Total worker-days = 8 × 6 = 48."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the HCF of 24 and 36?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "12 is the greatest number that divides both 24 and 36."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the LCM of 6 and 8?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "The least common multiple of 6 and 8 is 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A number increases from 80 to 100. What is the percentage increase?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "40%"
+    ],
+    "answer": 1,
+    "explanation": "Increase = 20; 20/80 × 100 = 25%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 120?",
+    "options": [
+      "8",
+      "18",
+      "28",
+      "38"
+    ],
+    "answer": 1,
+    "explanation": "120 × 15 ÷ 100 = 18."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 160?",
+    "options": [
+      "14",
+      "24",
+      "34",
+      "44"
+    ],
+    "answer": 1,
+    "explanation": "160 × 15 ÷ 100 = 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 240?",
+    "options": [
+      "26",
+      "36",
+      "46",
+      "56"
+    ],
+    "answer": 1,
+    "explanation": "240 × 15 ÷ 100 = 36."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 320?",
+    "options": [
+      "38",
+      "48",
+      "58",
+      "68"
+    ],
+    "answer": 1,
+    "explanation": "320 × 15 ÷ 100 = 48."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 480?",
+    "options": [
+      "62",
+      "72",
+      "82",
+      "92"
+    ],
+    "answer": 1,
+    "explanation": "480 × 15 ÷ 100 = 72."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 600?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "answer": 1,
+    "explanation": "600 × 15 ÷ 100 = 90."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 720?",
+    "options": [
+      "98",
+      "108",
+      "118",
+      "128"
+    ],
+    "answer": 1,
+    "explanation": "720 × 15 ÷ 100 = 108."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 840?",
+    "options": [
+      "116",
+      "126",
+      "136",
+      "146"
+    ],
+    "answer": 1,
+    "explanation": "840 × 15 ÷ 100 = 126."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 960?",
+    "options": [
+      "134",
+      "144",
+      "154",
+      "164"
+    ],
+    "answer": 1,
+    "explanation": "960 × 15 ÷ 100 = 144."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 1200?",
+    "options": [
+      "170",
+      "180",
+      "190",
+      "200"
+    ],
+    "answer": 1,
+    "explanation": "1200 × 15 ÷ 100 = 180."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 2 identical notebooks cost ₹14, what is the cost of one notebook?",
+    "options": [
+      "₹5",
+      "₹6",
+      "₹7",
+      "₹8"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹14 ÷ 2 = ₹7."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 3 identical notebooks cost ₹21, what is the cost of one notebook?",
+    "options": [
+      "₹1",
+      "₹2",
+      "₹3",
+      "₹4"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹21 ÷ 3 = ₹3."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 4 identical notebooks cost ₹28, what is the cost of one notebook?",
+    "options": [
+      "₹2",
+      "₹3",
+      "₹4",
+      "₹5"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹28 ÷ 4 = ₹4."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 5 identical notebooks cost ₹35, what is the cost of one notebook?",
+    "options": [
+      "₹3",
+      "₹4",
+      "₹5",
+      "₹6"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹35 ÷ 5 = ₹5."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 6 identical notebooks cost ₹42, what is the cost of one notebook?",
+    "options": [
+      "₹4",
+      "₹5",
+      "₹6",
+      "₹7"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹42 ÷ 6 = ₹6."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 7 identical notebooks cost ₹49, what is the cost of one notebook?",
+    "options": [
+      "₹5",
+      "₹6",
+      "₹7",
+      "₹8"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹49 ÷ 7 = ₹7."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 8 identical notebooks cost ₹56, what is the cost of one notebook?",
+    "options": [
+      "₹6",
+      "₹7",
+      "₹8",
+      "₹9"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹56 ÷ 8 = ₹8."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 9 identical notebooks cost ₹63, what is the cost of one notebook?",
+    "options": [
+      "₹7",
+      "₹8",
+      "₹9",
+      "₹10"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹63 ÷ 9 = ₹9."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 10 identical notebooks cost ₹70, what is the cost of one notebook?",
+    "options": [
+      "₹8",
+      "₹9",
+      "₹10",
+      "₹11"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹70 ÷ 10 = ₹10."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 11 identical notebooks cost ₹77, what is the cost of one notebook?",
+    "options": [
+      "₹9",
+      "₹10",
+      "₹11",
+      "₹12"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹77 ÷ 11 = ₹11."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of a plant mainly absorbs water from the soil?",
+    "options": [
+      "Leaf",
+      "Flower",
+      "Root",
+      "Stem"
+    ],
+    "answer": 2,
+    "explanation": "Roots absorb water and mineral salts from the soil."
+  },
+  {
+    "category": "Science",
+    "question": "What is the boiling point of water at standard atmospheric pressure?",
+    "options": [
+      "50°C",
+      "75°C",
+      "100°C",
+      "125°C"
+    ],
+    "answer": 2,
+    "explanation": "At 1 atmosphere, pure water boils at 100°C."
+  },
+  {
+    "category": "GK",
+    "question": "Jammu & Kashmir mein Chenab River par duniya ka sabse uncha railway arch bridge kaunsa hai?",
+    "options": [
+      "Chenab Rail Bridge",
+      "Pamban Bridge",
+      "Bogibeel Bridge",
+      "Howrah Bridge"
+    ],
+    "answer": 0,
+    "explanation": "Chenab Rail Bridge Jammu & Kashmir mein Reasi ke paas Chenab nadi par bana hai."
+  },
+  {
+    "category": "Polity",
+    "question": "Bharat ke Samvidhan mein Fundamental Duties (Maulik Kartavya) kis Article mein hain?",
+    "options": [
+      "Article 14",
+      "Article 21A",
+      "Article 51A",
+      "Article 356"
+    ],
+    "answer": 2,
+    "explanation": "42nd Amendment Act (1976) ke tahat Part IV-A aur Article 51A mein Fundamental Duties jodi gayin."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Agar 2, 6, 12, 20, 30 series di gayi ho, to agla number kya hoga?",
+    "options": [
+      "36",
+      "40",
+      "42",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "Pattern n*(n+1) hai: 1x2=2, 2x3=6, 3x4=12, 4x5=20, 5x6=30, aur 6x7=42."
+  },
+  {
+    "category": "Maths",
+    "question": "Agar kisi item ki cost price Rs 400 hai aur selling price Rs 460 hai, to profit percentage kitna hoga?",
+    "options": [
+      "12%",
+      "15%",
+      "18%",
+      "20%"
+    ],
+    "answer": 1,
+    "explanation": "Profit = 460 - 400 = 60. Profit % = (60 / 400) * 100 = 15%."
+  },
+  {
+    "category": "General Science",
+    "question": "Human blood ka rang laal kis pigment ki wajah se hota hai?",
+    "options": [
+      "Chlorophyll",
+      "Melanin",
+      "Haemoglobin",
+      "Keratin"
+    ],
+    "answer": 2,
+    "explanation": "Haemoglobin mein iron (loha) hota hai jo oxygen carry karta hai aur khoon ko laal rang deta hai."
+  },
+  {
+    "category": "Computer",
+    "question": "CPU ka full form kya hai?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Power Unit",
+      "Core Program Utility",
+      "Central Print Unit"
+    ],
+    "answer": 0,
+    "explanation": "CPU ka matlab Central Processing Unit hai, jise computer ka brain kaha jata hai."
+  },
+  {
+    "category": "JKSSB GK",
+    "question": "Dal Lake kis shehar mein sthit hai?",
+    "options": [
+      "Jammu",
+      "Srinagar",
+      "Leh",
+      "Udhampur"
+    ],
+    "answer": 1,
+    "explanation": "Dal Lake Srinagar, Jammu & Kashmir mein sthit hai."
+  },
+  {
+    "category": "Defence GK",
+    "question": "Indian Army Day har saal kis tareekh ko manaya jata hai?",
+    "options": [
+      "8 October",
+      "4 December",
+      "15 January",
+      "26 July"
+    ],
+    "answer": 2,
+    "explanation": "Har saal 15 January ko Indian Army Day manaya jata hai."
+  },
+  {
+    "category": "JKSSB GK",
+    "question": "Wular Lake, jo Bharat ki sabse badi freshwater lakes mein se ek hai, Jammu & Kashmir ke kis district mein sthit hai?",
+    "options": [
+      "Bandipora",
+      "Kathua",
+      "Poonch",
+      "Kishtwar"
+    ],
+    "answer": 0,
+    "explanation": "Wular Lake Jammu & Kashmir ke Bandipora district mein sthit hai."
+  },
+  {
+    "category": "Polity",
+    "question": "Bharat ke President banne ke liye minimum age kitni honi chahiye?",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "40 years"
+    ],
+    "answer": 2,
+    "explanation": "Article 58 ke anusaar Bharat ke President banne ke liye minimum umar 35 saal honi chahiye."
+  },
+  {
+    "category": "Maths",
+    "question": "Agar ek train 60 km/hr ki speed se chal rahi hai, to 2.5 ghante mein kitni doori (distance) tay karegi?",
+    "options": [
+      "120 km",
+      "140 km",
+      "150 km",
+      "180 km"
+    ],
+    "answer": 2,
+    "explanation": "Distance = Speed x Time = 60 x 2.5 = 150 km."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Agar CAT = 24 (3+1+20) likha jata hai, to DOG ko kaise likha jayega?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "answer": 1,
+    "explanation": "D=4, O=15, G=7; 4 + 15 + 7 = 26."
+  },
+  {
+    "category": "General Science",
+    "question": "Sunlight se human body ko kaunsa Vitamin milta hai?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": 3,
+    "explanation": "Suraj ki roshni (UV rays) se skin mein Vitamin D banta hai."
+  },
+  {
+    "category": "Computer",
+    "question": "RAM ka full form kya hai?",
+    "options": [
+      "Random Access Memory",
+      "Read Always Memory",
+      "Rapid Action Module",
+      "Run Access Machine"
+    ],
+    "answer": 0,
+    "explanation": "RAM ka poora naam Random Access Memory hai, jo temporary primary memory hoti hai."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 20% of 450?",
+    "options": [
+      "80",
+      "90",
+      "95",
+      "100"
+    ],
+    "answer": 1,
+    "explanation": "450 x 20 / 100 = 90."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 12.5% of 800?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "120"
+    ],
+    "answer": 2,
+    "explanation": "12.5% is 1/8; 800 / 8 = 100."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the compound interest on Rs 1,000 at 10% per annum for 2 years compounded annually.",
+    "options": [
+      "Rs 200",
+      "Rs 210",
+      "Rs 220",
+      "Rs 250"
+    ],
+    "answer": 1,
+    "explanation": "Amount = 1000*(1.1)^2 = 1210; CI = 210."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If a car travels 180 km in 3 hours and 240 km in 4 hours, what is its average speed for the entire journey?",
+    "options": [
+      "55 km/h",
+      "60 km/h",
+      "62 km/h",
+      "65 km/h"
+    ],
+    "answer": 1,
+    "explanation": "Total distance = 420 km, total time = 7 hr; 420 / 7 = 60 km/h."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A shopkeeper gives a 10% discount on a marked price of Rs 500. What is the selling price?",
+    "options": [
+      "Rs 425",
+      "Rs 450",
+      "Rs 460",
+      "Rs 475"
+    ],
+    "answer": 1,
+    "explanation": "Discount = 10% of 500 = 50; SP = 500 - 50 = 450."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The perimeter of a square is 64 cm. What is its area?",
+    "options": [
+      "144 sq cm",
+      "196 sq cm",
+      "256 sq cm",
+      "324 sq cm"
+    ],
+    "answer": 2,
+    "explanation": "Side = 64 / 4 = 16 cm; Area = 16 * 16 = 256 sq cm."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If A can finish a work in 12 days and B in 24 days, together they finish it in:",
+    "options": [
+      "6 days",
+      "8 days",
+      "9 days",
+      "10 days"
+    ],
+    "answer": 1,
+    "explanation": "Combined rate = 1/12 + 1/24 = 3/24 = 1/8; 8 days."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square root of 2304?",
+    "options": [
+      "44",
+      "46",
+      "48",
+      "52"
+    ],
+    "answer": 2,
+    "explanation": "48 * 48 = 2304."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The sum of three consecutive even numbers is 54. What is the largest number?",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Numbers are 16, 18, 20; sum = 54, largest = 20."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 45% of a number is 135, what is the number?",
+    "options": [
+      "270",
+      "300",
+      "315",
+      "350"
+    ],
+    "answer": 1,
+    "explanation": "0.45 * N = 135 => N = 300."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "30",
+      "35",
+      "36",
+      "49"
+    ],
+    "answer": 2,
+    "explanation": "Squares of 1, 2, 3, 4, 5, 6 -> 36."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 3, 9, 27, 81, ?",
+    "options": [
+      "162",
+      "243",
+      "270",
+      "324"
+    ],
+    "answer": 1,
+    "explanation": "Each term is multiplied by 3 -> 243."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If PEN is coded as QFO, how is INK coded?",
+    "options": [
+      "JOL",
+      "JOM",
+      "JNL",
+      "HMK"
+    ],
+    "answer": 0,
+    "explanation": "Each letter shifts +1: I->J, N->O, K->L."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Pointing to a photograph, Ravi said, 'She is the daughter of my grandfather's only son.' How is the girl related to Ravi?",
+    "options": [
+      "Sister",
+      "Cousin",
+      "Mother",
+      "Aunt"
+    ],
+    "answer": 0,
+    "explanation": "Grandfather's only son is Ravi's father; his daughter is Ravi's sister."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If '+' means '-', '-' means '+', 'x' means '/', and '/' means 'x', what is 16 / 2 + 6 - 4?",
+    "options": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "answer": 0,
+    "explanation": "16 * 2 - 6 + 4 = 32 - 6 + 4 = 30."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd word pair:",
+    "options": [
+      "India : New Delhi",
+      "Japan : Tokyo",
+      "Nepal : Kathmandu",
+      "Australia : Sydney"
+    ],
+    "answer": 3,
+    "explanation": "Capital of Australia is Canberra, not Sydney."
+  },
+  {
+    "category": "Reasoning",
+    "question": "How many triangles are in a standard 5-pointed star figure? (Basic count: 5 outer tips + 5 inner = 10)",
+    "options": [
+      "5",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "A standard 5-pointed star has 10 elementary triangles."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If 1st January 2026 is a Thursday, what day of the week is 8th January 2026?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "answer": 0,
+    "explanation": "7 days later is the same day: Thursday."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which pass connects Jammu with Srinagar via the Pir Panjal range?",
+    "options": [
+      "Zoji La",
+      "Banihal Pass",
+      "Khardung La",
+      "Chang La"
+    ],
+    "answer": 1,
+    "explanation": "Banihal Pass (and Jawahar/Navyug tunnel route) connects Jammu and Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Tawi River flows through which major city of Jammu & Kashmir?",
+    "options": [
+      "Srinagar",
+      "Jammu",
+      "Anantnag",
+      "Baramulla"
+    ],
+    "answer": 1,
+    "explanation": "Tawi River flows through Jammu city."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Dachigam National Park is famous for which endangered deer species?",
+    "options": [
+      "Hangul (Kashmir Stag)",
+      "Snow Leopard",
+      "Blackbuck",
+      "Nilgai"
+    ],
+    "answer": 0,
+    "explanation": "Dachigam National Park near Srinagar is renowned for the Hangul."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Salal Hydroelectric Project is built on which river in Jammu & Kashmir?",
+    "options": [
+      "Jhelum",
+      "Chenab",
+      "Ravi",
+      "Indus"
+    ],
+    "answer": 1,
+    "explanation": "Salal Dam is constructed on the Chenab River in Reasi district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Baglihar Dam is located on which river?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Tawi",
+      "Suru"
+    ],
+    "answer": 0,
+    "explanation": "Baglihar Hydroelectric Power Project is on the Chenab River."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which lake in Jammu district is associated with Baba Jitto / religious tourism?",
+    "options": [
+      "Mansar Lake",
+      "Wular Lake",
+      "Tso Moriri",
+      "Pangong Tso"
+    ],
+    "answer": 0,
+    "explanation": "Mansar Lake lies in Samba/Jammu region of Jammu & Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Kashmir Valley lies between which two mountain ranges?",
+    "options": [
+      "Greater Himalayas and Pir Panjal",
+      "Karakoram and Ladakh",
+      "Shivalik and Zanskar",
+      "Aravalli and Vindhya"
+    ],
+    "answer": 0,
+    "explanation": "The Vale of Kashmir sits between the Greater Himalayas (Zanskar) and Pir Panjal."
+  },
+  {
+    "category": "GK",
+    "question": "Which Article of the Indian Constitution provides for the Right to Constitutional Remedies?",
+    "options": [
+      "Article 19",
+      "Article 21",
+      "Article 32",
+      "Article 44"
+    ],
+    "answer": 2,
+    "explanation": "Article 32 allows moving the Supreme Court to enforce Fundamental Rights."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the founder of the Maurya Empire?",
+    "options": [
+      "Ashoka",
+      "Chandragupta Maurya",
+      "Bindusara",
+      "Samudragupta"
+    ],
+    "answer": 1,
+    "explanation": "Chandragupta Maurya founded the Maurya Empire."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the longest river flowing entirely within India?",
+    "options": [
+      "Ganga",
+      "Godavari",
+      "Yamuna",
+      "Narmada"
+    ],
+    "answer": 1,
+    "explanation": "Godavari is the longest peninsular river and longest river wholly within India."
+  },
+  {
+    "category": "GK",
+    "question": "How many schedules were originally in the Constitution of India?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Originally there were 8 schedules in the Constitution of India."
+  },
+  {
+    "category": "GK",
+    "question": "Who presides over a joint sitting of both Houses of Parliament?",
+    "options": [
+      "President",
+      "Vice President",
+      "Speaker of Lok Sabha",
+      "Prime Minister"
+    ],
+    "answer": 2,
+    "explanation": "Speaker of Lok Sabha presides over a joint sitting of Parliament."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of the human brain controls balance and posture?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla",
+      "Hypothalamus"
+    ],
+    "answer": 1,
+    "explanation": "Cerebellum coordinates balance, posture, and voluntary movements."
+  },
+  {
+    "category": "Science",
+    "question": "Sound travels fastest in which medium?",
+    "options": [
+      "Vacuum",
+      "Air",
+      "Water",
+      "Steel (Solids)"
+    ],
+    "answer": 3,
+    "explanation": "Sound travels fastest in solids like steel due to closely packed particles."
+  },
+  {
+    "category": "Science",
+    "question": "What is the chemical formula of common salt (Sodium Chloride)?",
+    "options": [
+      "NaOH",
+      "NaCl",
+      "Na2CO3",
+      "KCl"
+    ],
+    "answer": 1,
+    "explanation": "Common table salt is sodium chloride (NaCl)."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key opens a new incognito/private window in most desktop browsers?",
+    "options": [
+      "Ctrl+Shift+N",
+      "Ctrl+Alt+T",
+      "Ctrl+Shift+P",
+      "Alt+F4"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl+Shift+N opens a new Incognito window in Chrome/Edge."
+  },
+  {
+    "category": "Computer",
+    "question": "1 Kilobyte (KB) in standard computing equals how many bytes?",
+    "options": [
+      "100",
+      "512",
+      "1024",
+      "2048"
+    ],
+    "answer": 2,
+    "explanation": "In binary storage units, 1 KB = 1024 bytes."
+  },
+  {
+    "category": "Computer",
+    "question": "Which software translates high-level source code into machine code all at once?",
+    "options": [
+      "Assembler",
+      "Compiler",
+      "Browser",
+      "Spreadsheet"
+    ],
+    "answer": 1,
+    "explanation": "A compiler translates the entire program before execution."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correctly spelt word:",
+    "options": [
+      "Committe",
+      "Committee",
+      "Comittee",
+      "Commitee"
+    ],
+    "answer": 1,
+    "explanation": "Committee has double m, double t, and double e."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct preposition: He is good ___ mathematics.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "with"
+    ],
+    "answer": 1,
+    "explanation": "Standard usage is 'good at' a subject or skill."
+  },
+  {
+    "category": "English",
+    "question": "One who knows many languages is called a:",
+    "options": [
+      "Linguist / Polyglot",
+      "Optimist",
+      "Pessimist",
+      "Veteran"
+    ],
+    "answer": 0,
+    "explanation": "A polyglot or linguist is skilled in multiple languages."
+  },
+  {
+    "category": "English",
+    "question": "Choose the antonym of 'Transparent':",
+    "options": [
+      "Clear",
+      "Opaque",
+      "Lucid",
+      "Bright"
+    ],
+    "answer": 1,
+    "explanation": "Opaque does not allow light to pass through, opposite of transparent."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 12 identical chairs cost Rs 1800, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 1800 / 12 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 13 identical chairs cost Rs 1950, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 1950 / 13 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 14 identical chairs cost Rs 2100, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2100 / 14 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 15 identical chairs cost Rs 2250, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2250 / 15 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 16 identical chairs cost Rs 2400, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2400 / 16 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 17 identical chairs cost Rs 2550, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2550 / 17 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 18 identical chairs cost Rs 2700, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2700 / 18 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 19 identical chairs cost Rs 2850, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2850 / 19 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 20 identical chairs cost Rs 3000, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3000 / 20 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 21 identical chairs cost Rs 3150, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3150 / 21 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 22 identical chairs cost Rs 3300, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3300 / 22 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 23 identical chairs cost Rs 3450, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3450 / 23 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 24 identical chairs cost Rs 3600, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3600 / 24 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 25 identical chairs cost Rs 3750, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3750 / 25 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 26 identical chairs cost Rs 3900, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3900 / 26 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 27 identical chairs cost Rs 4050, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4050 / 27 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 28 identical chairs cost Rs 4200, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4200 / 28 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 29 identical chairs cost Rs 4350, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4350 / 29 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 30 identical chairs cost Rs 4500, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4500 / 30 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 31 identical chairs cost Rs 4650, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4650 / 31 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 6?",
+    "options": [
+      "32",
+      "36",
+      "42",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "6 x 6 = 36."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 7?",
+    "options": [
+      "45",
+      "49",
+      "55",
+      "61"
+    ],
+    "answer": 1,
+    "explanation": "7 x 7 = 49."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 8?",
+    "options": [
+      "60",
+      "64",
+      "70",
+      "76"
+    ],
+    "answer": 1,
+    "explanation": "8 x 8 = 64."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 9?",
+    "options": [
+      "77",
+      "81",
+      "87",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "9 x 9 = 81."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 10?",
+    "options": [
+      "96",
+      "100",
+      "106",
+      "112"
+    ],
+    "answer": 1,
+    "explanation": "10 x 10 = 100."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 11?",
+    "options": [
+      "117",
+      "121",
+      "127",
+      "133"
+    ],
+    "answer": 1,
+    "explanation": "11 x 11 = 121."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 12?",
+    "options": [
+      "140",
+      "144",
+      "150",
+      "156"
+    ],
+    "answer": 1,
+    "explanation": "12 x 12 = 144."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 13?",
+    "options": [
+      "165",
+      "169",
+      "175",
+      "181"
+    ],
+    "answer": 1,
+    "explanation": "13 x 13 = 169."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 14?",
+    "options": [
+      "192",
+      "196",
+      "202",
+      "208"
+    ],
+    "answer": 1,
+    "explanation": "14 x 14 = 196."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 15?",
+    "options": [
+      "221",
+      "225",
+      "231",
+      "237"
+    ],
+    "answer": 1,
+    "explanation": "15 x 15 = 225."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 16?",
+    "options": [
+      "252",
+      "256",
+      "262",
+      "268"
+    ],
+    "answer": 1,
+    "explanation": "16 x 16 = 256."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 17?",
+    "options": [
+      "285",
+      "289",
+      "295",
+      "301"
+    ],
+    "answer": 1,
+    "explanation": "17 x 17 = 289."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 18?",
+    "options": [
+      "320",
+      "324",
+      "330",
+      "336"
+    ],
+    "answer": 1,
+    "explanation": "18 x 18 = 324."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 19?",
+    "options": [
+      "357",
+      "361",
+      "367",
+      "373"
+    ],
+    "answer": 1,
+    "explanation": "19 x 19 = 361."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 20?",
+    "options": [
+      "396",
+      "400",
+      "406",
+      "412"
+    ],
+    "answer": 1,
+    "explanation": "20 x 20 = 400."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 21?",
+    "options": [
+      "437",
+      "441",
+      "447",
+      "453"
+    ],
+    "answer": 1,
+    "explanation": "21 x 21 = 441."
+  },
+  {
+    "category": "GK",
+    "question": "Which Constitutional Amendment is known as the 'Mini Constitution' of India?",
+    "options": [
+      "42nd Amendment Act, 1976",
+      "44th Amendment Act, 1978",
+      "52nd Amendment Act, 1985",
+      "61st Amendment Act, 1988"
+    ],
+    "answer": 0,
+    "explanation": "42nd Amendment Act (1976) made sweeping changes to the Constitution."
+  },
+  {
+    "category": "GK",
+    "question": "By which Constitutional Amendment was the voting age in India lowered from 21 to 18 years?",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "73rd Amendment"
+    ],
+    "answer": 2,
+    "explanation": "61st Constitutional Amendment Act (1988) reduced voting age from 21 to 18."
+  },
+  {
+    "category": "GK",
+    "question": "Which schedule of the Indian Constitution deals with Anti-Defection Law?",
+    "options": [
+      "8th Schedule",
+      "9th Schedule",
+      "10th Schedule",
+      "11th Schedule"
+    ],
+    "answer": 2,
+    "explanation": "10th Schedule was added by the 52nd Amendment Act, 1985."
+  },
+  {
+    "category": "GK",
+    "question": "Where is the headquarters of ISRO located?",
+    "options": [
+      "Bengaluru",
+      "Hyderabad",
+      "Ahmedabad",
+      "Thiruvananthapuram"
+    ],
+    "answer": 0,
+    "explanation": "ISRO headquarters is located in Bengaluru, Karnataka."
+  },
+  {
+    "category": "GK",
+    "question": "Which organization in India is responsible for defence research and development?",
+    "options": [
+      "ISRO",
+      "DRDO",
+      "BARC",
+      "HAL"
+    ],
+    "answer": 1,
+    "explanation": "Defence Research and Development Organisation (DRDO) handles defence R&D."
+  },
+  {
+    "category": "GK",
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Maharashtra",
+      "Tamil Nadu",
+      "Gujarat",
+      "Andhra Pradesh"
+    ],
+    "answer": 2,
+    "explanation": "Gujarat has the longest coastline among Indian states."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which river is known in ancient texts as 'Vitasta'?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Ravi",
+      "Tawi"
+    ],
+    "answer": 1,
+    "explanation": "Jhelum River is historically known as Vitasta."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which river is known in ancient texts as 'Asikni'?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Indus",
+      "Beas"
+    ],
+    "answer": 0,
+    "explanation": "Chenab River is historically known as Asikni."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Raghunath Temple is located in which city?",
+    "options": [
+      "Srinagar",
+      "Jammu",
+      "Katra",
+      "Udhampur"
+    ],
+    "answer": 1,
+    "explanation": "Raghunath Temple is situated in Jammu city."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Hemis / Kishtwar / Salim Ali National Park — which national park is located in Jammu & Kashmir?",
+    "options": [
+      "Kishtwar National Park",
+      "Kaziranga National Park",
+      "Gir National Park",
+      "Bandipur National Park"
+    ],
+    "answer": 0,
+    "explanation": "Kishtwar High Altitude National Park is in Jammu & Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Uri Hydroelectric Project is located on which river?",
+    "options": [
+      "Jhelum",
+      "Chenab",
+      "Tawi",
+      "Lidder"
+    ],
+    "answer": 0,
+    "explanation": "Uri hydroelectric power projects are located on the Jhelum River in Baramulla."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If CP = Rs 600 and loss = 15%, what is the selling price?",
+    "options": [
+      "Rs 490",
+      "Rs 500",
+      "Rs 510",
+      "Rs 520"
+    ],
+    "answer": 2,
+    "explanation": "Loss = 15% of 600 = Rs 90; SP = 600 - 90 = Rs 510."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of the first five odd natural numbers (1, 3, 5, 7, 9)?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Sum = 25; Average = 25 / 5 = 5."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 18 men can finish a piece of work in 10 days, how many days will 15 men take to finish the same work?",
+    "options": [
+      "10 days",
+      "12 days",
+      "14 days",
+      "15 days"
+    ],
+    "answer": 1,
+    "explanation": "M1*D1 = M2*D2 => 18*10 = 15*D2 => D2 = 12 days."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 12% of 250?",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "answer": 1,
+    "explanation": "250 * 12 / 100 = 30."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A train 180 m long crosses a pole in 12 seconds. What is its speed in m/s?",
+    "options": [
+      "12 m/s",
+      "15 m/s",
+      "18 m/s",
+      "20 m/s"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance / Time = 180 / 12 = 15 m/s."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 10, 20, 40, 80, ?",
+    "options": [
+      "120",
+      "140",
+      "160",
+      "200"
+    ],
+    "answer": 2,
+    "explanation": "Each number doubles: 80 * 2 = 160."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If SOUTH is coded as TPVUI by adding +1 to each letter, NORTH is coded as:",
+    "options": [
+      "OPSUI",
+      "OPSVI",
+      "OPRUI",
+      "NPSUI"
+    ],
+    "answer": 0,
+    "explanation": "N->O, O->P, R->S, T->U, H->I => OPSUI."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd one out:",
+    "options": [
+      "January",
+      "March",
+      "April",
+      "July"
+    ],
+    "answer": 2,
+    "explanation": "April has 30 days; January, March, and July each have 31 days."
+  },
+  {
+    "category": "Reasoning",
+    "question": "In a row of 25 students, Ramesh is 9th from the left. What is his rank from the right?",
+    "options": [
+      "15th",
+      "16th",
+      "17th",
+      "18th"
+    ],
+    "answer": 2,
+    "explanation": "Rank from right = (25 - 9) + 1 = 17th."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is used in balloons / airships or is lightest among these? (Hydrogen is lightest gas)",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen",
+      "Argon"
+    ],
+    "answer": 2,
+    "explanation": "Hydrogen is the lightest element/gas."
+  },
+  {
+    "category": "Science",
+    "question": "Which organ in the human body produces insulin?",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Kidney",
+      "Stomach"
+    ],
+    "answer": 1,
+    "explanation": "Insulin is secreted by the pancreas."
+  },
+  {
+    "category": "Computer",
+    "question": "Which storage device uses flash memory and has no moving mechanical parts?",
+    "options": [
+      "HDD",
+      "SSD",
+      "Floppy Disk",
+      "Magnetic Tape"
+    ],
+    "answer": 1,
+    "explanation": "Solid State Drive (SSD) uses non-volatile flash memory with no moving parts."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key saves the current document in most applications?",
+    "options": [
+      "Ctrl+S",
+      "Ctrl+P",
+      "Ctrl+V",
+      "Ctrl+A"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl+S is the standard Save shortcut."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
+    "options": [
+      "Dr. Rajendra Prasad",
+      "Dr. B. R. Ambedkar",
+      "Jawaharlal Nehru",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "answer": 1,
+    "explanation": "Dr. B. R. Ambedkar chaired the Drafting Committee of the Constituent Assembly."
+  },
+  {
+    "category": "GK",
+    "question": "Which Fundamental Right was removed from the list of Fundamental Rights by the 44th Amendment Act, 1978?",
+    "options": [
+      "Right to Equality",
+      "Right to Freedom",
+      "Right to Property",
+      "Right against Exploitation"
+    ],
+    "answer": 2,
+    "explanation": "Right to Property was made a legal right under Article 300A by the 44th Amendment Act, 1978."
+  },
+  {
+    "category": "GK",
+    "question": "The Quit India Movement was launched in which year?",
+    "options": [
+      "1920",
+      "1930",
+      "1942",
+      "1946"
+    ],
+    "answer": 2,
+    "explanation": "Mahatma Gandhi launched the Quit India Movement in August 1942."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the smallest Indian state by area?",
+    "options": [
+      "Sikkim",
+      "Goa",
+      "Tripura",
+      "Mizoram"
+    ],
+    "answer": 1,
+    "explanation": "Goa is the smallest state in India by area."
+  },
+  {
+    "category": "GK",
+    "question": "Kaziranga National Park, famous for the one-horned rhinoceros, is located in which state?",
+    "options": [
+      "West Bengal",
+      "Assam",
+      "Odisha",
+      "Bihar"
+    ],
+    "answer": 1,
+    "explanation": "Kaziranga National Park is located in Assam."
+  },
+  {
+    "category": "GK",
+    "question": "Who is known as the 'Nightingale of India'?",
+    "options": [
+      "Indira Gandhi",
+      "Sarojini Naidu",
+      "Lata Mangeshkar",
+      "Annie Besant"
+    ],
+    "answer": 1,
+    "explanation": "Sarojini Naidu is known as the Nightingale of India."
+  },
+  {
+    "category": "GK",
+    "question": "Which Article of the Indian Constitution deals with National Emergency?",
+    "options": [
+      "Article 352",
+      "Article 356",
+      "Article 360",
+      "Article 370"
+    ],
+    "answer": 0,
+    "explanation": "Article 352 deals with the proclamation of National Emergency."
+  },
+  {
+    "category": "GK",
+    "question": "The Hirakud Dam is built across which river?",
+    "options": [
+      "Godavari",
+      "Mahanadi",
+      "Krishna",
+      "Narmada"
+    ],
+    "answer": 1,
+    "explanation": "Hirakud Dam is constructed across the Mahanadi River in Odisha."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Who was the first Chief Minister of Jammu & Kashmir?",
+    "options": [
+      "Sheikh Abdullah",
+      "Ghulam Mohammed Sadiq",
+      "Bakshi Ghulam Mohammad",
+      "Farooq Abdullah"
+    ],
+    "answer": 1,
+    "explanation": "Ghulam Mohammed Sadiq became the first Chief Minister of J&K in 1965 after the title changed from Prime Minister."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which fort in Jammu city is situated on the banks of the Tawi River?",
+    "options": [
+      "Hari Parbat Fort",
+      "Bahu Fort",
+      "Bhimber Fort",
+      "Chiktan Fort"
+    ],
+    "answer": 1,
+    "explanation": "Bahu Fort is located on a rock face along the Tawi River in Jammu."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Shalimar Bagh in Srinagar was built by which Mughal Emperor?",
+    "options": [
+      "Akbar",
+      "Jahangir",
+      "Shah Jahan",
+      "Aurangzeb"
+    ],
+    "answer": 1,
+    "explanation": "Emperor Jahangir built Shalimar Bagh in Srinagar for Nur Jahan in 1619."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which temple in Jammu & Kashmir is situated on Trikuta Hills?",
+    "options": [
+      "Amarnath Cave",
+      "Mata Vaishno Devi Shrine",
+      "Shankaracharya Temple",
+      "Martand Sun Temple"
+    ],
+    "answer": 1,
+    "explanation": "Shri Mata Vaishno Devi Shrine is located in the Trikuta Hills near Katra, Reasi."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Martand Sun Temple in Anantnag was built by which ruler of the Karkota dynasty?",
+    "options": [
+      "Avantivarman",
+      "Lalitaditya Muktapida",
+      "Durlabhavardhana",
+      "Zain-ul-Abidin"
+    ],
+    "answer": 1,
+    "explanation": "Lalitaditya Muktapida built the Martand Sun Temple in the 8th century CE."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which Sultan of Kashmir was popularly known as 'Budshah' (The Great King)?",
+    "options": [
+      "Shah Mir",
+      "Sultan Sikandar",
+      "Zain-ul-Abidin",
+      "Yusuf Shah Chak"
+    ],
+    "answer": 2,
+    "explanation": "Sultan Zain-ul-Abidin was revered as Budshah for his tolerant policies and patronage of arts."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Dulhasti Hydroelectric Power Station is built on which river in Kishtwar?",
+    "options": [
+      "Jhelum",
+      "Chenab",
+      "Ravi",
+      "Tawi"
+    ],
+    "answer": 1,
+    "explanation": "Dulhasti Hydroelectric Project is located on the Chenab River in Kishtwar district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which pass connects Kishtwar in Jammu division with Anantnag in Kashmir Valley?",
+    "options": [
+      "Zoji La",
+      "Sinthan Top",
+      "Pir Ki Gali",
+      "Khardung La"
+    ],
+    "answer": 1,
+    "explanation": "Sinthan Top connects Breng Valley (Anantnag) with Kishtwar."
+  },
+  {
+    "category": "Defence GK",
+    "question": "Where is the headquarters of the Indian Navy located?",
+    "options": [
+      "Mumbai",
+      "Visakhapatnam",
+      "New Delhi",
+      "Kochi"
+    ],
+    "answer": 2,
+    "explanation": "Integrated Headquarters of Ministry of Defence (Navy) is in New Delhi."
+  },
+  {
+    "category": "Defence GK",
+    "question": "Kargil Vijay Diwas is observed in India every year on which date?",
+    "options": [
+      "15 January",
+      "26 July",
+      "8 October",
+      "4 December"
+    ],
+    "answer": 1,
+    "explanation": "Kargil Vijay Diwas is commemorated on 26 July."
+  },
+  {
+    "category": "GK",
+    "question": "Where is the headquarters of Northern Railway located?",
+    "options": [
+      "Lucknow",
+      "New Delhi",
+      "Chandigarh",
+      "Jammu"
+    ],
+    "answer": 1,
+    "explanation": "Northern Railway zone is headquartered at Baroda House, New Delhi."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If the cost price of 15 articles is equal to the selling price of 12 articles, find the profit percentage.",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "15%"
+    ],
+    "answer": 1,
+    "explanation": "Profit % = ((15 - 12) / 12) × 100 = (3/12) × 100 = 25%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A sum of money doubles itself in 10 years at simple interest. What is the rate of interest per annum?",
+    "options": [
+      "8%",
+      "10%",
+      "12%",
+      "15%"
+    ],
+    "answer": 1,
+    "explanation": "If P doubles, SI = P. R = (100 × P) / (P × 10) = 10%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the area of a circle whose radius is 7 cm? (Take π = 22/7)",
+    "options": [
+      "44 sq cm",
+      "154 sq cm",
+      "144 sq cm",
+      "308 sq cm"
+    ],
+    "answer": 1,
+    "explanation": "Area = πr² = (22/7) × 7 × 7 = 154 sq cm."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Two numbers are in the ratio 4:7 and their HCF is 6. What is their LCM?",
+    "options": [
+      "84",
+      "126",
+      "168",
+      "252"
+    ],
+    "answer": 2,
+    "explanation": "Numbers are 24 and 42; LCM = 6 × 4 × 7 = 168."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A pipe can fill a tank in 6 hours and another pipe can empty it in 12 hours. If both are opened together, in how many hours will the tank be filled?",
+    "options": [
+      "8 hours",
+      "10 hours",
+      "12 hours",
+      "18 hours"
+    ],
+    "answer": 2,
+    "explanation": "Net rate = 1/6 - 1/12 = 1/12 per hour, so 12 hours."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the value of (0.2 × 0.2 + 0.3 × 0.3).",
+    "options": [
+      "0.13",
+      "0.25",
+      "0.50",
+      "1.30"
+    ],
+    "answer": 0,
+    "explanation": "0.04 + 0.09 = 0.13."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 7, 14, 28, 56, ?",
+    "options": [
+      "84",
+      "98",
+      "112",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Each term is multiplied by 2: 56 × 2 = 112."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Doctor is to Hospital as Teacher is to:",
+    "options": [
+      "Court",
+      "School",
+      "Factory",
+      "Station"
+    ],
+    "answer": 1,
+    "explanation": "A doctor works in a hospital; a teacher works in a school."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If CLOCK is coded as DMPDL, how is WATCH coded?",
+    "options": [
+      "XBUDI",
+      "XBUCI",
+      "VZSBG",
+      "XBTDI"
+    ],
+    "answer": 0,
+    "explanation": "Each letter moves +1 forward: W→X, A→B, T→U, C→D, H→I."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd one out: Mercury, Venus, Moon, Mars.",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Moon",
+      "Mars"
+    ],
+    "answer": 2,
+    "explanation": "Moon is a natural satellite, whereas Mercury, Venus, and Mars are planets."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If 3 + 5 = 16, 4 + 6 = 20, then 5 + 7 = ?",
+    "options": [
+      "22",
+      "24",
+      "26",
+      "35"
+    ],
+    "answer": 1,
+    "explanation": "Rule is (a + b) × 2: (5 + 7) × 2 = 24."
+  },
+  {
+    "category": "Science",
+    "question": "Which lens is used to correct myopia (nearsightedness)?",
+    "options": [
+      "Convex lens",
+      "Concave lens",
+      "Cylindrical lens",
+      "Bifocal lens"
+    ],
+    "answer": 1,
+    "explanation": "A concave (diverging) lens corrects myopia."
+  },
+  {
+    "category": "Science",
+    "question": "Which acid is present in vinegar?",
+    "options": [
+      "Citric acid",
+      "Acetic acid",
+      "Lactic acid",
+      "Tartaric acid"
+    ],
+    "answer": 1,
+    "explanation": "Vinegar is a dilute solution of acetic acid."
+  },
+  {
+    "category": "Science",
+    "question": "What is the speed of light in vacuum approximately?",
+    "options": [
+      "3 × 10^6 m/s",
+      "3 × 10^8 m/s",
+      "3 × 10^10 m/s",
+      "3 × 10^5 m/s"
+    ],
+    "answer": 1,
+    "explanation": "Light travels in vacuum at approximately 3 × 10^8 m/s."
+  },
+  {
+    "category": "Science",
+    "question": "Which planet has the largest number of known moons in our Solar System?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "answer": 1,
+    "explanation": "Saturn has the highest count of confirmed moons in the Solar System."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key is used to paste copied content?",
+    "options": [
+      "Ctrl+C",
+      "Ctrl+X",
+      "Ctrl+V",
+      "Ctrl+P"
+    ],
+    "answer": 2,
+    "explanation": "Ctrl+V pastes copied or cut content."
+  },
+  {
+    "category": "Computer",
+    "question": "What does PDF stand for?",
+    "options": [
+      "Portable Document Format",
+      "Public Data File",
+      "Printed Document Form",
+      "Personal Digital File"
+    ],
+    "answer": 0,
+    "explanation": "PDF stands for Portable Document Format."
+  },
+  {
+    "category": "Computer",
+    "question": "Which protocol is used to send emails?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "SNMP"
+    ],
+    "answer": 2,
+    "explanation": "Simple Mail Transfer Protocol (SMTP) is used for sending emails."
+  },
+  {
+    "category": "Computer",
+    "question": "In MS Excel, every formula must begin with which symbol?",
+    "options": [
+      "#",
+      "@",
+      "=",
+      "&"
+    ],
+    "answer": 2,
+    "explanation": "All formulas in MS Excel start with an equals (=) sign."
+  },
+  {
+    "category": "English",
+    "question": "Choose the synonym of 'Abundant':",
+    "options": [
+      "Scarce",
+      "Plentiful",
+      "Empty",
+      "Rare"
+    ],
+    "answer": 1,
+    "explanation": "Abundant means existing in large quantities; plentiful."
+  },
+  {
+    "category": "English",
+    "question": "Choose the antonym of 'Optimistic':",
+    "options": [
+      "Hopeful",
+      "Cheerful",
+      "Pessimistic",
+      "Confident"
+    ],
+    "answer": 2,
+    "explanation": "Pessimistic is the opposite of optimistic."
+  },
+  {
+    "category": "English",
+    "question": "Fill in the blank: She has been living here ___ 2020.",
+    "options": [
+      "for",
+      "since",
+      "from",
+      "by"
+    ],
+    "answer": 1,
+    "explanation": "'Since' is used with a specific point in time (2020)."
+  },
+  {
+    "category": "English",
+    "question": "One word substitution: A place where birds are kept is called:",
+    "options": [
+      "Apiary",
+      "Aviary",
+      "Aquarium",
+      "Sanctuary"
+    ],
+    "answer": 1,
+    "explanation": "An aviary is a large enclosure for keeping birds; an apiary is for bees."
+  },
+  {
+    "category": "GK",
+    "question": "Who is the supreme commander of the Indian Armed Forces?",
+    "options": [
+      "Prime Minister",
+      "Defence Minister",
+      "President of India",
+      "Chief of Defence Staff"
+    ],
+    "answer": 2,
+    "explanation": "The President of India is the Supreme Commander of the Defence Forces."
+  },
+  {
+    "category": "GK",
+    "question": "How many members can the President nominate to the Rajya Sabha?",
+    "options": [
+      "2",
+      "10",
+      "12",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Under Article 80, the President nominates 12 members with special knowledge or practical experience."
+  },
+  {
+    "category": "GK",
+    "question": "What is the minimum age to become a member of the Lok Sabha?",
+    "options": [
+      "18 years",
+      "21 years",
+      "25 years",
+      "30 years"
+    ],
+    "answer": 2,
+    "explanation": "Minimum age for Lok Sabha membership is 25 years."
+  },
+  {
+    "category": "GK",
+    "question": "What is the minimum age to become a member of the Rajya Sabha?",
+    "options": [
+      "21 years",
+      "25 years",
+      "30 years",
+      "35 years"
+    ],
+    "answer": 2,
+    "explanation": "Minimum age for Rajya Sabha membership is 30 years."
+  },
+  {
+    "category": "GK",
+    "question": "Which Article of the Indian Constitution guarantees Right to Education (6 to 14 years)?",
+    "options": [
+      "Article 19",
+      "Article 21A",
+      "Article 24",
+      "Article 29"
+    ],
+    "answer": 1,
+    "explanation": "Article 21A provides free and compulsory education for children aged 6 to 14 years."
+  },
+  {
+    "category": "GK",
+    "question": "Which Article deals with the impeachment of the President of India?",
+    "options": [
+      "Article 52",
+      "Article 61",
+      "Article 72",
+      "Article 76"
+    ],
+    "answer": 1,
+    "explanation": "Article 61 lays down the procedure for impeachment of the President."
+  },
+  {
+    "category": "GK",
+    "question": "Who is the ex-officio Chairman of the Rajya Sabha?",
+    "options": [
+      "President",
+      "Vice President",
+      "Speaker",
+      "Prime Minister"
+    ],
+    "answer": 1,
+    "explanation": "The Vice President of India is the ex-officio Chairman of the Rajya Sabha."
+  },
+  {
+    "category": "GK",
+    "question": "Which Constitutional Amendment introduced the Goods and Services Tax (GST) in India?",
+    "options": [
+      "99th Amendment",
+      "100th Amendment",
+      "101st Amendment",
+      "102nd Amendment"
+    ],
+    "answer": 2,
+    "explanation": "The 101st Constitutional Amendment Act, 2016 introduced GST."
+  },
+  {
+    "category": "GK",
+    "question": "The Finance Commission of India is constituted under which Article?",
+    "options": [
+      "Article 265",
+      "Article 280",
+      "Article 300",
+      "Article 315"
+    ],
+    "answer": 1,
+    "explanation": "Article 280 provides for the constitution of the Finance Commission."
+  },
+  {
+    "category": "GK",
+    "question": "Union Public Service Commission (UPSC) is established under which Article?",
+    "options": [
+      "Article 312",
+      "Article 315",
+      "Article 320",
+      "Article 324"
+    ],
+    "answer": 1,
+    "explanation": "Article 315 provides for Public Service Commissions for the Union and States."
+  },
+  {
+    "category": "GK",
+    "question": "Election Commission of India is an autonomous constitutional body under which Article?",
+    "options": [
+      "Article 320",
+      "Article 324",
+      "Article 326",
+      "Article 330"
+    ],
+    "answer": 1,
+    "explanation": "Article 324 vests superintendence, direction and control of elections in the Election Commission."
+  },
+  {
+    "category": "GK",
+    "question": "Which part of the Indian Constitution deals with Fundamental Rights?",
+    "options": [
+      "Part II",
+      "Part III",
+      "Part IV",
+      "Part V"
+    ],
+    "answer": 1,
+    "explanation": "Part III (Articles 12 to 35) deals with Fundamental Rights."
+  },
+  {
+    "category": "GK",
+    "question": "Which part of the Indian Constitution deals with Directive Principles of State Policy (DPSP)?",
+    "options": [
+      "Part II",
+      "Part III",
+      "Part IV",
+      "Part IVA"
+    ],
+    "answer": 2,
+    "explanation": "Part IV (Articles 36 to 51) covers Directive Principles of State Policy."
+  },
+  {
+    "category": "GK",
+    "question": "How many Fundamental Duties are listed in Article 51A of the Constitution?",
+    "options": [
+      "8",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "There are 11 Fundamental Duties under Article 51A (the 11th added by the 86th Amendment Act, 2002)."
+  },
+  {
+    "category": "GK",
+    "question": "Which writ is issued by a higher court to release a person unlawfully detained?",
+    "options": [
+      "Mandamus",
+      "Habeas Corpus",
+      "Prohibition",
+      "Quo Warranto"
+    ],
+    "answer": 1,
+    "explanation": "Habeas Corpus means 'to have the body' and protects against unlawful detention."
+  },
+  {
+    "category": "GK",
+    "question": "In which year did the Revolt of 1857 start?",
+    "options": [
+      "1856",
+      "1857",
+      "1858",
+      "1885"
+    ],
+    "answer": 1,
+    "explanation": "The First War of Independence / Revolt of 1857 began in 1857."
+  },
+  {
+    "category": "GK",
+    "question": "Who founded the Indian National Congress in 1885?",
+    "options": [
+      "Dadabhai Naoroji",
+      "A. O. Hume",
+      "W. C. Bonnerjee",
+      "Surendranath Banerjee"
+    ],
+    "answer": 1,
+    "explanation": "Allan Octavian Hume played the key role in founding INC in 1885."
+  },
+  {
+    "category": "GK",
+    "question": "The Jallianwala Bagh massacre took place in which year?",
+    "options": [
+      "1917",
+      "1919",
+      "1920",
+      "1922"
+    ],
+    "answer": 1,
+    "explanation": "The Jallianwala Bagh tragedy occurred on 13 April 1919 in Amritsar."
+  },
+  {
+    "category": "GK",
+    "question": "Who gave the slogan 'Swaraj is my birthright and I shall have it'?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Bal Gangadhar Tilak",
+      "Lala Lajpat Rai",
+      "Bipin Chandra Pal"
+    ],
+    "answer": 1,
+    "explanation": "Bal Gangadhar Tilak gave this famous slogan."
+  },
+  {
+    "category": "GK",
+    "question": "Who gave the slogan 'Do or Die' during the Quit India Movement?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose",
+      "Bhagat Singh"
+    ],
+    "answer": 1,
+    "explanation": "Mahatma Gandhi gave the call 'Do or Die' in August 1942."
+  },
+  {
+    "category": "GK",
+    "question": "Who founded the Azad Hind Fauj (Indian National Army) leadership expansion / 'Give me blood, I will give you freedom' slogan?",
+    "options": [
+      "Bhagat Singh",
+      "Subhas Chandra Bose",
+      "Rash Behari Bose",
+      "Sardar Patel"
+    ],
+    "answer": 1,
+    "explanation": "Netaji Subhas Chandra Bose gave the slogan 'Tum mujhe khoon do, main tumhe azaadi doonga'."
+  },
+  {
+    "category": "GK",
+    "question": "Which movement was suspended after the Chauri Chaura incident in 1922?",
+    "options": [
+      "Swadeshi Movement",
+      "Non-Cooperation Movement",
+      "Civil Disobedience Movement",
+      "Khilafat Movement"
+    ],
+    "answer": 1,
+    "explanation": "Gandhiji suspended the Non-Cooperation Movement following the Chauri Chaura incident in February 1922."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the first Governor-General of independent India?",
+    "options": [
+      "C. Rajagopalachari",
+      "Lord Mountbatten",
+      "Dr. Rajendra Prasad",
+      "Jawaharlal Nehru"
+    ],
+    "answer": 1,
+    "explanation": "Lord Mountbatten was the first Governor-General of independent India; C. Rajagopalachari was the first and last Indian Governor-General."
+  },
+  {
+    "category": "GK",
+    "question": "The Indus Valley Civilization site Lothal is located in which modern Indian state?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Haryana",
+      "Punjab"
+    ],
+    "answer": 1,
+    "explanation": "Lothal is an ancient dockyard city of the Indus Valley Civilization in Gujarat."
+  },
+  {
+    "category": "GK",
+    "question": "Who built the famous Grand Trunk Road originally / revived it extensively in medieval history?",
+    "options": [
+      "Akbar",
+      "Sher Shah Suri",
+      "Humayun",
+      "Babur"
+    ],
+    "answer": 1,
+    "explanation": "Sher Shah Suri rebuilt and improved the Grand Trunk Road."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the longest river in India?",
+    "options": [
+      "Yamuna",
+      "Godavari",
+      "Ganga",
+      "Brahmaputra"
+    ],
+    "answer": 2,
+    "explanation": "The Ganga is the longest river flowing in India (~2,525 km)."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the highest peak in India (within Indian-administered territory / commonly asked in static GK)?",
+    "options": [
+      "Kanchenjunga",
+      "Nanda Devi",
+      "Guru Shikhar",
+      "Anaimudi"
+    ],
+    "answer": 0,
+    "explanation": "Kanchenjunga is the highest mountain peak in India and third highest in the world."
+  },
+  {
+    "category": "GK",
+    "question": "Which state is known as the 'Land of Five Rivers'?",
+    "options": [
+      "Haryana",
+      "Punjab",
+      "Himachal Pradesh",
+      "Uttar Pradesh"
+    ],
+    "answer": 1,
+    "explanation": "Punjab gets its name from 'Punj' (five) and 'Aab' (waters/rivers)."
+  },
+  {
+    "category": "GK",
+    "question": "Tehri Dam is built on which river?",
+    "options": [
+      "Bhagirathi",
+      "Narmada",
+      "Sutlej",
+      "Kaveri"
+    ],
+    "answer": 0,
+    "explanation": "Tehri Dam is constructed on the Bhagirathi River in Uttarakhand."
+  },
+  {
+    "category": "GK",
+    "question": "Bhakra Nangal Dam is built on which river?",
+    "options": [
+      "Ravi",
+      "Sutlej",
+      "Chenab",
+      "Beas"
+    ],
+    "answer": 1,
+    "explanation": "Bhakra Nangal Dam is built across the Sutlej River."
+  },
+  {
+    "category": "GK",
+    "question": "Sardar Sarovar Dam is built on which river?",
+    "options": [
+      "Tapi",
+      "Narmada",
+      "Mahi",
+      "Godavari"
+    ],
+    "answer": 1,
+    "explanation": "Sardar Sarovar Dam is on the Narmada River in Gujarat."
+  },
+  {
+    "category": "GK",
+    "question": "Chilika Lake, India's largest brackish water lagoon, is in which state?",
+    "options": [
+      "Andhra Pradesh",
+      "Odisha",
+      "Tamil Nadu",
+      "Kerala"
+    ],
+    "answer": 1,
+    "explanation": "Chilika Lake is located in Odisha."
+  },
+  {
+    "category": "GK",
+    "question": "Gir National Park in Gujarat is famous for:",
+    "options": [
+      "Bengal Tiger",
+      "Asiatic Lion",
+      "Indian Elephant",
+      "Snow Leopard"
+    ],
+    "answer": 1,
+    "explanation": "Gir Forest National Park in Gujarat is the natural habitat of the Asiatic Lion."
+  },
+  {
+    "category": "GK",
+    "question": "Sundarbans mangrove forest is famous for:",
+    "options": [
+      "Royal Bengal Tiger",
+      "Great Indian Bustard",
+      "Red Panda",
+      "Musk Deer"
+    ],
+    "answer": 0,
+    "explanation": "The Sundarbans in West Bengal is famous for the Royal Bengal Tiger."
+  },
+  {
+    "category": "GK",
+    "question": "Which line divides India into roughly northern and southern halves?",
+    "options": [
+      "Equator",
+      "Tropic of Cancer",
+      "Tropic of Capricorn",
+      "Prime Meridian"
+    ],
+    "answer": 1,
+    "explanation": "The Tropic of Cancer (23.5° N) passes through the middle of India."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "How many districts are there in the Union Territory of Jammu & Kashmir?",
+    "options": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "There are 20 districts in Jammu & Kashmir (10 in Jammu division and 10 in Kashmir division)."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which river is also known as 'Raghunath / Suryaputri' or flows into Chenab near Akhnoor?",
+    "options": [
+      "Tawi",
+      "Jhelum",
+      "Nubra",
+      "Lidder"
+    ],
+    "answer": 0,
+    "explanation": "Tawi River flows through Jammu and joins the Chenab."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Where is Vaishno Devi Temple located in Jammu & Kashmir?",
+    "options": [
+      "Pahalgam",
+      "Katra",
+      "Gulmarg",
+      "Sonamarg"
+    ],
+    "answer": 1,
+    "explanation": "Shri Mata Vaishno Devi Temple is located near Katra in Reasi district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which pass lies on the Mughal Road between Shopian and Poonch/Rajouri?",
+    "options": [
+      "Zoji La",
+      "Pir Ki Gali",
+      "Fotu La",
+      "Rohtang Pass"
+    ],
+    "answer": 1,
+    "explanation": "Pir Ki Gali is the highest point (~3,490 m) on the Mughal Road."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Patnitop is a famous hill station located along which national highway in J&K?",
+    "options": [
+      "NH-44",
+      "NH-144A",
+      "NH-501",
+      "NH-244"
+    ],
+    "answer": 0,
+    "explanation": "Patnitop lies along NH-44 (Jammu–Srinagar highway) in Udhampur/Ramban belt."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which lake in Jammu & Kashmir is famous for floating gardens (Rad) and Shikaras?",
+    "options": [
+      "Mansar Lake",
+      "Dal Lake",
+      "Surinsar Lake",
+      "Anchar Lake"
+    ],
+    "answer": 1,
+    "explanation": "Dal Lake in Srinagar is famous for Shikaras and floating gardens."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Rajtarangini, the famous historical chronicle of Kashmir, was written by:",
+    "options": [
+      "Kalhana",
+      "Bilhana",
+      "Abul Fazl",
+      "Jonaraja"
+    ],
+    "answer": 0,
+    "explanation": "Kalhana wrote Rajtarangini in Sanskrit in the 12th century."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which festival is celebrated as Kashmiri New Year?",
+    "options": [
+      "Baisakhi",
+      "Navreh",
+      "Lohri",
+      "Losar"
+    ],
+    "answer": 1,
+    "explanation": "Navreh marks the traditional Kashmiri New Year."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Basohli paintings, which received a GI tag, belong to which district of Jammu & Kashmir?",
+    "options": [
+      "Kathua",
+      "Doda",
+      "Baramulla",
+      "Pulwama"
+    ],
+    "answer": 0,
+    "explanation": "Basohli is in Kathua district of Jammu division."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Salim Ali National Park (City Forest National Park) was located in which city of J&K?",
+    "options": [
+      "Jammu",
+      "Srinagar",
+      "Kathua",
+      "Anantnag"
+    ],
+    "answer": 1,
+    "explanation": "City Forest / Salim Ali National Park was in Srinagar."
+  },
+  {
+    "category": "Science",
+    "question": "What is the SI unit of power?",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Ohm"
+    ],
+    "answer": 1,
+    "explanation": "Power is measured in watts (W); 1 Watt = 1 Joule per second."
+  },
+  {
+    "category": "Science",
+    "question": "What is the SI unit of frequency?",
+    "options": [
+      "Hertz",
+      "Decibel",
+      "Tesla",
+      "Lux"
+    ],
+    "answer": 0,
+    "explanation": "Frequency is measured in hertz (Hz)."
+  },
+  {
+    "category": "Science",
+    "question": "Which instrument is used to measure electric current?",
+    "options": [
+      "Voltmeter",
+      "Ammeter",
+      "Galvanometer",
+      "Barometer"
+    ],
+    "answer": 1,
+    "explanation": "An ammeter is connected in series to measure electric current."
+  },
+  {
+    "category": "Science",
+    "question": "Which mirror is used as a rear-view mirror in vehicles?",
+    "options": [
+      "Concave mirror",
+      "Convex mirror",
+      "Plane mirror",
+      "Parabolic mirror"
+    ],
+    "answer": 1,
+    "explanation": "A convex mirror gives a wider field of view and forms an erect, diminished image."
+  },
+  {
+    "category": "Science",
+    "question": "Which mirror is used by dentists and in solar furnaces?",
+    "options": [
+      "Convex mirror",
+      "Concave mirror",
+      "Plane mirror",
+      "Cylindrical mirror"
+    ],
+    "answer": 1,
+    "explanation": "A concave mirror converges light rays and magnifies nearby objects."
+  },
+  {
+    "category": "Science",
+    "question": "What is the chemical formula of water?",
+    "options": [
+      "H2O",
+      "CO2",
+      "NaCl",
+      "H2O2"
+    ],
+    "answer": 0,
+    "explanation": "Each water molecule consists of two hydrogen atoms and one oxygen atom (H2O)."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is known as 'Laughing Gas'?",
+    "options": [
+      "Nitric oxide",
+      "Nitrous oxide",
+      "Nitrogen dioxide",
+      "Carbon monoxide"
+    ],
+    "answer": 1,
+    "explanation": "Nitrous oxide (N2O) is commonly referred to as laughing gas."
+  },
+  {
+    "category": "Science",
+    "question": "Which metal is the best conductor of electricity?",
+    "options": [
+      "Copper",
+      "Silver",
+      "Gold",
+      "Aluminium"
+    ],
+    "answer": 1,
+    "explanation": "Silver has the highest electrical conductivity among all metals."
+  },
+  {
+    "category": "Science",
+    "question": "Which gland in the human body is called the 'Master Gland'?",
+    "options": [
+      "Thyroid gland",
+      "Pituitary gland",
+      "Adrenal gland",
+      "Pineal gland"
+    ],
+    "answer": 1,
+    "explanation": "The pituitary gland regulates several other endocrine glands."
+  },
+  {
+    "category": "Science",
+    "question": "Which organ purifies blood by filtering waste products and excess water?",
+    "options": [
+      "Heart",
+      "Lungs",
+      "Kidney",
+      "Spleen"
+    ],
+    "answer": 2,
+    "explanation": "Kidneys filter metabolic wastes from blood to form urine."
+  },
+  {
+    "category": "Computer",
+    "question": "What does HTTP stand for?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "High Transfer Text Process",
+      "Hyperlink Text Tool Program",
+      "Host Transfer Transmission Protocol"
+    ],
+    "answer": 0,
+    "explanation": "HTTP stands for HyperText Transfer Protocol."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key selects all content in a document or page?",
+    "options": [
+      "Ctrl+C",
+      "Ctrl+A",
+      "Ctrl+V",
+      "Ctrl+X"
+    ],
+    "answer": 1,
+    "explanation": "Ctrl+A selects all items/text."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key copies selected text or items?",
+    "options": [
+      "Ctrl+C",
+      "Ctrl+V",
+      "Ctrl+Z",
+      "Ctrl+S"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl+C copies the selected item to the clipboard."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key cuts selected text or items?",
+    "options": [
+      "Ctrl+X",
+      "Ctrl+C",
+      "Ctrl+V",
+      "Ctrl+Y"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl+X cuts the selected item."
+  },
+  {
+    "category": "Computer",
+    "question": "What is the full form of USB?",
+    "options": [
+      "Universal Serial Bus",
+      "Unified System Board",
+      "User Storage Backup",
+      "Universal Software Bridge"
+    ],
+    "answer": 0,
+    "explanation": "USB stands for Universal Serial Bus."
+  },
+  {
+    "category": "Computer",
+    "question": "Which key is used to delete the character immediately after (to the right of) the cursor?",
+    "options": [
+      "Backspace",
+      "Delete",
+      "Shift",
+      "Esc"
+    ],
+    "answer": 1,
+    "explanation": "The Delete key removes the character ahead of the cursor; Backspace removes behind."
+  },
+  {
+    "category": "Computer",
+    "question": "Which of the following is an input device?",
+    "options": [
+      "Printer",
+      "Monitor",
+      "Keyboard",
+      "Speaker"
+    ],
+    "answer": 2,
+    "explanation": "A keyboard sends input data to the computer."
+  },
+  {
+    "category": "Computer",
+    "question": "In computer networks, what does LAN stand for?",
+    "options": [
+      "Large Area Network",
+      "Local Area Network",
+      "Logical Access Node",
+      "Link Address Network"
+    ],
+    "answer": 1,
+    "explanation": "LAN stands for Local Area Network (such as a home, school, or office network)."
+  },
+  {
+    "category": "Computer",
+    "question": "Which file extension is commonly used for Microsoft Word documents?",
+    "options": [
+      ".xlsx",
+      ".pptx",
+      ".docx",
+      ".mp3"
+    ],
+    "answer": 2,
+    "explanation": ".docx is the standard document extension for Microsoft Word."
+  },
+  {
+    "category": "Computer",
+    "question": "Which memory is non-volatile and permanently stores firmware/startup instructions?",
+    "options": [
+      "RAM",
+      "ROM",
+      "Cache",
+      "Register"
+    ],
+    "answer": 1,
+    "explanation": "ROM (Read-Only Memory) retains its data even when power is turned off."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct synonym of 'Brave':",
+    "options": [
+      "Cowardly",
+      "Courageous",
+      "Timid",
+      "Afraid"
+    ],
+    "answer": 1,
+    "explanation": "Courageous means brave and fearless."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct antonym of 'Victory':",
+    "options": [
+      "Triumph",
+      "Defeat",
+      "Success",
+      "Win"
+    ],
+    "answer": 1,
+    "explanation": "Defeat is the opposite of victory."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct article: She bought ___ umbrella.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer": 1,
+    "explanation": "Use 'an' before 'umbrella' because it starts with a vowel sound."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct preposition: The book is ___ the table.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "into"
+    ],
+    "answer": 1,
+    "explanation": "'On' is used when something rests on a surface."
+  },
+  {
+    "category": "English",
+    "question": "One word substitution: A person who writes books is called an:",
+    "options": [
+      "Author",
+      "Actor",
+      "Editor",
+      "Auditor"
+    ],
+    "answer": 0,
+    "explanation": "An author writes books, articles, or stories."
+  },
+  {
+    "category": "English",
+    "question": "Choose the synonym of 'Silent':",
+    "options": [
+      "Noisy",
+      "Quiet",
+      "Loud",
+      "Rowdy"
+    ],
+    "answer": 1,
+    "explanation": "Quiet is a synonym of silent."
+  },
+  {
+    "category": "English",
+    "question": "Choose the antonym of 'Expand':",
+    "options": [
+      "Grow",
+      "Contract",
+      "Increase",
+      "Extend"
+    ],
+    "answer": 1,
+    "explanation": "Contract means to shrink or become smaller, opposite of expand."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 20% of 120 (Practice Set #1).",
+    "options": [
+      "14",
+      "24",
+      "34",
+      "44"
+    ],
+    "answer": 1,
+    "explanation": "20% of 120 = (20 × 120) ÷ 100 = 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 150 km in 3 hours at uniform speed. Find its speed (Practice Set #2).",
+    "options": [
+      "45",
+      "50",
+      "55",
+      "60"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 150 ÷ 3 = 50 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #3)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹1400 at 5% per annum for 2 years (Problem #4).",
+    "options": [
+      "₹90",
+      "₹140",
+      "₹190",
+      "₹240"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (1400 × 5 × 2) ÷ 100 = ₹140."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 23, and 29? (Set #5)",
+    "options": [
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 23 + 29) ÷ 3 = 69 ÷ 3 = 23."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 10% of 220 (Practice Set #6).",
+    "options": [
+      "12",
+      "22",
+      "32",
+      "42"
+    ],
+    "answer": 1,
+    "explanation": "10% of 220 = (10 × 220) ÷ 100 = 22."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 225 km in 3 hours at uniform speed. Find its speed (Practice Set #7).",
+    "options": [
+      "70",
+      "75",
+      "80",
+      "85"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 225 ÷ 3 = 75 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #8)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹1900 at 5% per annum for 2 years (Problem #9).",
+    "options": [
+      "₹140",
+      "₹190",
+      "₹240",
+      "₹290"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (1900 × 5 × 2) ÷ 100 = ₹190."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 28, and 34? (Set #10)",
+    "options": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 28 + 34) ÷ 3 = 84 ÷ 3 = 28."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 50% of 320 (Practice Set #11).",
+    "options": [
+      "150",
+      "160",
+      "170",
+      "180"
+    ],
+    "answer": 1,
+    "explanation": "50% of 320 = (50 × 320) ÷ 100 = 160."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 300 km in 3 hours at uniform speed. Find its speed (Practice Set #12).",
+    "options": [
+      "95",
+      "100",
+      "105",
+      "110"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 300 ÷ 3 = 100 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #13)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹2400 at 5% per annum for 2 years (Problem #14).",
+    "options": [
+      "₹190",
+      "₹240",
+      "₹290",
+      "₹340"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (2400 × 5 × 2) ÷ 100 = ₹240."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 33, and 39? (Set #15)",
+    "options": [
+      "31",
+      "33",
+      "35",
+      "37"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 33 + 39) ÷ 3 = 99 ÷ 3 = 33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 40% of 420 (Practice Set #16).",
+    "options": [
+      "158",
+      "168",
+      "178",
+      "188"
+    ],
+    "answer": 1,
+    "explanation": "40% of 420 = (40 × 420) ÷ 100 = 168."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 375 km in 3 hours at uniform speed. Find its speed (Practice Set #17).",
+    "options": [
+      "120",
+      "125",
+      "130",
+      "135"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 375 ÷ 3 = 125 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #18)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹2900 at 5% per annum for 2 years (Problem #19).",
+    "options": [
+      "₹240",
+      "₹290",
+      "₹340",
+      "₹390"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (2900 × 5 × 2) ÷ 100 = ₹290."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 38, and 44? (Set #20)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 38 + 44) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 30% of 520 (Practice Set #21).",
+    "options": [
+      "146",
+      "156",
+      "166",
+      "176"
+    ],
+    "answer": 1,
+    "explanation": "30% of 520 = (30 × 520) ÷ 100 = 156."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 450 km in 3 hours at uniform speed. Find its speed (Practice Set #22).",
+    "options": [
+      "145",
+      "150",
+      "155",
+      "160"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 450 ÷ 3 = 150 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #23)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹3400 at 5% per annum for 2 years (Problem #24).",
+    "options": [
+      "₹290",
+      "₹340",
+      "₹390",
+      "₹440"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (3400 × 5 × 2) ÷ 100 = ₹340."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 18, and 49? (Set #25)",
+    "options": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 18 + 49) ÷ 3 = 84 ÷ 3 = 28."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 25% of 620 (Practice Set #26).",
+    "options": [
+      "145",
+      "155",
+      "165",
+      "175"
+    ],
+    "answer": 1,
+    "explanation": "25% of 620 = (25 × 620) ÷ 100 = 155."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 525 km in 3 hours at uniform speed. Find its speed (Practice Set #27).",
+    "options": [
+      "170",
+      "175",
+      "180",
+      "185"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 525 ÷ 3 = 175 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #28)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹3900 at 5% per annum for 2 years (Problem #29).",
+    "options": [
+      "₹340",
+      "₹390",
+      "₹440",
+      "₹490"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (3900 × 5 × 2) ÷ 100 = ₹390."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 23, and 24? (Set #30)",
+    "options": [
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 23 + 24) ÷ 3 = 69 ÷ 3 = 23."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 20% of 720 (Practice Set #31).",
+    "options": [
+      "134",
+      "144",
+      "154",
+      "164"
+    ],
+    "answer": 1,
+    "explanation": "20% of 720 = (20 × 720) ÷ 100 = 144."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 600 km in 3 hours at uniform speed. Find its speed (Practice Set #32).",
+    "options": [
+      "195",
+      "200",
+      "205",
+      "210"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 600 ÷ 3 = 200 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #33)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹4400 at 5% per annum for 2 years (Problem #34).",
+    "options": [
+      "₹390",
+      "₹440",
+      "₹490",
+      "₹540"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (4400 × 5 × 2) ÷ 100 = ₹440."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 28, and 29? (Set #35)",
+    "options": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 28 + 29) ÷ 3 = 84 ÷ 3 = 28."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 10% of 820 (Practice Set #36).",
+    "options": [
+      "72",
+      "82",
+      "92",
+      "102"
+    ],
+    "answer": 1,
+    "explanation": "10% of 820 = (10 × 820) ÷ 100 = 82."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 675 km in 3 hours at uniform speed. Find its speed (Practice Set #37).",
+    "options": [
+      "220",
+      "225",
+      "230",
+      "235"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 675 ÷ 3 = 225 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #38)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹4900 at 5% per annum for 2 years (Problem #39).",
+    "options": [
+      "₹440",
+      "₹490",
+      "₹540",
+      "₹590"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (4900 × 5 × 2) ÷ 100 = ₹490."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 33, and 34? (Set #40)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 33 + 34) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 50% of 920 (Practice Set #41).",
+    "options": [
+      "450",
+      "460",
+      "470",
+      "480"
+    ],
+    "answer": 1,
+    "explanation": "50% of 920 = (50 × 920) ÷ 100 = 460."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 750 km in 3 hours at uniform speed. Find its speed (Practice Set #42).",
+    "options": [
+      "245",
+      "250",
+      "255",
+      "260"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 750 ÷ 3 = 250 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #43)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹5400 at 5% per annum for 2 years (Problem #44).",
+    "options": [
+      "₹490",
+      "₹540",
+      "₹590",
+      "₹640"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (5400 × 5 × 2) ÷ 100 = ₹540."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 38, and 39? (Set #45)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 38 + 39) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 40% of 1020 (Practice Set #46).",
+    "options": [
+      "398",
+      "408",
+      "418",
+      "428"
+    ],
+    "answer": 1,
+    "explanation": "40% of 1020 = (40 × 1020) ÷ 100 = 408."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 825 km in 3 hours at uniform speed. Find its speed (Practice Set #47).",
+    "options": [
+      "270",
+      "275",
+      "280",
+      "285"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 825 ÷ 3 = 275 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #48)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹5900 at 5% per annum for 2 years (Problem #49).",
+    "options": [
+      "₹540",
+      "₹590",
+      "₹640",
+      "₹690"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (5900 × 5 × 2) ÷ 100 = ₹590."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 18, and 44? (Set #50)",
+    "options": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 18 + 44) ÷ 3 = 84 ÷ 3 = 28."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 30% of 1120 (Practice Set #51).",
+    "options": [
+      "326",
+      "336",
+      "346",
+      "356"
+    ],
+    "answer": 1,
+    "explanation": "30% of 1120 = (30 × 1120) ÷ 100 = 336."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 900 km in 3 hours at uniform speed. Find its speed (Practice Set #52).",
+    "options": [
+      "295",
+      "300",
+      "305",
+      "310"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 900 ÷ 3 = 300 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #53)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹6400 at 5% per annum for 2 years (Problem #54).",
+    "options": [
+      "₹590",
+      "₹640",
+      "₹690",
+      "₹740"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (6400 × 5 × 2) ÷ 100 = ₹640."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 23, and 49? (Set #55)",
+    "options": [
+      "31",
+      "33",
+      "35",
+      "37"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 23 + 49) ÷ 3 = 99 ÷ 3 = 33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 25% of 1220 (Practice Set #56).",
+    "options": [
+      "295",
+      "305",
+      "315",
+      "325"
+    ],
+    "answer": 1,
+    "explanation": "25% of 1220 = (25 × 1220) ÷ 100 = 305."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 975 km in 3 hours at uniform speed. Find its speed (Practice Set #57).",
+    "options": [
+      "320",
+      "325",
+      "330",
+      "335"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 975 ÷ 3 = 325 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #58)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹6900 at 5% per annum for 2 years (Problem #59).",
+    "options": [
+      "₹640",
+      "₹690",
+      "₹740",
+      "₹790"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (6900 × 5 × 2) ÷ 100 = ₹690."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 28, and 24? (Set #60)",
+    "options": [
+      "19.33",
+      "21.33",
+      "23.33",
+      "25.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 28 + 24) ÷ 3 = 64 ÷ 3 = 21.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 20% of 1320 (Practice Set #61).",
+    "options": [
+      "254",
+      "264",
+      "274",
+      "284"
+    ],
+    "answer": 1,
+    "explanation": "20% of 1320 = (20 × 1320) ÷ 100 = 264."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1050 km in 3 hours at uniform speed. Find its speed (Practice Set #62).",
+    "options": [
+      "345",
+      "350",
+      "355",
+      "360"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1050 ÷ 3 = 350 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #63)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹7400 at 5% per annum for 2 years (Problem #64).",
+    "options": [
+      "₹690",
+      "₹740",
+      "₹790",
+      "₹840"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (7400 × 5 × 2) ÷ 100 = ₹740."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 33, and 29? (Set #65)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 33 + 29) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 10% of 1420 (Practice Set #66).",
+    "options": [
+      "132",
+      "142",
+      "152",
+      "162"
+    ],
+    "answer": 1,
+    "explanation": "10% of 1420 = (10 × 1420) ÷ 100 = 142."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1125 km in 3 hours at uniform speed. Find its speed (Practice Set #67).",
+    "options": [
+      "370",
+      "375",
+      "380",
+      "385"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1125 ÷ 3 = 375 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #68)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹7900 at 5% per annum for 2 years (Problem #69).",
+    "options": [
+      "₹740",
+      "₹790",
+      "₹840",
+      "₹890"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (7900 × 5 × 2) ÷ 100 = ₹790."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 38, and 34? (Set #70)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 38 + 34) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 50% of 1520 (Practice Set #71).",
+    "options": [
+      "750",
+      "760",
+      "770",
+      "780"
+    ],
+    "answer": 1,
+    "explanation": "50% of 1520 = (50 × 1520) ÷ 100 = 760."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1200 km in 3 hours at uniform speed. Find its speed (Practice Set #72).",
+    "options": [
+      "395",
+      "400",
+      "405",
+      "410"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1200 ÷ 3 = 400 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #73)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹8400 at 5% per annum for 2 years (Problem #74).",
+    "options": [
+      "₹790",
+      "₹840",
+      "₹890",
+      "₹940"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (8400 × 5 × 2) ÷ 100 = ₹840."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 18, and 39? (Set #75)",
+    "options": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 18 + 39) ÷ 3 = 84 ÷ 3 = 28."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 40% of 1620 (Practice Set #76).",
+    "options": [
+      "638",
+      "648",
+      "658",
+      "668"
+    ],
+    "answer": 1,
+    "explanation": "40% of 1620 = (40 × 1620) ÷ 100 = 648."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1275 km in 3 hours at uniform speed. Find its speed (Practice Set #77).",
+    "options": [
+      "420",
+      "425",
+      "430",
+      "435"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1275 ÷ 3 = 425 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #78)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹8900 at 5% per annum for 2 years (Problem #79).",
+    "options": [
+      "₹840",
+      "₹890",
+      "₹940",
+      "₹990"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (8900 × 5 × 2) ÷ 100 = ₹890."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 23, and 44? (Set #80)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 23 + 44) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 30% of 1720 (Practice Set #81).",
+    "options": [
+      "506",
+      "516",
+      "526",
+      "536"
+    ],
+    "answer": 1,
+    "explanation": "30% of 1720 = (30 × 1720) ÷ 100 = 516."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1350 km in 3 hours at uniform speed. Find its speed (Practice Set #82).",
+    "options": [
+      "445",
+      "450",
+      "455",
+      "460"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1350 ÷ 3 = 450 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #83)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹9400 at 5% per annum for 2 years (Problem #84).",
+    "options": [
+      "₹890",
+      "₹940",
+      "₹990",
+      "₹1040"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (9400 × 5 × 2) ÷ 100 = ₹940."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 28, and 49? (Set #85)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 28 + 49) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 25% of 1820 (Practice Set #86).",
+    "options": [
+      "445",
+      "455",
+      "465",
+      "475"
+    ],
+    "answer": 1,
+    "explanation": "25% of 1820 = (25 × 1820) ÷ 100 = 455."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1425 km in 3 hours at uniform speed. Find its speed (Practice Set #87).",
+    "options": [
+      "470",
+      "475",
+      "480",
+      "485"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1425 ÷ 3 = 475 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #88)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹9900 at 5% per annum for 2 years (Problem #89).",
+    "options": [
+      "₹940",
+      "₹990",
+      "₹1040",
+      "₹1090"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (9900 × 5 × 2) ÷ 100 = ₹990."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 33, and 24? (Set #90)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 33 + 24) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 20% of 1920 (Practice Set #91).",
+    "options": [
+      "374",
+      "384",
+      "394",
+      "404"
+    ],
+    "answer": 1,
+    "explanation": "20% of 1920 = (20 × 1920) ÷ 100 = 384."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1500 km in 3 hours at uniform speed. Find its speed (Practice Set #92).",
+    "options": [
+      "495",
+      "500",
+      "505",
+      "510"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1500 ÷ 3 = 500 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #93)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹10400 at 5% per annum for 2 years (Problem #94).",
+    "options": [
+      "₹990",
+      "₹1040",
+      "₹1090",
+      "₹1140"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (10400 × 5 × 2) ÷ 100 = ₹1040."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 38, and 29? (Set #95)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 38 + 29) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 10% of 2020 (Practice Set #96).",
+    "options": [
+      "192",
+      "202",
+      "212",
+      "222"
+    ],
+    "answer": 1,
+    "explanation": "10% of 2020 = (10 × 2020) ÷ 100 = 202."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1575 km in 3 hours at uniform speed. Find its speed (Practice Set #97).",
+    "options": [
+      "520",
+      "525",
+      "530",
+      "535"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1575 ÷ 3 = 525 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #98)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹10900 at 5% per annum for 2 years (Problem #99).",
+    "options": [
+      "₹1040",
+      "₹1090",
+      "₹1140",
+      "₹1190"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (10900 × 5 × 2) ÷ 100 = ₹1090."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 18, and 34? (Set #100)",
+    "options": [
+      "19.33",
+      "21.33",
+      "23.33",
+      "25.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 18 + 34) ÷ 3 = 64 ÷ 3 = 21.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 50% of 2120 (Practice Set #101).",
+    "options": [
+      "1050",
+      "1060",
+      "1070",
+      "1080"
+    ],
+    "answer": 1,
+    "explanation": "50% of 2120 = (50 × 2120) ÷ 100 = 1060."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1650 km in 3 hours at uniform speed. Find its speed (Practice Set #102).",
+    "options": [
+      "545",
+      "550",
+      "555",
+      "560"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1650 ÷ 3 = 550 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #103)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹11400 at 5% per annum for 2 years (Problem #104).",
+    "options": [
+      "₹1090",
+      "₹1140",
+      "₹1190",
+      "₹1240"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (11400 × 5 × 2) ÷ 100 = ₹1140."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 23, and 39? (Set #105)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 23 + 39) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 40% of 2220 (Practice Set #106).",
+    "options": [
+      "878",
+      "888",
+      "898",
+      "908"
+    ],
+    "answer": 1,
+    "explanation": "40% of 2220 = (40 × 2220) ÷ 100 = 888."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1725 km in 3 hours at uniform speed. Find its speed (Practice Set #107).",
+    "options": [
+      "570",
+      "575",
+      "580",
+      "585"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1725 ÷ 3 = 575 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #108)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹11900 at 5% per annum for 2 years (Problem #109).",
+    "options": [
+      "₹1140",
+      "₹1190",
+      "₹1240",
+      "₹1290"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (11900 × 5 × 2) ÷ 100 = ₹1190."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 28, and 44? (Set #110)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 28 + 44) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 30% of 2320 (Practice Set #111).",
+    "options": [
+      "686",
+      "696",
+      "706",
+      "716"
+    ],
+    "answer": 1,
+    "explanation": "30% of 2320 = (30 × 2320) ÷ 100 = 696."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1800 km in 3 hours at uniform speed. Find its speed (Practice Set #112).",
+    "options": [
+      "595",
+      "600",
+      "605",
+      "610"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1800 ÷ 3 = 600 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #113)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹12400 at 5% per annum for 2 years (Problem #114).",
+    "options": [
+      "₹1190",
+      "₹1240",
+      "₹1290",
+      "₹1340"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (12400 × 5 × 2) ÷ 100 = ₹1240."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 33, and 49? (Set #115)",
+    "options": [
+      "34.33",
+      "36.33",
+      "38.33",
+      "40.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 33 + 49) ÷ 3 = 109 ÷ 3 = 36.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 25% of 2420 (Practice Set #116).",
+    "options": [
+      "595",
+      "605",
+      "615",
+      "625"
+    ],
+    "answer": 1,
+    "explanation": "25% of 2420 = (25 × 2420) ÷ 100 = 605."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1875 km in 3 hours at uniform speed. Find its speed (Practice Set #117).",
+    "options": [
+      "620",
+      "625",
+      "630",
+      "635"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1875 ÷ 3 = 625 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #118)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹12900 at 5% per annum for 2 years (Problem #119).",
+    "options": [
+      "₹1240",
+      "₹1290",
+      "₹1340",
+      "₹1390"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (12900 × 5 × 2) ÷ 100 = ₹1290."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 38, and 24? (Set #120)",
+    "options": [
+      "22.67",
+      "24.67",
+      "26.67",
+      "28.67"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 38 + 24) ÷ 3 = 74 ÷ 3 = 24.67."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 20% of 2520 (Practice Set #121).",
+    "options": [
+      "494",
+      "504",
+      "514",
+      "524"
+    ],
+    "answer": 1,
+    "explanation": "20% of 2520 = (20 × 2520) ÷ 100 = 504."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 1950 km in 3 hours at uniform speed. Find its speed (Practice Set #122).",
+    "options": [
+      "645",
+      "650",
+      "655",
+      "660"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 1950 ÷ 3 = 650 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #123)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹13400 at 5% per annum for 2 years (Problem #124).",
+    "options": [
+      "₹1290",
+      "₹1340",
+      "₹1390",
+      "₹1440"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (13400 × 5 × 2) ÷ 100 = ₹1340."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 18, and 29? (Set #125)",
+    "options": [
+      "19.33",
+      "21.33",
+      "23.33",
+      "25.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 18 + 29) ÷ 3 = 64 ÷ 3 = 21.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 10% of 2620 (Practice Set #126).",
+    "options": [
+      "252",
+      "262",
+      "272",
+      "282"
+    ],
+    "answer": 1,
+    "explanation": "10% of 2620 = (10 × 2620) ÷ 100 = 262."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2025 km in 3 hours at uniform speed. Find its speed (Practice Set #127).",
+    "options": [
+      "670",
+      "675",
+      "680",
+      "685"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2025 ÷ 3 = 675 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #128)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹13900 at 5% per annum for 2 years (Problem #129).",
+    "options": [
+      "₹1340",
+      "₹1390",
+      "₹1440",
+      "₹1490"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (13900 × 5 × 2) ÷ 100 = ₹1390."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 23, and 34? (Set #130)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 23 + 34) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 50% of 2720 (Practice Set #131).",
+    "options": [
+      "1350",
+      "1360",
+      "1370",
+      "1380"
+    ],
+    "answer": 1,
+    "explanation": "50% of 2720 = (50 × 2720) ÷ 100 = 1360."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2100 km in 3 hours at uniform speed. Find its speed (Practice Set #132).",
+    "options": [
+      "695",
+      "700",
+      "705",
+      "710"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2100 ÷ 3 = 700 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #133)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹14400 at 5% per annum for 2 years (Problem #134).",
+    "options": [
+      "₹1390",
+      "₹1440",
+      "₹1490",
+      "₹1540"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (14400 × 5 × 2) ÷ 100 = ₹1440."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 28, and 39? (Set #135)",
+    "options": [
+      "29.33",
+      "31.33",
+      "33.33",
+      "35.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 28 + 39) ÷ 3 = 94 ÷ 3 = 31.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 40% of 2820 (Practice Set #136).",
+    "options": [
+      "1118",
+      "1128",
+      "1138",
+      "1148"
+    ],
+    "answer": 1,
+    "explanation": "40% of 2820 = (40 × 2820) ÷ 100 = 1128."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2175 km in 3 hours at uniform speed. Find its speed (Practice Set #137).",
+    "options": [
+      "720",
+      "725",
+      "730",
+      "735"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2175 ÷ 3 = 725 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #138)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹14900 at 5% per annum for 2 years (Problem #139).",
+    "options": [
+      "₹1440",
+      "₹1490",
+      "₹1540",
+      "₹1590"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (14900 × 5 × 2) ÷ 100 = ₹1490."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 33, and 44? (Set #140)",
+    "options": [
+      "27.67",
+      "29.67",
+      "31.67",
+      "33.67"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 33 + 44) ÷ 3 = 89 ÷ 3 = 29.67."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 30% of 2920 (Practice Set #141).",
+    "options": [
+      "866",
+      "876",
+      "886",
+      "896"
+    ],
+    "answer": 1,
+    "explanation": "30% of 2920 = (30 × 2920) ÷ 100 = 876."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2250 km in 3 hours at uniform speed. Find its speed (Practice Set #142).",
+    "options": [
+      "745",
+      "750",
+      "755",
+      "760"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2250 ÷ 3 = 750 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #143)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹15400 at 5% per annum for 2 years (Problem #144).",
+    "options": [
+      "₹1490",
+      "₹1540",
+      "₹1590",
+      "₹1640"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (15400 × 5 × 2) ÷ 100 = ₹1540."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 38, and 49? (Set #145)",
+    "options": [
+      "32.67",
+      "34.67",
+      "36.67",
+      "38.67"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 38 + 49) ÷ 3 = 104 ÷ 3 = 34.67."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 25% of 3020 (Practice Set #146).",
+    "options": [
+      "745",
+      "755",
+      "765",
+      "775"
+    ],
+    "answer": 1,
+    "explanation": "25% of 3020 = (25 × 3020) ÷ 100 = 755."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2325 km in 3 hours at uniform speed. Find its speed (Practice Set #147).",
+    "options": [
+      "770",
+      "775",
+      "780",
+      "785"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2325 ÷ 3 = 775 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #148)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹15900 at 5% per annum for 2 years (Problem #149).",
+    "options": [
+      "₹1540",
+      "₹1590",
+      "₹1640",
+      "₹1690"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (15900 × 5 × 2) ÷ 100 = ₹1590."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 18, and 24? (Set #150)",
+    "options": [
+      "19.33",
+      "21.33",
+      "23.33",
+      "25.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 18 + 24) ÷ 3 = 64 ÷ 3 = 21.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 20% of 3120 (Practice Set #151).",
+    "options": [
+      "614",
+      "624",
+      "634",
+      "644"
+    ],
+    "answer": 1,
+    "explanation": "20% of 3120 = (20 × 3120) ÷ 100 = 624."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2400 km in 3 hours at uniform speed. Find its speed (Practice Set #152).",
+    "options": [
+      "795",
+      "800",
+      "805",
+      "810"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2400 ÷ 3 = 800 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #153)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹16400 at 5% per annum for 2 years (Problem #154).",
+    "options": [
+      "₹1590",
+      "₹1640",
+      "₹1690",
+      "₹1740"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (16400 × 5 × 2) ÷ 100 = ₹1640."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 27, 23, and 29? (Set #155)",
+    "options": [
+      "24.33",
+      "26.33",
+      "28.33",
+      "30.33"
+    ],
+    "answer": 1,
+    "explanation": "Average = (27 + 23 + 29) ÷ 3 = 79 ÷ 3 = 26.33."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 10% of 3220 (Practice Set #156).",
+    "options": [
+      "312",
+      "322",
+      "332",
+      "342"
+    ],
+    "answer": 1,
+    "explanation": "10% of 3220 = (10 × 3220) ÷ 100 = 322."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2475 km in 3 hours at uniform speed. Find its speed (Practice Set #157).",
+    "options": [
+      "820",
+      "825",
+      "830",
+      "835"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2475 ÷ 3 = 825 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 12, 18, 24, 30, 36, ? (Series #158)",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 36 + 6 = 42."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹16900 at 5% per annum for 2 years (Problem #159).",
+    "options": [
+      "₹1640",
+      "₹1690",
+      "₹1740",
+      "₹1790"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (16900 × 5 × 2) ÷ 100 = ₹1690."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 12, 28, and 34? (Set #160)",
+    "options": [
+      "22.67",
+      "24.67",
+      "26.67",
+      "28.67"
+    ],
+    "answer": 1,
+    "explanation": "Average = (12 + 28 + 34) ÷ 3 = 74 ÷ 3 = 24.67."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 50% of 3320 (Practice Set #161).",
+    "options": [
+      "1650",
+      "1660",
+      "1670",
+      "1680"
+    ],
+    "answer": 1,
+    "explanation": "50% of 3320 = (50 × 3320) ÷ 100 = 1660."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2550 km in 3 hours at uniform speed. Find its speed (Practice Set #162).",
+    "options": [
+      "845",
+      "850",
+      "855",
+      "860"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2550 ÷ 3 = 850 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 17, 23, 29, 35, 41, ? (Series #163)",
+    "options": [
+      "41",
+      "47",
+      "53",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 41 + 6 = 47."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹17400 at 5% per annum for 2 years (Problem #164).",
+    "options": [
+      "₹1690",
+      "₹1740",
+      "₹1790",
+      "₹1840"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (17400 × 5 × 2) ÷ 100 = ₹1740."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 17, 33, and 39? (Set #165)",
+    "options": [
+      "27.67",
+      "29.67",
+      "31.67",
+      "33.67"
+    ],
+    "answer": 1,
+    "explanation": "Average = (17 + 33 + 39) ÷ 3 = 89 ÷ 3 = 29.67."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 40% of 3420 (Practice Set #166).",
+    "options": [
+      "1358",
+      "1368",
+      "1378",
+      "1388"
+    ],
+    "answer": 1,
+    "explanation": "40% of 3420 = (40 × 3420) ÷ 100 = 1368."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2625 km in 3 hours at uniform speed. Find its speed (Practice Set #167).",
+    "options": [
+      "870",
+      "875",
+      "880",
+      "885"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2625 ÷ 3 = 875 km/h."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number in the arithmetic series: 7, 13, 19, 25, 31, ? (Series #168)",
+    "options": [
+      "31",
+      "37",
+      "43",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Each term increases by +6: 31 + 6 = 37."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹17900 at 5% per annum for 2 years (Problem #169).",
+    "options": [
+      "₹1740",
+      "₹1790",
+      "₹1840",
+      "₹1890"
+    ],
+    "answer": 1,
+    "explanation": "Simple Interest = (P × R × T) ÷ 100 = (17900 × 5 × 2) ÷ 100 = ₹1790."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of 22, 38, and 44? (Set #170)",
+    "options": [
+      "32.67",
+      "34.67",
+      "36.67",
+      "38.67"
+    ],
+    "answer": 1,
+    "explanation": "Average = (22 + 38 + 44) ÷ 3 = 104 ÷ 3 = 34.67."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Calculate 30% of 3520 (Practice Set #171).",
+    "options": [
+      "1046",
+      "1056",
+      "1066",
+      "1076"
+    ],
+    "answer": 1,
+    "explanation": "30% of 3520 = (30 × 3520) ÷ 100 = 1056."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A vehicle covers 2700 km in 3 hours at uniform speed. Find its speed (Practice Set #172).",
+    "options": [
+      "895",
+      "900",
+      "905",
+      "910"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance ÷ Time = 2700 ÷ 3 = 900 km/h."
+  }
+]
