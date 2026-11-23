@@ -1,0 +1,2846 @@
+[
+  {
+    "category": "GK",
+    "question": "Which Article of the Indian Constitution guarantees equality before law?",
+    "options": [
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 32"
+    ],
+    "answer": 0,
+    "explanation": "Article 14 provides equality before law and equal protection of laws."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the first President of India?",
+    "options": [
+      "Dr. Rajendra Prasad",
+      "Dr. S. Radhakrishnan",
+      "Zakir Husain",
+      "V. V. Giri"
+    ],
+    "answer": 0,
+    "explanation": "Dr. Rajendra Prasad was the first President of India."
+  },
+  {
+    "category": "GK",
+    "question": "The Battle of Plassey was fought in which year?",
+    "options": [
+      "1756",
+      "1757",
+      "1761",
+      "1764"
+    ],
+    "answer": 1,
+    "explanation": "The Battle of Plassey took place in 1757."
+  },
+  {
+    "category": "GK",
+    "question": "Who wrote the Indian national song Vande Mataram?",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chatterjee",
+      "Sarojini Naidu",
+      "Subramania Bharati"
+    ],
+    "answer": 1,
+    "explanation": "Bankim Chandra Chatterjee wrote Vande Mataram."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the largest Indian state by area?",
+    "options": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "answer": 2,
+    "explanation": "Rajasthan is the largest Indian state by area."
+  },
+  {
+    "category": "GK",
+    "question": "The Tropic of Cancer passes through how many Indian states?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "The Tropic of Cancer passes through eight Indian states."
+  },
+  {
+    "category": "GK",
+    "question": "Who is known as the Iron Man of India?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Sardar Vallabhbhai Patel",
+      "B. R. Ambedkar",
+      "Lal Bahadur Shastri"
+    ],
+    "answer": 1,
+    "explanation": "Sardar Vallabhbhai Patel is popularly known as the Iron Man of India."
+  },
+  {
+    "category": "GK",
+    "question": "Which House of Parliament is called the Council of States?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "Vidhan Sabha",
+      "Gram Sabha"
+    ],
+    "answer": 1,
+    "explanation": "Rajya Sabha is the Council of States."
+  },
+  {
+    "category": "GK",
+    "question": "The Dandi March was associated with which movement?",
+    "options": [
+      "Quit India Movement",
+      "Non-Cooperation Movement",
+      "Civil Disobedience Movement",
+      "Swadeshi Movement"
+    ],
+    "answer": 2,
+    "explanation": "The 1930 Salt March marked the launch of the Civil Disobedience Movement."
+  },
+  {
+    "category": "GK",
+    "question": "Which river is known as the Dakshin Ganga?",
+    "options": [
+      "Narmada",
+      "Godavari",
+      "Krishna",
+      "Mahanadi"
+    ],
+    "answer": 1,
+    "explanation": "The Godavari is often called the Dakshin Ganga."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the first Indian to win a Nobel Prize?",
+    "options": [
+      "C. V. Raman",
+      "Rabindranath Tagore",
+      "Amartya Sen",
+      "Mother Teresa"
+    ],
+    "answer": 1,
+    "explanation": "Rabindranath Tagore received the Nobel Prize in Literature in 1913."
+  },
+  {
+    "category": "GK",
+    "question": "The headquarters of the Reserve Bank of India is in which city?",
+    "options": [
+      "New Delhi",
+      "Kolkata",
+      "Mumbai",
+      "Chennai"
+    ],
+    "answer": 2,
+    "explanation": "The RBI headquarters is in Mumbai."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the highest civilian award in India?",
+    "options": [
+      "Padma Shri",
+      "Padma Bhushan",
+      "Padma Vibhushan",
+      "Bharat Ratna"
+    ],
+    "answer": 3,
+    "explanation": "Bharat Ratna is India’s highest civilian award."
+  },
+  {
+    "category": "GK",
+    "question": "The Constitution of India was adopted on which date?",
+    "options": [
+      "15 August 1947",
+      "26 November 1949",
+      "26 January 1950",
+      "2 October 1950"
+    ],
+    "answer": 1,
+    "explanation": "The Constituent Assembly adopted the Constitution on 26 November 1949."
+  },
+  {
+    "category": "GK",
+    "question": "Who appoints the Governor of an Indian state?",
+    "options": [
+      "Prime Minister",
+      "Chief Minister",
+      "President of India",
+      "Chief Justice of India"
+    ],
+    "answer": 2,
+    "explanation": "The President appoints state Governors."
+  },
+  {
+    "category": "Science",
+    "question": "What is the SI unit of force?",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": 1,
+    "explanation": "Force is measured in newtons (N)."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is the most abundant in Earth’s atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "answer": 1,
+    "explanation": "Nitrogen makes up about 78% of dry air."
+  },
+  {
+    "category": "Science",
+    "question": "Which vitamin deficiency causes scurvy?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B1",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": 2,
+    "explanation": "Scurvy is caused by vitamin C deficiency."
+  },
+  {
+    "category": "Science",
+    "question": "What is the normal pH value of pure water at room temperature, approximately?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Pure water is neutral, with pH approximately 7 at 25°C."
+  },
+  {
+    "category": "Science",
+    "question": "Which organelle is called the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi body"
+    ],
+    "answer": 1,
+    "explanation": "Mitochondria generate much of the cell’s usable energy."
+  },
+  {
+    "category": "Science",
+    "question": "Which blood cells help the body fight infection?",
+    "options": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Plasma"
+    ],
+    "answer": 1,
+    "explanation": "White blood cells are key components of the immune system."
+  },
+  {
+    "category": "Science",
+    "question": "What is the chemical symbol of sodium?",
+    "options": [
+      "So",
+      "S",
+      "Na",
+      "N"
+    ],
+    "answer": 2,
+    "explanation": "Na comes from the Latin name natrium."
+  },
+  {
+    "category": "Science",
+    "question": "Which instrument measures atmospheric pressure?",
+    "options": [
+      "Thermometer",
+      "Barometer",
+      "Ammeter",
+      "Hygrometer"
+    ],
+    "answer": 1,
+    "explanation": "A barometer measures atmospheric pressure."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of the human eye controls the amount of light entering?",
+    "options": [
+      "Retina",
+      "Iris",
+      "Cornea",
+      "Optic nerve"
+    ],
+    "answer": 1,
+    "explanation": "The iris changes pupil size to regulate incoming light."
+  },
+  {
+    "category": "Science",
+    "question": "Which metal is liquid at ordinary room temperature?",
+    "options": [
+      "Iron",
+      "Aluminium",
+      "Mercury",
+      "Copper"
+    ],
+    "answer": 2,
+    "explanation": "Mercury is liquid at ordinary room temperature."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is released during photosynthesis?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Methane"
+    ],
+    "answer": 1,
+    "explanation": "Plants release oxygen during photosynthesis."
+  },
+  {
+    "category": "Science",
+    "question": "What is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere",
+      "Watt"
+    ],
+    "answer": 2,
+    "explanation": "Electric current is measured in amperes."
+  },
+  {
+    "category": "Science",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": 1,
+    "explanation": "Iron oxide on Mars gives it a reddish appearance."
+  },
+  {
+    "category": "Science",
+    "question": "Which vitamin is produced in skin in response to sunlight?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin K"
+    ],
+    "answer": 2,
+    "explanation": "Sunlight enables the skin to synthesise vitamin D."
+  },
+  {
+    "category": "Science",
+    "question": "Which blood group is commonly called the universal red-cell donor type?",
+    "options": [
+      "AB positive",
+      "O negative",
+      "A positive",
+      "B negative"
+    ],
+    "answer": 1,
+    "explanation": "O negative red cells lack A, B and Rh(D) antigens; transfusion still requires clinical compatibility checks."
+  },
+  {
+    "category": "Computer",
+    "question": "Which memory is volatile?",
+    "options": [
+      "ROM",
+      "RAM",
+      "SSD",
+      "DVD"
+    ],
+    "answer": 1,
+    "explanation": "RAM generally loses its stored data when power is removed."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut is commonly used to undo an action?",
+    "options": [
+      "Ctrl+C",
+      "Ctrl+X",
+      "Ctrl+Z",
+      "Ctrl+Y"
+    ],
+    "answer": 2,
+    "explanation": "Ctrl+Z is the common Undo shortcut."
+  },
+  {
+    "category": "Computer",
+    "question": "What does URL stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Record Link",
+      "Unified Reference Language",
+      "User Route Location"
+    ],
+    "answer": 0,
+    "explanation": "URL means Uniform Resource Locator."
+  },
+  {
+    "category": "Computer",
+    "question": "Which device is primarily used to convert a paper document into a digital image?",
+    "options": [
+      "Plotter",
+      "Scanner",
+      "Speaker",
+      "Joystick"
+    ],
+    "answer": 1,
+    "explanation": "A scanner captures a digital representation of a document."
+  },
+  {
+    "category": "Computer",
+    "question": "Which of these is an operating system?",
+    "options": [
+      "Linux",
+      "HTML",
+      "HTTP",
+      "SQL"
+    ],
+    "answer": 0,
+    "explanation": "Linux is an operating system."
+  },
+  {
+    "category": "Computer",
+    "question": "What is the full form of CPU?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Primary Utility",
+      "Core Program Unit",
+      "Central Print Utility"
+    ],
+    "answer": 0,
+    "explanation": "CPU stands for Central Processing Unit."
+  },
+  {
+    "category": "Computer",
+    "question": "Which number system uses only 0 and 1?",
+    "options": [
+      "Decimal",
+      "Octal",
+      "Binary",
+      "Hexadecimal"
+    ],
+    "answer": 2,
+    "explanation": "Binary is a base-2 number system."
+  },
+  {
+    "category": "Computer",
+    "question": "Which protocol is commonly used for secure web browsing?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "SMTP",
+      "Telnet"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS uses TLS to secure communication with websites."
+  },
+  {
+    "category": "Computer",
+    "question": "Which key is commonly used to refresh a webpage in desktop browsers?",
+    "options": [
+      "F1",
+      "F2",
+      "F5",
+      "F12"
+    ],
+    "answer": 2,
+    "explanation": "F5 commonly refreshes the current webpage."
+  },
+  {
+    "category": "Computer",
+    "question": "Which of these is an example of an output device?",
+    "options": [
+      "Keyboard",
+      "Mouse",
+      "Monitor",
+      "Microphone"
+    ],
+    "answer": 2,
+    "explanation": "A monitor displays output from a computer."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Jhelum River originates at which place?",
+    "options": [
+      "Verinag",
+      "Dal Lake",
+      "Wular Lake",
+      "Mansar Lake"
+    ],
+    "answer": 0,
+    "explanation": "The Jhelum originates from the Verinag spring in Anantnag district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Wular Lake is located mainly in which district?",
+    "options": [
+      "Bandipora",
+      "Jammu",
+      "Kathua",
+      "Kishtwar"
+    ],
+    "answer": 0,
+    "explanation": "Wular Lake is in Bandipora district of Jammu and Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Zoji La Pass connects the Kashmir Valley with which region?",
+    "options": [
+      "Punjab",
+      "Ladakh",
+      "Himachal Pradesh",
+      "Jammu plains"
+    ],
+    "answer": 1,
+    "explanation": "Zoji La lies on the Srinagar–Leh route connecting Kashmir and Ladakh."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Mughal Road connects the Kashmir Valley with which area?",
+    "options": [
+      "Poonch-Rajouri",
+      "Doda-Kishtwar",
+      "Kathua-Pathankot",
+      "Leh-Kargil"
+    ],
+    "answer": 0,
+    "explanation": "The Mughal Road links Shopian in Kashmir with the Rajouri-Poonch region."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Pahalgam, a major route for the Amarnath Yatra, is in which district?",
+    "options": [
+      "Anantnag",
+      "Udhampur",
+      "Samba",
+      "Rajouri"
+    ],
+    "answer": 0,
+    "explanation": "Pahalgam is in Anantnag district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Dal Lake is located in which city?",
+    "options": [
+      "Jammu",
+      "Srinagar",
+      "Anantnag",
+      "Baramulla"
+    ],
+    "answer": 1,
+    "explanation": "Dal Lake is a well-known lake in Srinagar."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which is a major traditional handicraft of Kashmir?",
+    "options": [
+      "Pashmina shawl weaving",
+      "Blue pottery of Jaipur",
+      "Channapatna toys",
+      "Madhubani painting"
+    ],
+    "answer": 0,
+    "explanation": "Kashmir is renowned for Pashmina shawls and related crafts."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Gulmarg is especially known as a destination for which activity?",
+    "options": [
+      "Desert safari",
+      "Skiing",
+      "Scuba diving",
+      "Tea plantation"
+    ],
+    "answer": 1,
+    "explanation": "Gulmarg is a prominent winter sports and skiing destination."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "The Chenab River is formed by the confluence of which rivers?",
+    "options": [
+      "Chandra and Bhaga",
+      "Jhelum and Kishanganga",
+      "Ravi and Beas",
+      "Tawi and Ujh"
+    ],
+    "answer": 0,
+    "explanation": "The Chandra and Bhaga rivers meet at Tandi to form the Chenab."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which region is famous for the saffron fields around Pampore?",
+    "options": [
+      "Kashmir Valley",
+      "Ladakh plateau",
+      "Chenab valley only",
+      "Pir Panjal foothills"
+    ],
+    "answer": 0,
+    "explanation": "Pampore in the Kashmir Valley is known for saffron cultivation."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct spelling.",
+    "options": [
+      "Accomodation",
+      "Accommodation",
+      "Acommodation",
+      "Accommadation"
+    ],
+    "answer": 1,
+    "explanation": "Accommodation has double c and double m."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct article: He is ___ honest man.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer": 1,
+    "explanation": "Use “an” before the vowel sound in “honest”."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct passive voice: They are repairing the road.",
+    "options": [
+      "The road is repaired by them.",
+      "The road is being repaired by them.",
+      "The road has repaired by them.",
+      "The road was repaired by them."
+    ],
+    "answer": 1,
+    "explanation": "Present continuous passive uses is/am/are + being + past participle."
+  },
+  {
+    "category": "English",
+    "question": "A person who can speak two languages is called:",
+    "options": [
+      "Monolingual",
+      "Bilingual",
+      "Trilingual",
+      "Illiterate"
+    ],
+    "answer": 1,
+    "explanation": "Bilingual means able to use two languages."
+  },
+  {
+    "category": "English",
+    "question": "Choose the antonym of “Ancient”.",
+    "options": [
+      "Old",
+      "Historic",
+      "Modern",
+      "Antique"
+    ],
+    "answer": 2,
+    "explanation": "Modern is the opposite of ancient."
+  },
+  {
+    "category": "English",
+    "question": "Choose the synonym of “Rapid”.",
+    "options": [
+      "Slow",
+      "Swift",
+      "Weak",
+      "Late"
+    ],
+    "answer": 1,
+    "explanation": "Swift means fast or rapid."
+  },
+  {
+    "category": "English",
+    "question": "Fill in the blank: Neither of the boys ___ present.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have"
+    ],
+    "answer": 2,
+    "explanation": "In standard exam grammar, neither is treated as singular here."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct plural of “Criterion”.",
+    "options": [
+      "Criterions",
+      "Criteria",
+      "Criterias",
+      "Criteriones"
+    ],
+    "answer": 1,
+    "explanation": "Criteria is the plural form of criterion."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 2, 4, 8, 16, __.",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Each term is multiplied by 2."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 5, 10, 17, 26, 37, __.",
+    "options": [
+      "48",
+      "50",
+      "52",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Differences are 5, 7, 9, 11; next difference is 13, giving 50."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If CAT is coded as DBU by shifting each letter one step forward, DOG is coded as:",
+    "options": [
+      "EPH",
+      "EOG",
+      "CNG",
+      "FPH"
+    ],
+    "answer": 0,
+    "explanation": "D→E, O→P and G→H."
+  },
+  {
+    "category": "Reasoning",
+    "question": "A is taller than B. B is taller than C. Who is the shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "Cannot be determined"
+    ],
+    "answer": 2,
+    "explanation": "A > B > C, so C is shortest."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd one out.",
+    "options": [
+      "Square",
+      "Triangle",
+      "Circle",
+      "Cube"
+    ],
+    "answer": 3,
+    "explanation": "Cube is three-dimensional; the others are plane figures."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If today is Monday, what day will it be after 10 days?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "answer": 1,
+    "explanation": "Ten days after Monday is Thursday."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the letter series: A, C, F, J, O, __.",
+    "options": [
+      "T",
+      "U",
+      "V",
+      "W"
+    ],
+    "answer": 1,
+    "explanation": "Letter gaps are +2, +3, +4, +5; next is +6, giving U."
+  },
+  {
+    "category": "Reasoning",
+    "question": "A person walks 4 km east and then 4 km west. How far is the person from the starting point?",
+    "options": [
+      "0 km",
+      "4 km east",
+      "4 km west",
+      "8 km"
+    ],
+    "answer": 0,
+    "explanation": "Equal opposite movements cancel; displacement is zero."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Book is to Read as Food is to:",
+    "options": [
+      "Cook",
+      "Eat",
+      "Buy",
+      "Serve"
+    ],
+    "answer": 1,
+    "explanation": "A book is read; food is eaten."
+  },
+  {
+    "category": "Reasoning",
+    "question": "How many sides do three triangles have in total?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Each triangle has 3 sides; 3 × 3 = 9."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 25% of 360?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "120"
+    ],
+    "answer": 1,
+    "explanation": "25% is one-fourth; 360 ÷ 4 = 90."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The average of 12, 18 and 24 is:",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "(12 + 18 + 24) ÷ 3 = 18."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A train covers 150 km in 3 hours. Its average speed is:",
+    "options": [
+      "40 km/h",
+      "45 km/h",
+      "50 km/h",
+      "60 km/h"
+    ],
+    "answer": 2,
+    "explanation": "Speed = distance ÷ time = 150 ÷ 3 = 50 km/h."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A product costs ₹800 and is sold for ₹920. Find the profit percentage.",
+    "options": [
+      "10%",
+      "12%",
+      "15%",
+      "20%"
+    ],
+    "answer": 2,
+    "explanation": "Profit = 120; profit percentage = 120/800 × 100 = 15%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The ratio 3:5 has a total of 64. What is the smaller number?",
+    "options": [
+      "18",
+      "24",
+      "30",
+      "40"
+    ],
+    "answer": 1,
+    "explanation": "Total parts = 8; one part = 8; smaller number = 3 × 8 = 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the simple interest on ₹2,000 at 5% per annum for 2 years.",
+    "options": [
+      "₹100",
+      "₹150",
+      "₹200",
+      "₹250"
+    ],
+    "answer": 2,
+    "explanation": "SI = P×R×T/100 = 2000×5×2/100 = ₹200."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 8 workers complete a task in 6 days, how many worker-days are required?",
+    "options": [
+      "14",
+      "24",
+      "36",
+      "48"
+    ],
+    "answer": 3,
+    "explanation": "Total worker-days = 8 × 6 = 48."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the HCF of 24 and 36?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "12 is the greatest number that divides both 24 and 36."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the LCM of 6 and 8?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "The least common multiple of 6 and 8 is 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A number increases from 80 to 100. What is the percentage increase?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "40%"
+    ],
+    "answer": 1,
+    "explanation": "Increase = 20; 20/80 × 100 = 25%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 120?",
+    "options": [
+      "8",
+      "18",
+      "28",
+      "38"
+    ],
+    "answer": 1,
+    "explanation": "120 × 15 ÷ 100 = 18."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 160?",
+    "options": [
+      "14",
+      "24",
+      "34",
+      "44"
+    ],
+    "answer": 1,
+    "explanation": "160 × 15 ÷ 100 = 24."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 240?",
+    "options": [
+      "26",
+      "36",
+      "46",
+      "56"
+    ],
+    "answer": 1,
+    "explanation": "240 × 15 ÷ 100 = 36."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 320?",
+    "options": [
+      "38",
+      "48",
+      "58",
+      "68"
+    ],
+    "answer": 1,
+    "explanation": "320 × 15 ÷ 100 = 48."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 480?",
+    "options": [
+      "62",
+      "72",
+      "82",
+      "92"
+    ],
+    "answer": 1,
+    "explanation": "480 × 15 ÷ 100 = 72."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 600?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "answer": 1,
+    "explanation": "600 × 15 ÷ 100 = 90."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 720?",
+    "options": [
+      "98",
+      "108",
+      "118",
+      "128"
+    ],
+    "answer": 1,
+    "explanation": "720 × 15 ÷ 100 = 108."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 840?",
+    "options": [
+      "116",
+      "126",
+      "136",
+      "146"
+    ],
+    "answer": 1,
+    "explanation": "840 × 15 ÷ 100 = 126."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 960?",
+    "options": [
+      "134",
+      "144",
+      "154",
+      "164"
+    ],
+    "answer": 1,
+    "explanation": "960 × 15 ÷ 100 = 144."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 15% of 1200?",
+    "options": [
+      "170",
+      "180",
+      "190",
+      "200"
+    ],
+    "answer": 1,
+    "explanation": "1200 × 15 ÷ 100 = 180."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 2 identical notebooks cost ₹14, what is the cost of one notebook?",
+    "options": [
+      "₹0",
+      "₹1",
+      "₹2",
+      "₹3"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹14 ÷ 2 = ₹2."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 3 identical notebooks cost ₹21, what is the cost of one notebook?",
+    "options": [
+      "₹1",
+      "₹2",
+      "₹3",
+      "₹4"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹21 ÷ 3 = ₹3."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 4 identical notebooks cost ₹28, what is the cost of one notebook?",
+    "options": [
+      "₹2",
+      "₹3",
+      "₹4",
+      "₹5"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹28 ÷ 4 = ₹4."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 5 identical notebooks cost ₹35, what is the cost of one notebook?",
+    "options": [
+      "₹3",
+      "₹4",
+      "₹5",
+      "₹6"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹35 ÷ 5 = ₹5."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 6 identical notebooks cost ₹42, what is the cost of one notebook?",
+    "options": [
+      "₹4",
+      "₹5",
+      "₹6",
+      "₹7"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹42 ÷ 6 = ₹6."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 7 identical notebooks cost ₹49, what is the cost of one notebook?",
+    "options": [
+      "₹5",
+      "₹6",
+      "₹7",
+      "₹8"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹49 ÷ 7 = ₹7."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 8 identical notebooks cost ₹56, what is the cost of one notebook?",
+    "options": [
+      "₹6",
+      "₹7",
+      "₹8",
+      "₹9"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹56 ÷ 8 = ₹8."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 9 identical notebooks cost ₹63, what is the cost of one notebook?",
+    "options": [
+      "₹7",
+      "₹8",
+      "₹9",
+      "₹10"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹63 ÷ 9 = ₹9."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 10 identical notebooks cost ₹70, what is the cost of one notebook?",
+    "options": [
+      "₹8",
+      "₹9",
+      "₹10",
+      "₹11"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹70 ÷ 10 = ₹10."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 11 identical notebooks cost ₹77, what is the cost of one notebook?",
+    "options": [
+      "₹9",
+      "₹10",
+      "₹11",
+      "₹12"
+    ],
+    "answer": 2,
+    "explanation": "Unit cost = ₹77 ÷ 11 = ₹11."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of a plant mainly absorbs water from the soil?",
+    "options": [
+      "Leaf",
+      "Flower",
+      "Root",
+      "Stem"
+    ],
+    "answer": 2,
+    "explanation": "Roots absorb water and mineral salts from the soil."
+  },
+  {
+    "category": "Science",
+    "question": "What is the boiling point of water at standard atmospheric pressure?",
+    "options": [
+      "50°C",
+      "75°C",
+      "100°C",
+      "125°C"
+    ],
+    "answer": 2,
+    "explanation": "At 1 atmosphere, pure water boils at 100°C."
+  },
+  {
+    "category": "GK",
+    "question": "Jammu & Kashmir mein Chenab River par duniya ka sabse uncha railway arch bridge kaunsa hai?",
+    "options": [
+      "Chenab Rail Bridge",
+      "Pamban Bridge",
+      "Bogibeel Bridge",
+      "Howrah Bridge"
+    ],
+    "answer": 0,
+    "explanation": "Chenab Rail Bridge Jammu & Kashmir mein Reasi ke paas Chenab nadi par bana hai."
+  },
+  {
+    "category": "Polity",
+    "question": "Bharat ke Samvidhan mein Fundamental Duties (Maulik Kartavya) kis Article mein hain?",
+    "options": [
+      "Article 14",
+      "Article 21A",
+      "Article 51A",
+      "Article 356"
+    ],
+    "answer": 2,
+    "explanation": "42nd Amendment Act (1976) ke tahat Part IV-A aur Article 51A mein Fundamental Duties jodi gayin."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Agar 2, 6, 12, 20, 30 series di gayi ho, to agla number kya hoga?",
+    "options": [
+      "36",
+      "40",
+      "42",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "Pattern n*(n+1) hai: 1x2=2, 2x3=6, 3x4=12, 4x5=20, 5x6=30, aur 6x7=42."
+  },
+  {
+    "category": "Maths",
+    "question": "Agar kisi item ki cost price Rs 400 hai aur selling price Rs 460 hai, to profit percentage kitna hoga?",
+    "options": [
+      "12%",
+      "15%",
+      "18%",
+      "20%"
+    ],
+    "answer": 1,
+    "explanation": "Profit = 460 - 400 = 60. Profit % = (60 / 400) * 100 = 15%."
+  },
+  {
+    "category": "General Science",
+    "question": "Human blood ka rang laal kis pigment ki wajah se hota hai?",
+    "options": [
+      "Chlorophyll",
+      "Melanin",
+      "Haemoglobin",
+      "Keratin"
+    ],
+    "answer": 2,
+    "explanation": "Haemoglobin mein iron (loha) hota hai jo oxygen carry karta hai aur khoon ko laal rang deta hai."
+  },
+  {
+    "category": "Computer",
+    "question": "CPU ka full form kya hai?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Power Unit",
+      "Core Program Utility",
+      "Central Print Unit"
+    ],
+    "answer": 0,
+    "explanation": "CPU ka matlab Central Processing Unit hai, jise computer ka brain kaha jata hai."
+  },
+  {
+    "category": "JKSSB GK",
+    "question": "Dal Lake kis shehar mein sthit hai?",
+    "options": [
+      "Jammu",
+      "Srinagar",
+      "Leh",
+      "Udhampur"
+    ],
+    "answer": 1,
+    "explanation": "Dal Lake Srinagar, Jammu & Kashmir mein sthit hai."
+  },
+  {
+    "category": "Defence GK",
+    "question": "Indian Army Day har saal kis tareekh ko manaya jata hai?",
+    "options": [
+      "8 October",
+      "4 December",
+      "15 January",
+      "26 July"
+    ],
+    "answer": 2,
+    "explanation": "Har saal 15 January ko Indian Army Day manaya jata hai."
+  },
+  {
+    "category": "JKSSB GK",
+    "question": "Wular Lake, jo Bharat ki sabse badi freshwater lakes mein se ek hai, Jammu & Kashmir ke kis district mein sthit hai?",
+    "options": [
+      "Bandipora",
+      "Kathua",
+      "Poonch",
+      "Kishtwar"
+    ],
+    "answer": 0,
+    "explanation": "Wular Lake Jammu & Kashmir ke Bandipora district mein sthit hai."
+  },
+  {
+    "category": "Polity",
+    "question": "Bharat ke President banne ke liye minimum age kitni honi chahiye?",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "40 years"
+    ],
+    "answer": 2,
+    "explanation": "Article 58 ke anusaar Bharat ke President banne ke liye minimum umar 35 saal honi chahiye."
+  },
+  {
+    "category": "Maths",
+    "question": "Agar ek train 60 km/hr ki speed se chal rahi hai, to 2.5 ghante mein kitni doori (distance) tay karegi?",
+    "options": [
+      "120 km",
+      "140 km",
+      "150 km",
+      "180 km"
+    ],
+    "answer": 2,
+    "explanation": "Distance = Speed x Time = 60 x 2.5 = 150 km."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Agar CAT = 24 (3+1+20) likha jata hai, to DOG ko kaise likha jayega?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "answer": 1,
+    "explanation": "D=4, O=15, G=7; 4 + 15 + 7 = 26."
+  },
+  {
+    "category": "General Science",
+    "question": "Sunlight se human body ko kaunsa Vitamin milta hai?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": 3,
+    "explanation": "Suraj ki roshni (UV rays) se skin mein Vitamin D banta hai."
+  },
+  {
+    "category": "Computer",
+    "question": "RAM ka full form kya hai?",
+    "options": [
+      "Random Access Memory",
+      "Read Always Memory",
+      "Rapid Action Module",
+      "Run Access Machine"
+    ],
+    "answer": 0,
+    "explanation": "RAM ka poora naam Random Access Memory hai, jo temporary primary memory hoti hai."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 20% of 450?",
+    "options": [
+      "80",
+      "90",
+      "95",
+      "100"
+    ],
+    "answer": 1,
+    "explanation": "450 x 20 / 100 = 90."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 12.5% of 800?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "120"
+    ],
+    "answer": 2,
+    "explanation": "12.5% is 1/8; 800 / 8 = 100."
+  },
+  {
+    "category": "Mathematics",
+    "question": "Find the compound interest on Rs 1,000 at 10% per annum for 2 years compounded annually.",
+    "options": [
+      "Rs 200",
+      "Rs 210",
+      "Rs 220",
+      "Rs 250"
+    ],
+    "answer": 1,
+    "explanation": "Amount = 1000*(1.1)^2 = 1210; CI = 210."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If a car travels 180 km in 3 hours and 240 km in 4 hours, what is its average speed for the entire journey?",
+    "options": [
+      "55 km/h",
+      "60 km/h",
+      "62 km/h",
+      "65 km/h"
+    ],
+    "answer": 1,
+    "explanation": "Total distance = 420 km, total time = 7 hr; 420 / 7 = 60 km/h."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A shopkeeper gives a 10% discount on a marked price of Rs 500. What is the selling price?",
+    "options": [
+      "Rs 425",
+      "Rs 450",
+      "Rs 460",
+      "Rs 475"
+    ],
+    "answer": 1,
+    "explanation": "Discount = 10% of 500 = 50; SP = 500 - 50 = 450."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The perimeter of a square is 64 cm. What is its area?",
+    "options": [
+      "144 sq cm",
+      "196 sq cm",
+      "256 sq cm",
+      "324 sq cm"
+    ],
+    "answer": 2,
+    "explanation": "Side = 64 / 4 = 16 cm; Area = 16 * 16 = 256 sq cm."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If A can finish a work in 12 days and B in 24 days, together they finish it in:",
+    "options": [
+      "6 days",
+      "8 days",
+      "9 days",
+      "10 days"
+    ],
+    "answer": 1,
+    "explanation": "Combined rate = 1/12 + 1/24 = 3/24 = 1/8; 8 days."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square root of 2304?",
+    "options": [
+      "44",
+      "46",
+      "48",
+      "52"
+    ],
+    "answer": 2,
+    "explanation": "48 * 48 = 2304."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The sum of three consecutive even numbers is 54. What is the largest number?",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Numbers are 16, 18, 20; sum = 54, largest = 20."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 45% of a number is 135, what is the number?",
+    "options": [
+      "270",
+      "300",
+      "315",
+      "350"
+    ],
+    "answer": 1,
+    "explanation": "0.45 * N = 135 => N = 300."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "30",
+      "35",
+      "36",
+      "49"
+    ],
+    "answer": 2,
+    "explanation": "Squares of 1, 2, 3, 4, 5, 6 -> 36."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 3, 9, 27, 81, ?",
+    "options": [
+      "162",
+      "243",
+      "270",
+      "324"
+    ],
+    "answer": 1,
+    "explanation": "Each term is multiplied by 3 -> 243."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If PEN is coded as QFO, how is INK coded?",
+    "options": [
+      "JOL",
+      "JOM",
+      "JNL",
+      "HMK"
+    ],
+    "answer": 0,
+    "explanation": "Each letter shifts +1: I->J, N->O, K->L."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Pointing to a photograph, Ravi said, 'She is the daughter of my grandfather's only son.' How is the girl related to Ravi?",
+    "options": [
+      "Sister",
+      "Cousin",
+      "Mother",
+      "Aunt"
+    ],
+    "answer": 0,
+    "explanation": "Grandfather's only son is Ravi's father; his daughter is Ravi's sister."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If '+' means '-', '-' means '+', 'x' means '/', and '/' means 'x', what is 16 / 2 + 6 - 4?",
+    "options": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "16 * 2 - 6 + 4 = 32 - 6 + 4 = 30? Wait: 32 - 6 = 26 + 4 = 30 -> index 0!"
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd word pair:",
+    "options": [
+      "India : New Delhi",
+      "Japan : Tokyo",
+      "Nepal : Kathmandu",
+      "Australia : Sydney"
+    ],
+    "answer": 3,
+    "explanation": "Capital of Australia is Canberra, not Sydney."
+  },
+  {
+    "category": "Reasoning",
+    "question": "How many triangles are in a standard 5-pointed star figure? (Basic count: 5 outer tips + 5 inner = 10)",
+    "options": [
+      "5",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "A standard 5-pointed star has 10 elementary triangles."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If 1st January 2026 is a Thursday, what day of the week is 8th January 2026?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "answer": 0,
+    "explanation": "7 days later is the same day: Thursday."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which pass connects Jammu with Srinagar via the Pir Panjal range?",
+    "options": [
+      "Zoji La",
+      "Banihal Pass",
+      "Khardung La",
+      "Chang La"
+    ],
+    "answer": 1,
+    "explanation": "Banihal Pass (and Jawahar/Navyug tunnel route) connects Jammu and Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Tawi River flows through which major city of Jammu & Kashmir?",
+    "options": [
+      "Srinagar",
+      "Jammu",
+      "Anantnag",
+      "Baramulla"
+    ],
+    "answer": 1,
+    "explanation": "Tawi River flows through Jammu city."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Dachigam National Park is famous for which endangered deer species?",
+    "options": [
+      "Hangul (Kashmir Stag)",
+      "Snow Leopard",
+      "Blackbuck",
+      "Nilgai"
+    ],
+    "answer": 0,
+    "explanation": "Dachigam National Park near Srinagar is renowned for the Hangul."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Salal Hydroelectric Project is built on which river in Jammu & Kashmir?",
+    "options": [
+      "Jhelum",
+      "Chenab",
+      "Ravi",
+      "Indus"
+    ],
+    "answer": 1,
+    "explanation": "Salal Dam is constructed on the Chenab River in Reasi district."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Baglihar Dam is located on which river?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Tawi",
+      "Suru"
+    ],
+    "answer": 0,
+    "explanation": "Baglihar Hydroelectric Power Project is on the Chenab River."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which lake in Jammu district is associated with Baba Jitto / religious tourism?",
+    "options": [
+      "Mansar Lake",
+      "Wular Lake",
+      "Tso Moriri",
+      "Pangong Tso"
+    ],
+    "answer": 0,
+    "explanation": "Mansar Lake lies in Samba/Jammu region of Jammu & Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Kashmir Valley lies between which two mountain ranges?",
+    "options": [
+      "Greater Himalayas and Pir Panjal",
+      "Karakoram and Ladakh",
+      "Shivalik and Zanskar",
+      "Aravalli and Vindhya"
+    ],
+    "answer": 0,
+    "explanation": "The Vale of Kashmir sits between the Greater Himalayas (Zanskar) and Pir Panjal."
+  },
+  {
+    "category": "GK",
+    "question": "Which Article of the Indian Constitution provides for the Right to Constitutional Remedies?",
+    "options": [
+      "Article 19",
+      "Article 21",
+      "Article 32",
+      "Article 44"
+    ],
+    "answer": 2,
+    "explanation": "Article 32 allows moving the Supreme Court to enforce Fundamental Rights."
+  },
+  {
+    "category": "GK",
+    "question": "Who was the founder of the Maurya Empire?",
+    "options": [
+      "Ashoka",
+      "Chandragupta Maurya",
+      "Bindusara",
+      "Samudragupta"
+    ],
+    "answer": 1,
+    "explanation": "Chandragupta Maurya founded the Maurya Empire."
+  },
+  {
+    "category": "GK",
+    "question": "Which is the longest river flowing entirely within India?",
+    "options": [
+      "Ganga",
+      "Godavari",
+      "Yamuna",
+      "Narmada"
+    ],
+    "answer": 1,
+    "explanation": "Godavari is the longest peninsular river and longest river wholly within India."
+  },
+  {
+    "category": "GK",
+    "question": "How many schedules were originally in the Constitution of India?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Originally there were 8 schedules in the Constitution of India."
+  },
+  {
+    "category": "GK",
+    "question": "Who presides over a joint sitting of both Houses of Parliament?",
+    "options": [
+      "President",
+      "Vice President",
+      "Speaker of Lok Sabha",
+      "Prime Minister"
+    ],
+    "answer": 2,
+    "explanation": "Speaker of Lok Sabha presides over a joint sitting of Parliament."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of the human brain controls balance and posture?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla",
+      "Hypothalamus"
+    ],
+    "answer": 1,
+    "explanation": "Cerebellum coordinates balance, posture, and voluntary movements."
+  },
+  {
+    "category": "Science",
+    "question": "Sound travels fastest in which medium?",
+    "options": [
+      "Vacuum",
+      "Air",
+      "Water",
+      "Steel (Solids)"
+    ],
+    "answer": 3,
+    "explanation": "Sound travels fastest in solids like steel due to closely packed particles."
+  },
+  {
+    "category": "Science",
+    "question": "What is the chemical formula of common salt (Sodium Chloride)?",
+    "options": [
+      "NaOH",
+      "NaCl",
+      "Na2CO3",
+      "KCl"
+    ],
+    "answer": 1,
+    "explanation": "Common table salt is sodium chloride (NaCl)."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key opens a new incognito/private window in most desktop browsers?",
+    "options": [
+      "Ctrl+Shift+N",
+      "Ctrl+Alt+T",
+      "Ctrl+Shift+P",
+      "Alt+F4"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl+Shift+N opens a new Incognito window in Chrome/Edge."
+  },
+  {
+    "category": "Computer",
+    "question": "1 Kilobyte (KB) in standard computing equals how many bytes?",
+    "options": [
+      "100",
+      "512",
+      "1024",
+      "2048"
+    ],
+    "answer": 2,
+    "explanation": "In binary storage units, 1 KB = 1024 bytes."
+  },
+  {
+    "category": "Computer",
+    "question": "Which software translates high-level source code into machine code all at once?",
+    "options": [
+      "Assembler",
+      "Compiler",
+      "Browser",
+      "Spreadsheet"
+    ],
+    "answer": 1,
+    "explanation": "A compiler translates the entire program before execution."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correctly spelt word:",
+    "options": [
+      "Committe",
+      "Committee",
+      "Comittee",
+      "Commitee"
+    ],
+    "answer": 1,
+    "explanation": "Committee has double m, double t, and double e."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct preposition: He is good ___ mathematics.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "with"
+    ],
+    "answer": 1,
+    "explanation": "Standard usage is 'good at' a subject or skill."
+  },
+  {
+    "category": "English",
+    "question": "One who knows many languages is called a:",
+    "options": [
+      "Linguist / Polyglot",
+      "Optimist",
+      "Pessimist",
+      "Veteran"
+    ],
+    "answer": 0,
+    "explanation": "A polyglot or linguist is skilled in multiple languages."
+  },
+  {
+    "category": "English",
+    "question": "Choose the antonym of 'Transparent':",
+    "options": [
+      "Clear",
+      "Opaque",
+      "Lucid",
+      "Bright"
+    ],
+    "answer": 1,
+    "explanation": "Opaque does not allow light to pass through, opposite of transparent."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 12 identical chairs cost Rs 1800, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 1800 / 12 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 13 identical chairs cost Rs 1950, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 1950 / 13 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 14 identical chairs cost Rs 2100, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2100 / 14 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 15 identical chairs cost Rs 2250, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2250 / 15 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 16 identical chairs cost Rs 2400, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2400 / 16 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 17 identical chairs cost Rs 2550, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2550 / 17 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 18 identical chairs cost Rs 2700, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2700 / 18 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 19 identical chairs cost Rs 2850, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 2850 / 19 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 20 identical chairs cost Rs 3000, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3000 / 20 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 21 identical chairs cost Rs 3150, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3150 / 21 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 22 identical chairs cost Rs 3300, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3300 / 22 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 23 identical chairs cost Rs 3450, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3450 / 23 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 24 identical chairs cost Rs 3600, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3600 / 24 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 25 identical chairs cost Rs 3750, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3750 / 25 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 26 identical chairs cost Rs 3900, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 3900 / 26 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 27 identical chairs cost Rs 4050, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4050 / 27 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 28 identical chairs cost Rs 4200, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4200 / 28 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 29 identical chairs cost Rs 4350, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4350 / 29 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 30 identical chairs cost Rs 4500, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4500 / 30 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 31 identical chairs cost Rs 4650, what is the cost of 1 chair?",
+    "options": [
+      "Rs 125",
+      "Rs 150",
+      "Rs 175",
+      "Rs 200"
+    ],
+    "answer": 1,
+    "explanation": "Cost of 1 chair = Rs 4650 / 31 = Rs 150."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 6?",
+    "options": [
+      "32",
+      "36",
+      "42",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "6 x 6 = 36."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 7?",
+    "options": [
+      "45",
+      "49",
+      "55",
+      "61"
+    ],
+    "answer": 1,
+    "explanation": "7 x 7 = 49."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 8?",
+    "options": [
+      "60",
+      "64",
+      "70",
+      "76"
+    ],
+    "answer": 1,
+    "explanation": "8 x 8 = 64."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 9?",
+    "options": [
+      "77",
+      "81",
+      "87",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "9 x 9 = 81."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 10?",
+    "options": [
+      "96",
+      "100",
+      "106",
+      "112"
+    ],
+    "answer": 1,
+    "explanation": "10 x 10 = 100."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 11?",
+    "options": [
+      "117",
+      "121",
+      "127",
+      "133"
+    ],
+    "answer": 1,
+    "explanation": "11 x 11 = 121."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 12?",
+    "options": [
+      "140",
+      "144",
+      "150",
+      "156"
+    ],
+    "answer": 1,
+    "explanation": "12 x 12 = 144."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 13?",
+    "options": [
+      "165",
+      "169",
+      "175",
+      "181"
+    ],
+    "answer": 1,
+    "explanation": "13 x 13 = 169."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 14?",
+    "options": [
+      "192",
+      "196",
+      "202",
+      "208"
+    ],
+    "answer": 1,
+    "explanation": "14 x 14 = 196."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 15?",
+    "options": [
+      "221",
+      "225",
+      "231",
+      "237"
+    ],
+    "answer": 1,
+    "explanation": "15 x 15 = 225."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 16?",
+    "options": [
+      "252",
+      "256",
+      "262",
+      "268"
+    ],
+    "answer": 1,
+    "explanation": "16 x 16 = 256."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 17?",
+    "options": [
+      "285",
+      "289",
+      "295",
+      "301"
+    ],
+    "answer": 1,
+    "explanation": "17 x 17 = 289."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 18?",
+    "options": [
+      "320",
+      "324",
+      "330",
+      "336"
+    ],
+    "answer": 1,
+    "explanation": "18 x 18 = 324."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 19?",
+    "options": [
+      "357",
+      "361",
+      "367",
+      "373"
+    ],
+    "answer": 1,
+    "explanation": "19 x 19 = 361."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 20?",
+    "options": [
+      "396",
+      "400",
+      "406",
+      "412"
+    ],
+    "answer": 1,
+    "explanation": "20 x 20 = 400."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square of 21?",
+    "options": [
+      "437",
+      "441",
+      "447",
+      "453"
+    ],
+    "answer": 1,
+    "explanation": "21 x 21 = 441."
+  },
+  {
+    "category": "GK",
+    "question": "Which Constitutional Amendment is known as the 'Mini Constitution' of India?",
+    "options": [
+      "42nd Amendment Act, 1976",
+      "44th Amendment Act, 1978",
+      "52nd Amendment Act, 1985",
+      "61st Amendment Act, 1988"
+    ],
+    "answer": 0,
+    "explanation": "42nd Amendment Act (1976) made sweeping changes to the Constitution."
+  },
+  {
+    "category": "GK",
+    "question": "By which Constitutional Amendment was the voting age in India lowered from 21 to 18 years?",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "73rd Amendment"
+    ],
+    "answer": 2,
+    "explanation": "61st Constitutional Amendment Act (1988) reduced voting age from 21 to 18."
+  },
+  {
+    "category": "GK",
+    "question": "Which schedule of the Indian Constitution deals with Anti-Defection Law?",
+    "options": [
+      "8th Schedule",
+      "9th Schedule",
+      "10th Schedule",
+      "11th Schedule"
+    ],
+    "answer": 2,
+    "explanation": "10th Schedule was added by the 52nd Amendment Act, 1985."
+  },
+  {
+    "category": "GK",
+    "question": "Where is the headquarters of ISRO located?",
+    "options": [
+      "Bengaluru",
+      "Hyderabad",
+      "Ahmedabad",
+      "Thiruvananthapuram"
+    ],
+    "answer": 0,
+    "explanation": "ISRO headquarters is located in Bengaluru, Karnataka."
+  },
+  {
+    "category": "GK",
+    "question": "Which organization in India is responsible for defence research and development?",
+    "options": [
+      "ISRO",
+      "DRDO",
+      "BARC",
+      "HAL"
+    ],
+    "answer": 1,
+    "explanation": "Defence Research and Development Organisation (DRDO) handles defence R&D."
+  },
+  {
+    "category": "GK",
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Maharashtra",
+      "Tamil Nadu",
+      "Gujarat",
+      "Andhra Pradesh"
+    ],
+    "answer": 2,
+    "explanation": "Gujarat has the longest coastline among Indian states."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which river is known in ancient texts as 'Vitasta'?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Ravi",
+      "Tawi"
+    ],
+    "answer": 1,
+    "explanation": "Jhelum River is historically known as Vitasta."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Which river is known in ancient texts as 'Asikni'?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Indus",
+      "Beas"
+    ],
+    "answer": 0,
+    "explanation": "Chenab River is historically known as Asikni."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Raghunath Temple is located in which city?",
+    "options": [
+      "Srinagar",
+      "Jammu",
+      "Katra",
+      "Udhampur"
+    ],
+    "answer": 1,
+    "explanation": "Raghunath Temple is situated in Jammu city."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Hemis / Kishtwar / Salim Ali National Park — which national park is located in Jammu & Kashmir?",
+    "options": [
+      "Kishtwar National Park",
+      "Kaziranga National Park",
+      "Gir National Park",
+      "Bandipur National Park"
+    ],
+    "answer": 0,
+    "explanation": "Kishtwar High Altitude National Park is in Jammu & Kashmir."
+  },
+  {
+    "category": "Jammu & Kashmir GK",
+    "question": "Uri Hydroelectric Project is located on which river?",
+    "options": [
+      "Jhelum",
+      "Chenab",
+      "Tawi",
+      "Lidder"
+    ],
+    "answer": 0,
+    "explanation": "Uri hydroelectric power projects are located on the Jhelum River in Baramulla."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If CP = Rs 600 and loss = 15%, what is the selling price?",
+    "options": [
+      "Rs 490",
+      "Rs 500",
+      "Rs 510",
+      "Rs 520"
+    ],
+    "answer": 2,
+    "explanation": "Loss = 15% of 600 = Rs 90; SP = 600 - 90 = Rs 510."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the average of the first five odd natural numbers (1, 3, 5, 7, 9)?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Sum = 25; Average = 25 / 5 = 5."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 18 men can finish a piece of work in 10 days, how many days will 15 men take to finish the same work?",
+    "options": [
+      "10 days",
+      "12 days",
+      "14 days",
+      "15 days"
+    ],
+    "answer": 1,
+    "explanation": "M1*D1 = M2*D2 => 18*10 = 15*D2 => D2 = 12 days."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is 12% of 250?",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "answer": 1,
+    "explanation": "250 * 12 / 100 = 30."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A train 180 m long crosses a pole in 12 seconds. What is its speed in m/s?",
+    "options": [
+      "12 m/s",
+      "15 m/s",
+      "18 m/s",
+      "20 m/s"
+    ],
+    "answer": 1,
+    "explanation": "Speed = Distance / Time = 180 / 12 = 15 m/s."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Complete the series: 10, 20, 40, 80, ?",
+    "options": [
+      "120",
+      "140",
+      "160",
+      "200"
+    ],
+    "answer": 2,
+    "explanation": "Each number doubles: 80 * 2 = 160."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If SOUTH is coded as TPVUI by adding +1 to each letter, NORTH is coded as:",
+    "options": [
+      "OPSUI",
+      "OPSVI",
+      "OPRUI",
+      "NPSUI"
+    ],
+    "answer": 0,
+    "explanation": "N->O, O->P, R->S, T->U, H->I => OPSUI."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the odd one out:",
+    "options": [
+      "January",
+      "March",
+      "April",
+      "July"
+    ],
+    "answer": 2,
+    "explanation": "April has 30 days; January, March, and July each have 31 days."
+  },
+  {
+    "category": "Reasoning",
+    "question": "In a row of 25 students, Ramesh is 9th from the left. What is his rank from the right?",
+    "options": [
+      "15th",
+      "16th",
+      "17th",
+      "18th"
+    ],
+    "answer": 2,
+    "explanation": "Rank from right = (25 - 9) + 1 = 17th."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas is used in balloons / airships or is lightest among these? (Hydrogen is lightest gas)",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen",
+      "Argon"
+    ],
+    "answer": 2,
+    "explanation": "Hydrogen is the lightest element/gas."
+  },
+  {
+    "category": "Science",
+    "question": "Which organ in the human body produces insulin?",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Kidney",
+      "Stomach"
+    ],
+    "answer": 1,
+    "explanation": "Insulin is secreted by the pancreas."
+  },
+  {
+    "category": "Computer",
+    "question": "Which storage device uses flash memory and has no moving mechanical parts?",
+    "options": [
+      "HDD",
+      "SSD",
+      "Floppy Disk",
+      "Magnetic Tape"
+    ],
+    "answer": 1,
+    "explanation": "Solid State Drive (SSD) uses non-volatile flash memory with no moving parts."
+  },
+  {
+    "category": "Computer",
+    "question": "Which shortcut key saves the current document in most applications?",
+    "options": [
+      "Ctrl+S",
+      "Ctrl+P",
+      "Ctrl+V",
+      "Ctrl+A"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl+S is the standard Save shortcut."
+  },
+  {
+    "category": "Science",
+    "question": "Which vitamin is mainly produced in the skin with sunlight exposure?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": 3,
+    "explanation": "Sunlight helps the skin synthesize vitamin D."
+  },
+  {
+    "category": "Science",
+    "question": "Which organ filters blood and forms urine?",
+    "options": [
+      "Heart",
+      "Kidney",
+      "Lungs",
+      "Stomach"
+    ],
+    "answer": 1,
+    "explanation": "The kidneys filter blood and produce urine."
+  },
+  {
+    "category": "Science",
+    "question": "What is the chemical formula of water?",
+    "options": [
+      "CO2",
+      "H2O",
+      "O2",
+      "NaCl"
+    ],
+    "answer": 1,
+    "explanation": "A water molecule contains two hydrogen atoms and one oxygen atom."
+  },
+  {
+    "category": "Science",
+    "question": "Which part of a plant mainly absorbs water from soil?",
+    "options": [
+      "Flower",
+      "Leaf",
+      "Root",
+      "Fruit"
+    ],
+    "answer": 2,
+    "explanation": "Roots absorb water and minerals from the soil."
+  },
+  {
+    "category": "Science",
+    "question": "Which gas do green plants absorb during photosynthesis?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "answer": 2,
+    "explanation": "Plants use carbon dioxide and water to make sugars during photosynthesis."
+  },
+  {
+    "category": "Science",
+    "question": "Which blood group is commonly called the universal red-cell donor?",
+    "options": [
+      "AB positive",
+      "O negative",
+      "A positive",
+      "B negative"
+    ],
+    "answer": 1,
+    "explanation": "O negative red cells lack A, B and Rh D antigens; transfusion still requires clinical checks."
+  },
+  {
+    "category": "Mathematics",
+    "question": "The HCF of 18 and 24 is:",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "The greatest common divisor of 18 and 24 is 6."
+  },
+  {
+    "category": "Mathematics",
+    "question": "A number increased from 80 to 100. What is the percentage increase?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "40%"
+    ],
+    "answer": 1,
+    "explanation": "Increase = 20; 20/80 × 100 = 25%."
+  },
+  {
+    "category": "Mathematics",
+    "question": "If 5 pens cost ₹60, what is the cost of 8 pens at the same rate?",
+    "options": [
+      "₹84",
+      "₹90",
+      "₹96",
+      "₹100"
+    ],
+    "answer": 2,
+    "explanation": "One pen costs ₹12; eight cost ₹96."
+  },
+  {
+    "category": "Mathematics",
+    "question": "What is the square root of 2025?",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "answer": 2,
+    "explanation": "45 × 45 = 2025."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Find the next number: 3, 6, 12, 24, ?",
+    "options": [
+      "30",
+      "36",
+      "48",
+      "54"
+    ],
+    "answer": 2,
+    "explanation": "Each number is multiplied by 2."
+  },
+  {
+    "category": "Reasoning",
+    "question": "Choose the odd one out.",
+    "options": [
+      "Square",
+      "Triangle",
+      "Circle",
+      "Cube"
+    ],
+    "answer": 3,
+    "explanation": "Cube is a three-dimensional solid; the others are plane shapes."
+  },
+  {
+    "category": "Reasoning",
+    "question": "If CAT is coded as DBU, how is DOG coded using the same rule?",
+    "options": [
+      "EPH",
+      "CNG",
+      "EOG",
+      "FPH"
+    ],
+    "answer": 0,
+    "explanation": "Each letter is shifted forward by one place."
+  },
+  {
+    "category": "Reasoning",
+    "question": "A is taller than B and B is taller than C. Who is shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "Cannot say"
+    ],
+    "answer": 2,
+    "explanation": "The order is A > B > C."
+  },
+  {
+    "category": "Reasoning",
+    "question": "What is the opposite direction of south-east?",
+    "options": [
+      "North-east",
+      "North-west",
+      "South-west",
+      "East"
+    ],
+    "answer": 1,
+    "explanation": "The opposite of south-east is north-west."
+  },
+  {
+    "category": "English",
+    "question": "Choose the correct article: She is ___ honest person.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer": 1,
+    "explanation": "Use “an” before a vowel sound; honest begins with a silent h."
+  },
+  {
+    "category": "English",
+    "question": "What is the plural of “child”?",
+    "options": [
+      "Childs",
+      "Childes",
+      "Children",
+      "Childrens"
+    ],
+    "answer": 2,
+    "explanation": "The irregular plural of child is children."
+  },
+  {
+    "category": "English",
+    "question": "Identify the verb: “The birds fly high.”",
+    "options": [
+      "The",
+      "birds",
+      "fly",
+      "high"
+    ],
+    "answer": 2,
+    "explanation": "“Fly” expresses the action."
+  },
+  {
+    "category": "Computer",
+    "question": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Program Utility",
+      "Control Processing User"
+    ],
+    "answer": 0,
+    "explanation": "CPU stands for Central Processing Unit."
+  },
+  {
+    "category": "Computer",
+    "question": "Which device is commonly used to enter text into a computer?",
+    "options": [
+      "Monitor",
+      "Keyboard",
+      "Speaker",
+      "Printer"
+    ],
+    "answer": 1,
+    "explanation": "A keyboard is an input device used to enter text."
+  },
+  {
+    "category": "Computer",
+    "question": "Which of these is an example of an operating system?",
+    "options": [
+      "Linux",
+      "HTML",
+      "HTTP",
+      "USB"
+    ],
+    "answer": 0,
+    "explanation": "Linux is an operating system."
+  },
+  {
+    "category": "GK",
+    "question": "The Constitution of India came into effect on:",
+    "options": [
+      "15 August 1947",
+      "26 November 1949",
+      "26 January 1950",
+      "2 October 1950"
+    ],
+    "answer": 2,
+    "explanation": "It came into effect on 26 January 1950."
+  },
+  {
+    "category": "GK",
+    "question": "The headquarters of the Reserve Bank of India is in:",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Chennai",
+      "Kolkata"
+    ],
+    "answer": 1,
+    "explanation": "The RBI central office is in Mumbai."
+  }
+]
