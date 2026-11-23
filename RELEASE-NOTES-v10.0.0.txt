@@ -1,0 +1,33 @@
+SARKARI JOB UNIVERSE — V10.0.0 FINAL
+
+JOBS-FIRST HOME PAGE
+- The Latest Government Jobs & Updates section appears directly after the hero and quick job statistics.
+- All student tools and advanced learning widgets remain below the job listings.
+- Existing job cards, filters, saved jobs, admin tools, job detail pages and job data are preserved.
+
+ADVANCED STUDENT FEATURES
+- Topic-wise MCQ practice now loads the validated public question bank (237 entries in this release) from /api/practice-questions.
+- Practice supports category selection, answer feedback, explanations, progress and correct-answer counts.
+- Topic answers are saved locally in the user's browser.
+- Daily (last 7 days) and Monthly (last 30 days) current-affairs quiz sets are built from the portal's published current-affairs records.
+- If too few current-affairs records exist for a meaningful quiz, a clearly labelled sample revision set is used; no live news is invented.
+- Formula & Short Tricks includes search and quick revision notes.
+- Daily study checklist progress is stored locally in the browser.
+
+PRESERVED PROJECT FEATURES
+- 96 existing job records (not all are guaranteed to be currently open).
+- 237 validated practice MCQs.
+- Existing admin console, official-source review workflow, job detail pages, filters, PDF library, mock tests, typing practice, current-affairs manager and student tools.
+- Existing Render deployment configuration and persistent storage setup.
+
+VALIDATION
+- JavaScript syntax checks passed for all frontend scripts and server.js.
+- JSON validation passed for data files and PDF manifest.
+- Project validator passed: 28 states, 8 Union Territories, 96 job records and 237 valid practice questions.
+- Archive integrity check passed.
+
+IMPORTANT LIMITATIONS
+- The included current-affairs dataset contains only the records present in data/current-affairs.json at build time. Admin updates or configured official feeds are needed to keep it current.
+- Daily/monthly quiz content is generated from published portal records; it is not a guarantee of complete news coverage.
+- Live API smoke tests require installing dependencies and deploying with the required environment variables.
+- Always verify job notices, dates, eligibility and application status on the linked official website.
