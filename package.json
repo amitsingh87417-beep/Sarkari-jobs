@@ -1,0 +1,19 @@
+{
+  "name": "sarkari-job-universe",
+  "version": "5.3.0",
+  "private": true,
+  "description": "Sarkari jobs portal with state filters, job details, bilingual UI, mock tests, typing practice and persistent Render deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "validate": "node scripts/validate-project.js",
+    "check": "node scripts/validate-project.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "multer": "^2.0.2"
+  }
+}

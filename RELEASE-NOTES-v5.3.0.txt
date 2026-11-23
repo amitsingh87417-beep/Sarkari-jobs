@@ -1,0 +1,18 @@
+SARKARI JOB UNIVERSE v5.3.0 FINAL
+
+- Added filters for all 28 Indian States and 8 Union Territories.
+- Admin job form supports state/UT selection and expanded job-detail fields.
+- Job cards open a dedicated full details page with official apply/notification links and print/save-as-PDF.
+- Added English, Hindi, Simple English and Simple Hindi selector for common navigation and filter labels.
+- Added admin bulk JSON question-bank upload (up to 5,000 questions per batch; duplicates/invalid entries skipped).
+- Daily question rotates from the server-side question bank, so admin uploads feed the daily question feature.
+- Expanded practice bank to 237 validated MCQs.
+- Added Render Blueprint with Starter instance, health check and persistent disk configuration.
+- Fixed pre-existing JavaScript syntax errors found in Student Hub, Current Affairs and PDF utility scripts.
+- Typing practice reports actual WPM and accuracy without impossible speed promises.
+- Added project validation command: npm run validate.
+
+IMPORTANT
+- The included 96 job records are the existing project database; not all are guaranteed to be currently open. Verify each official notice before applying. No fake vacancies or dates were invented.
+- Free Render web services may sleep and do not support an always-on guarantee. The Blueprint selects a paid Starter instance and persistent disk; check Render pricing before deployment.
+- Runtime/API smoke testing requires npm install and configured environment variables. Syntax, JSON, region list, job/question data and project-file validation passed locally.
