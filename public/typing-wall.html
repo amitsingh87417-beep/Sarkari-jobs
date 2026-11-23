@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#155eef">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Sarkari Job Universe">
+  <link rel="canonical" href="https://sarkari-jobs-fast.onrender.com/typing-wall.html">
+  <meta name="description" content="Free online typing test with hard text wall, 10,000-key drill, 500,000-character wall, backlog counter, and unlimited typing practice for government exams.">
+  <meta name="keywords" content="typing test online, hard typing wall, SSC typing test, typing speed test, unlimited typing practice, government exam typing test">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sarkari-jobs-fast.onrender.com/typing-wall.html">
+  <meta property="og:title" content="Typing Test &mdash; Hard Wall, Backlog &amp; Unlimited | Sarkari Job Universe">
+  <meta property="og:description" content="Free online typing test with hard text wall, 10,000-key drill, 500,000-character wall, backlog counter, and unlimited typing practice for government exams.">
+  <meta property="og:site_name" content="Sarkari Job Universe">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Typing Test &mdash; Hard Wall, Backlog &amp; Unlimited | Sarkari Job Universe">
+  <meta name="twitter:description" content="Free online typing test with hard text wall, 10,000-key drill, 500,000-character wall, backlog counter, and unlimited typing practice.">
+  <title>Typing Test &mdash; Hard Wall, Backlog &amp; Unlimited | Sarkari Job Universe</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .tw-wrap { max-width: 980px; margin: 28px auto; padding: 0 16px 60px; }
+    .tw-card { background: #fff; border: 1px solid #e5eaf2; border-radius: 18px; padding: 22px; box-shadow: 0 10px 30px #173b6d09; }
+    .tw-controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .tw-controls select, .tw-controls button { padding: 10px 13px; border-radius: 10px; border: 1px solid #dfe6f0; font: inherit; font-size: 13px; cursor: pointer; background: #fff; }
+    .tw-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+    .tw-stats div { background: #f3f7ff; border-radius: 12px; padding: 13px; }
+    .tw-stats b { display: block; font-size: 22px; color: #155eef; }
+    .tw-stats span { font-size: 12px; color: #64748b; }
+    .tw-progress { height: 8px; background: #e8edf5; border-radius: 10px; overflow: hidden; margin: 12px 0; }
+    .tw-progress span { display: block; height: 100%; width: 0%; background: #155eef; transition: width .2s ease; }
+    .tw-passage { background: #f5f8fd; border-radius: 12px; padding: 15px; line-height: 1.8; color: #35435d; max-height: 230px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+    .tw-area { width: 100%; min-height: 135px; padding: 12px; border: 1px solid #dfe6f0; border-radius: 10px; font: inherit; line-height: 1.6; margin-top: 12px; resize: vertical; background: #fff; }
+    .tw-status { margin-top: 10px; font-size: 12px; color: #64748b; line-height: 1.6; }
+    .tw-extra { margin-top: 14px; border-top: 1px solid #e5eaf2; padding-top: 14px; display: grid; gap: 10px; }
+    .tw-extra label { display: grid; gap: 6px; font-size: 12px; font-weight: 700; color: #24334d; }
+    .tw-extra textarea { width: 100%; min-height: 68px; padding: 10px; border: 1px solid #dfe6f0; border-radius: 10px; font: inherit; resize: vertical; background: #fff; }
+    @media (max-width: 720px) { .tw-stats { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brandmark">SJ</span>
+      <span>Sarkari Job <b>Universe</b><small>INDIA &bull; JAMMU &amp; KASHMIR</small></span>
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/student-hub.html">Student Hub</a>
+      <a href="/mock-test.html">AI Mock Test</a>
+      <a href="/papers.html">PDF Papers</a>
+    </nav>
+    <a class="admin-link" href="/student-hub.html">&larr; Student Hub</a>
+  </header>
+
+  <main class="tw-wrap">
+    <section class="tw-card" id="typing">
+      <div class="eyebrow blue">EXAM SKILL TRAINER</div>
+      <h1>Typing Test &mdash; Hard Wall, Backlog &amp; Unlimited</h1>
+      <p class="muted">1-minute (10,000-key target), 5-minute (500,000-character hard wall), backlog/error counter, and unlimited auto-extending passages.</p>
+
+      <div class="tw-controls">
+        <select id="typingDuration" aria-label="Test duration">
+          <option value="1">1 minute (10,000 Key Target)</option>
+          <option value="5">5 minutes (500,000 Text Wall)</option>
+          <option value="10">10 minutes</option>
+          <option value="15" selected>15 minutes</option>
+        </select>
+        <select id="typingMode" aria-label="Typing mode">
+          <option value="hard_wall" selected>Hard 500,000 Wall + Backlog</option>
+          <option value="unlimited_stream">Unlimited Auto-Extending Wall</option>
+          <option value="key_10k">1-Min 10,000 Key Drill</option>
+        </select>
+        <select id="typingStrict" aria-label="Error handling mode">
+          <option value="alert" selected>Backlog &amp; Error Alert</option>
+          <option value="strict_lock">Strict Lock (Block Mistake)</option>
+          <option value="free">Free Practice</option>
+        </select>
+        <button class="btn primary" id="typingStart" type="button">Start typing test</button>
+        <button class="btn ghost" id="typingReset" type="button">Reset</button>
+        <button class="btn ghost" id="typingNextWall" type="button">New Hard Wall &#8635;</button>
+      </div>
+
+      <div class="tw-stats">
+        <div><b id="timeLeft">15:00</b><span>Time left</span></div>
+        <div><b id="wpm">0</b><span>Words / minute</span></div>
+        <div><b id="accuracy">100%</b><span>Accuracy</span></div>
+        <div><b id="backlogCount">0</b><span>Backlog / Errors</span></div>
+      </div>
+
+      <div class="tw-progress"><span id="typingProgress"></span></div>
+      <div class="tw-passage" id="typingPassage">Loading hard typing wall...</div>
+      <textarea class="tw-area" id="typingInput" placeholder="Press Start, then type the passage here..." disabled></textarea>
+      <div class="tw-status" id="typingResult">Press Start to begin your timed practice.</div>
+
+      <div class="tw-extra">
+        <label>Custom Passage Paste (Apna koi bhi passage paste karke test lein)
+          <textarea id="typingCustomBox" placeholder="Yahan apna custom text paste karein..."></textarea>
+        </label>
+        <div class="tw-controls" style="margin:0;">
+          <button class="btn ghost" id="typingApplyCustom" type="button">Use Custom Passage</button>
+          <button class="btn ghost" id="typingClearCustom" type="button">Clear Custom</button>
+          <span id="typingBestBadge" style="font-size:12px;font-weight:700;color:#155eef;align-self:center;">Best: 0 WPM | Sessions: 0</span>
+        </div>
+        <div class="tw-status" id="typingSessionLog" style="margin-top:0;">Recent Sessions: Abhi koi session record nahi hua.</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/typing-wall.js" defer></script>
+</body>
+</html>
