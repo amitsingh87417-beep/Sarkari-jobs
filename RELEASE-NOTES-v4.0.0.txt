@@ -1,0 +1,8 @@
+Sarkari Job Universe v4.0.0 — Unlimited Mock Question Selection
+
+- Added 10, 20, 50, 100, 200, 500 and Unlimited question choices.
+- Unlimited loads every question currently available in the selected local question bank.
+- Fixed-size AI-generated tests remain supported when OPENAI_API_KEY is configured privately on the server.
+- Existing pages and other project features are retained.
+
+Note: Unlimited does not mean an infinite number of questions; it means all questions currently present in the question bank. Add/import more questions through the existing project workflow to increase the available total.
