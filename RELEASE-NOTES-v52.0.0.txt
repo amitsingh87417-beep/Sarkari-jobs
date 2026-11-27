@@ -1,0 +1,21 @@
+SARKARI JOB UNIVERSE v52.0.0 ULTIMATE PRO — RELEASE NOTES
+
+1. Auto-Scrolling Colored Job Boxes & 12-Section Modern Board (public/sarkari-board.js, public/styles.css):
+   - Smooth, slow dual-row auto-scrolling marquee below the "Welcome to Sarkari Job Universe" banner showing different live jobs automatically (with hover-to-pause, Pause/Play & Next Jobs controls).
+   - 100% original 12-section career board + upgraded 2-column structured Job Notice page (public/job.html, public/job.js) with Important Dates, Application Fee, Age Limit, Vacancy Table, Selection Process, Direct Links & Latest Updates sidebar.
+
+2. 5,00,000+ Hard Question Engine & Next-Day Auto-Rotation (lib/question-engine.js, server.js):
+   - Expanded dynamic engine to 5,00,000+ virtual hard MCQ capacity across Polity, History, Geography, J&K GK, Science, Economy, Computer, English, Quantitative Aptitude & Reasoning.
+   - Added GET /api/question-engine/pool and POST /api/mock-test/real-paper endpoints.
+   - Daily Engage Quiz, Daily GK & Topic Quiz, Unlimited Question Generator, and V10 "Practice by Subject" now auto-rotate every single day with brand new hard questions + unlimited "Load More" buttons.
+
+3. Real-Paper CBT Mock Test Simulator (public/mock-test.html, public/mock-test.js):
+   - Real Exam Paper Mode for SSC GD (80Q/60m), SSC CHSL (100Q/60m), SSC CGL (100Q/60m), JKSSB (100Q/120m), RRB NTPC (100Q/90m), Army GD (50Q/60m), and Banking (100Q/60m).
+   - TCS-style color palette (Answered, Marked for Review, Remaining), sectional tabs, Clear Response, Mark for Review & Next, live countdown timer, negative marking, and section-wise scorecard.
+
+4. Typing Pro Ultimate v52.0 (public/typing-wall.html, public/typing-wall.js, public/typing-academy.js):
+   - 3-in-1 Theme Switcher: Exam Light Mode, Pro Dark Mode, and Warm Paper Mode.
+   - Real Mechanical Keyboard Sound Engine (Web Audio API tactile click, spacebar thock, error alert) + Victory Fanfare & Voice Announcement ("Congratulations! Your typing test is complete!").
+   - Anti-Copy Protection (selection, right-click, copy, cut & paste blocked).
+   - 80-120+ WPM High-Speed Ready Unlimited Auto-Extending Non-Repeating Passages (1, 3, 5, 10, 15, 20, 30 min & Unlimited).
+   - Smooth Auto-Scroll active-word highlight, Live Word Streak, WPM Speedometer Bar, Rank Badges, and 30-Day Basic-to-Advance Full Keyboard Class (asdf jkl; -> Top Row -> Bottom Row -> Shift -> Numbers -> 80+ WPM).

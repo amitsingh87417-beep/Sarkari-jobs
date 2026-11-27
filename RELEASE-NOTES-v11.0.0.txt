@@ -1,0 +1,24 @@
+SARKARI JOB UNIVERSE v11.0.0 — FULL PRO UPGRADE
+
+All 9 core modules upgraded & tested:
+1. Typing Test Pro & Typing Wall:
+   - Added live Backspace counter, Sound ON/OFF chime toggle, Exam Target Pass/Benchmark indicator (SSC CHSL, DEST, RRB, JKSSB, CPCT, Court, Steno), and Weak Keys Mistake Analyzer with 1-click "Practice weak keys" custom drill generator.
+2. Typing Academy:
+   - Expanded to full 30-day structured curriculum (Beginner -> Intermediate -> Advanced -> Expert) for English & Hindi, plus "Next incomplete" jump button and "Reset course" option.
+3. Admin Panel:
+   - Added Live Dashboard Stats Bar (/api/admin/stats) showing Total Jobs, Published/Draft count, Question Bank size, Uploaded PDFs, Current Affairs, and Queue/Trash counts.
+   - Added Existing Jobs Search & Type Filter, 1-click Publish/Draft status toggle (/api/admin/jobs/:id/toggle-status), and Download Sample Question Bank JSON Template button.
+4. Unlimited Question Bank & Mock Tests:
+   - Expanded & audited data/practice-question-bank.json to 290 verified MCQs (fixed 10 legacy arithmetic/answer bugs).
+   - Added Negative Marking selector (0, -0.25, -0.33, -0.50), Live Countdown Timer with auto-submit, Interactive Question Palette, Bookmarking, Review Wrong/Skipped Only filter, and smart mixed exam balancing in /api/mock-test.
+5. Daily Quiz & Current Affairs:
+   - Expanded data/current-affairs.json with fresh J&K, National, Banking, Science & Defence updates for Daily & Monthly quizzes.
+6. PDF Management:
+   - Fixed /papers.html so Admin Uploaded Resources (/api/resources) load and render automatically.
+   - Added Quick Exam Filter Chips (SSC, J&K, JKSSB, Railway, Defence, Banking, Police) and an in-page PDF Quick Preview Modal.
+7. Jobs & State Filters:
+   - Added Qualification Filter (10th, 12th, Graduate, ITI, Diploma, B.Ed), normalized State/UT matching (Jammu and Kashmir / Jammu & Kashmir, India / All India), direct /job.html?id=... deep-link WhatsApp sharing, and fixed mojibake emojis in present-form-status.js.
+8. Student Tools:
+   - Added 1-click Backup & Restore All Study Data (JSON export/import for syllabus, applications, exam calendar, personal notes, timetable, saved jobs, and typing history).
+9. SEO & Deployment:
+   - Updated dynamic /sitemap.xml to include /student-hub.html and /typing-wall.html; preserved all 28 States + 8 UTs and Render Blueprint config.
