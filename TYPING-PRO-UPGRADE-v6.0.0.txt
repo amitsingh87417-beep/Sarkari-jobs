@@ -1,0 +1,18 @@
+SARKARI JOB UNIVERSE — TYPING PRO ULTIMATE v6.0.0
+
+Upgrade added:
+- Added a 30-day structured Student Typing Academy with Beginner, Intermediate, Advanced and Expert lesson stages.
+- Added English and Hindi course selection, lesson filters, lesson selector and daily lesson drills.
+- Added per-language lesson completion tracking and course progress dashboard.
+- Added one-click lesson loading into the existing typing test, with an appropriate practice duration.
+- Preserved the existing English/Hindi/mixed typing simulator, exam profiles, custom passages, strict mode, timer, pause/resume, speed, accuracy, result printing, CSV history and personal statistics.
+- Improved course layout for desktop, laptop and smaller screens.
+
+Important limitations:
+- Browser-based independent practice simulator; not an official examination platform.
+- Hindi InScript/Remington input relies on the keyboard/input method configured in the operating system. This website does not install keyboard drivers or guarantee legacy-font compatibility.
+- Typing history and academy progress are stored locally in the browser on each device. No account-based cloud sync is included.
+- Stenography shorthand dictation and official DEST data-entry software are not simulated by paragraph typing.
+- Exam durations, layouts, passage rules and qualifying benchmarks must be verified against the current official notification.
+
+Validation: JavaScript syntax and project validation are run for this release. Browser/device manual testing is still recommended before public deployment.
