@@ -1,0 +1,1222 @@
+[
+  {
+    "id": 211,
+    "title": "SSC MTS & Havaldar Mega Hard Paper – 100 Questions",
+    "exam": "SSC MTS",
+    "group": "SSC",
+    "file": "/papers/mega-100q-ssc-mts-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 212,
+    "title": "SSC CPO SI (Delhi Police & CAPF) Mega Hard Paper – 100 Questions",
+    "exam": "SSC CPO SI",
+    "group": "SSC",
+    "file": "/papers/mega-100q-ssc-cpo-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 213,
+    "title": "JKSSB Sub Inspector (Home Dept) Mega Hard Paper – 100 Questions",
+    "exam": "JKSSB SI",
+    "group": "Jammu & Kashmir",
+    "file": "/papers/mega-100q-jkssb-si-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 214,
+    "title": "JKSSB Patwari / Naib Tehsildar & JE GK Mega Hard Paper – 100 Questions",
+    "exam": "JKSSB Patwari / JE",
+    "group": "Jammu & Kashmir",
+    "file": "/papers/mega-100q-jkssb-je-patwari-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 215,
+    "title": "Delhi Police Constable Mega Hard Paper – 100 Questions",
+    "exam": "Delhi Police",
+    "group": "Police",
+    "file": "/papers/mega-100q-delhi-police-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 216,
+    "title": "BSF / CRPF / CISF Constable & Tradesman Mega Hard Paper – 100 Questions",
+    "exam": "BSF / CRPF",
+    "group": "Defence",
+    "file": "/papers/mega-100q-bsf-crpf-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 217,
+    "title": "Railway RRB ALP & Technician Mega Hard Paper – 100 Questions",
+    "exam": "RRB ALP",
+    "group": "Railway",
+    "file": "/papers/mega-100q-rrb-alp-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 218,
+    "title": "SBI Clerk & PO Prelims Mega Hard Paper – 100 Questions",
+    "exam": "SBI Clerk / PO",
+    "group": "Banking",
+    "file": "/papers/mega-100q-sbi-clerk-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 219,
+    "title": "CTET / State TET Paper-I & II Mega Hard Paper – 100 Questions",
+    "exam": "CTET / TET",
+    "group": "Other",
+    "file": "/papers/mega-100q-ctet-tet-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 220,
+    "title": "UPSC / JKPSC / State PCS General Studies Mega Hard Paper – 100 Questions",
+    "exam": "UPSC / State PCS",
+    "group": "Other",
+    "file": "/papers/mega-100q-upsc-pcs-gs-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 210,
+    "title": "All-India Competitive Mega Hard Mix – 100 Questions",
+    "exam": "All India Mix",
+    "group": "Other",
+    "file": "/papers/mega-100q-all-india-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 209,
+    "title": "IBPS / SBI Banking Mega Hard Paper – 100 Questions",
+    "exam": "IBPS PO / Clerk",
+    "group": "Banking",
+    "file": "/papers/mega-100q-banking-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 208,
+    "title": "Indian Army Agniveer Mega Hard Paper – 100 Questions",
+    "exam": "Army GD",
+    "group": "Defence",
+    "file": "/papers/mega-100q-army-gd-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 207,
+    "title": "Railway Group D Mega Hard Paper – 100 Questions",
+    "exam": "RRB Group D",
+    "group": "Railway",
+    "file": "/papers/mega-100q-rrb-group-d-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 206,
+    "title": "Railway RRB NTPC Mega Hard Paper – 100 Questions",
+    "exam": "RRB NTPC",
+    "group": "Railway",
+    "file": "/papers/mega-100q-rrb-ntpc-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 205,
+    "title": "J&K Police Constable Mega Hard Paper – 100 Questions",
+    "exam": "J&K Police",
+    "group": "Jammu & Kashmir",
+    "file": "/papers/mega-100q-jk-police-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 204,
+    "title": "JKSSB Class-IV / MTS Mega Hard Paper – 100 Questions",
+    "exam": "JKSSB",
+    "group": "Jammu & Kashmir",
+    "file": "/papers/mega-100q-jkssb-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 203,
+    "title": "SSC CGL Tier-1 Mega Hard Paper – 100 Questions",
+    "exam": "SSC CGL",
+    "group": "SSC",
+    "file": "/papers/mega-100q-ssc-cgl-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 202,
+    "title": "SSC CHSL Mega Hard Paper – 100 Questions",
+    "exam": "SSC CHSL",
+    "group": "SSC",
+    "file": "/papers/mega-100q-ssc-chsl-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 201,
+    "title": "SSC GD Mega Hard Paper – 100 Questions",
+    "exam": "SSC GD",
+    "group": "SSC",
+    "file": "/papers/mega-100q-ssc-gd-hard.pdf",
+    "questions": 100,
+    "kind": "100-Question Hard Mega Practice PDF",
+    "topics": "Full-Length 100 MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Answer Key"
+  },
+  {
+    "id": 1,
+    "title": "SSC GD – Hard Paper Set #1 (100 Questions)",
+    "exam": "SSC GD",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=1&exam=SSC%20GD&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 2,
+    "title": "SSC MTS – Hard Paper Set #2 (100 Questions)",
+    "exam": "SSC MTS",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=2&exam=SSC%20MTS&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 3,
+    "title": "SSC CHSL – Hard Paper Set #3 (100 Questions)",
+    "exam": "SSC CHSL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=3&exam=SSC%20CHSL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 4,
+    "title": "SSC CGL – Hard Paper Set #4 (100 Questions)",
+    "exam": "SSC CGL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=4&exam=SSC%20CGL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 5,
+    "title": "RRB NTPC – Hard Paper Set #5 (100 Questions)",
+    "exam": "RRB NTPC",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=5&exam=RRB%20NTPC&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 6,
+    "title": "RRB Group D – Hard Paper Set #6 (100 Questions)",
+    "exam": "RRB Group D",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=6&exam=RRB%20Group%20D&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 7,
+    "title": "RRB ALP – Hard Paper Set #7 (100 Questions)",
+    "exam": "RRB ALP",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=7&exam=RRB%20ALP&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 8,
+    "title": "Railway Technician – Hard Paper Set #8 (100 Questions)",
+    "exam": "Railway Technician",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=8&exam=Railway%20Technician&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 9,
+    "title": "JKSSB – Hard Paper Set #9 (100 Questions)",
+    "exam": "JKSSB",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=9&exam=JKSSB&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 10,
+    "title": "J&K Police – Hard Paper Set #10 (100 Questions)",
+    "exam": "J&K Police",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=10&exam=J%26K%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 11,
+    "title": "JKSSB Patwari – Hard Paper Set #11 (100 Questions)",
+    "exam": "JKSSB Patwari",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=11&exam=JKSSB%20Patwari&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 12,
+    "title": "J&K Forest Guard – Hard Paper Set #12 (100 Questions)",
+    "exam": "J&K Forest Guard",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=12&exam=J%26K%20Forest%20Guard&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 13,
+    "title": "Army GD / Agniveer – Hard Paper Set #13 (100 Questions)",
+    "exam": "Army GD / Agniveer",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=13&exam=Army%20GD%20/%20Agniveer&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 14,
+    "title": "Army Technical – Hard Paper Set #14 (100 Questions)",
+    "exam": "Army Technical",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=14&exam=Army%20Technical&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 15,
+    "title": "Army Clerk – Hard Paper Set #15 (100 Questions)",
+    "exam": "Army Clerk",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=15&exam=Army%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 16,
+    "title": "Navy SSR / MR – Hard Paper Set #16 (100 Questions)",
+    "exam": "Navy SSR / MR",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=16&exam=Navy%20SSR%20/%20MR&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 17,
+    "title": "IBPS Clerk – Hard Paper Set #17 (100 Questions)",
+    "exam": "IBPS Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=17&exam=IBPS%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 18,
+    "title": "SBI Clerk – Hard Paper Set #18 (100 Questions)",
+    "exam": "SBI Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=18&exam=SBI%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 19,
+    "title": "IBPS PO – Hard Paper Set #19 (100 Questions)",
+    "exam": "IBPS PO",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=19&exam=IBPS%20PO&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 20,
+    "title": "RBI Assistant – Hard Paper Set #20 (100 Questions)",
+    "exam": "RBI Assistant",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=20&exam=RBI%20Assistant&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 21,
+    "title": "State Police – Hard Paper Set #21 (100 Questions)",
+    "exam": "State Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=21&exam=State%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 22,
+    "title": "Delhi Police – Hard Paper Set #22 (100 Questions)",
+    "exam": "Delhi Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=22&exam=Delhi%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 23,
+    "title": "UP Police – Hard Paper Set #23 (100 Questions)",
+    "exam": "UP Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=23&exam=UP%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 24,
+    "title": "Other State Exams – Hard Paper Set #24 (100 Questions)",
+    "exam": "Other State Exams",
+    "group": "Other",
+    "file": "/api/pdf-sets/generate?set=24&exam=Other%20State%20Exams&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 25,
+    "title": "SSC GD – Hard Paper Set #25 (100 Questions)",
+    "exam": "SSC GD",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=25&exam=SSC%20GD&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 26,
+    "title": "SSC MTS – Hard Paper Set #26 (100 Questions)",
+    "exam": "SSC MTS",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=26&exam=SSC%20MTS&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 27,
+    "title": "SSC CHSL – Hard Paper Set #27 (100 Questions)",
+    "exam": "SSC CHSL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=27&exam=SSC%20CHSL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 28,
+    "title": "SSC CGL – Hard Paper Set #28 (100 Questions)",
+    "exam": "SSC CGL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=28&exam=SSC%20CGL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 29,
+    "title": "RRB NTPC – Hard Paper Set #29 (100 Questions)",
+    "exam": "RRB NTPC",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=29&exam=RRB%20NTPC&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 30,
+    "title": "RRB Group D – Hard Paper Set #30 (100 Questions)",
+    "exam": "RRB Group D",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=30&exam=RRB%20Group%20D&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 31,
+    "title": "RRB ALP – Hard Paper Set #31 (100 Questions)",
+    "exam": "RRB ALP",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=31&exam=RRB%20ALP&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 32,
+    "title": "Railway Technician – Hard Paper Set #32 (100 Questions)",
+    "exam": "Railway Technician",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=32&exam=Railway%20Technician&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 33,
+    "title": "JKSSB – Hard Paper Set #33 (100 Questions)",
+    "exam": "JKSSB",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=33&exam=JKSSB&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 34,
+    "title": "J&K Police – Hard Paper Set #34 (100 Questions)",
+    "exam": "J&K Police",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=34&exam=J%26K%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 35,
+    "title": "JKSSB Patwari – Hard Paper Set #35 (100 Questions)",
+    "exam": "JKSSB Patwari",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=35&exam=JKSSB%20Patwari&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 36,
+    "title": "J&K Forest Guard – Hard Paper Set #36 (100 Questions)",
+    "exam": "J&K Forest Guard",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=36&exam=J%26K%20Forest%20Guard&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 37,
+    "title": "Army GD / Agniveer – Hard Paper Set #37 (100 Questions)",
+    "exam": "Army GD / Agniveer",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=37&exam=Army%20GD%20/%20Agniveer&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 38,
+    "title": "Army Technical – Hard Paper Set #38 (100 Questions)",
+    "exam": "Army Technical",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=38&exam=Army%20Technical&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 39,
+    "title": "Army Clerk – Hard Paper Set #39 (100 Questions)",
+    "exam": "Army Clerk",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=39&exam=Army%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 40,
+    "title": "Navy SSR / MR – Hard Paper Set #40 (100 Questions)",
+    "exam": "Navy SSR / MR",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=40&exam=Navy%20SSR%20/%20MR&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 41,
+    "title": "IBPS Clerk – Hard Paper Set #41 (100 Questions)",
+    "exam": "IBPS Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=41&exam=IBPS%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 42,
+    "title": "SBI Clerk – Hard Paper Set #42 (100 Questions)",
+    "exam": "SBI Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=42&exam=SBI%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 43,
+    "title": "IBPS PO – Hard Paper Set #43 (100 Questions)",
+    "exam": "IBPS PO",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=43&exam=IBPS%20PO&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 44,
+    "title": "RBI Assistant – Hard Paper Set #44 (100 Questions)",
+    "exam": "RBI Assistant",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=44&exam=RBI%20Assistant&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 45,
+    "title": "State Police – Hard Paper Set #45 (100 Questions)",
+    "exam": "State Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=45&exam=State%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 46,
+    "title": "Delhi Police – Hard Paper Set #46 (100 Questions)",
+    "exam": "Delhi Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=46&exam=Delhi%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 47,
+    "title": "UP Police – Hard Paper Set #47 (100 Questions)",
+    "exam": "UP Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=47&exam=UP%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 48,
+    "title": "Other State Exams – Hard Paper Set #48 (100 Questions)",
+    "exam": "Other State Exams",
+    "group": "Other",
+    "file": "/api/pdf-sets/generate?set=48&exam=Other%20State%20Exams&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 49,
+    "title": "SSC GD – Hard Paper Set #49 (100 Questions)",
+    "exam": "SSC GD",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=49&exam=SSC%20GD&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 50,
+    "title": "SSC MTS – Hard Paper Set #50 (100 Questions)",
+    "exam": "SSC MTS",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=50&exam=SSC%20MTS&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 51,
+    "title": "SSC CHSL – Hard Paper Set #51 (100 Questions)",
+    "exam": "SSC CHSL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=51&exam=SSC%20CHSL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 52,
+    "title": "SSC CGL – Hard Paper Set #52 (100 Questions)",
+    "exam": "SSC CGL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=52&exam=SSC%20CGL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 53,
+    "title": "RRB NTPC – Hard Paper Set #53 (100 Questions)",
+    "exam": "RRB NTPC",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=53&exam=RRB%20NTPC&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 54,
+    "title": "RRB Group D – Hard Paper Set #54 (100 Questions)",
+    "exam": "RRB Group D",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=54&exam=RRB%20Group%20D&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 55,
+    "title": "RRB ALP – Hard Paper Set #55 (100 Questions)",
+    "exam": "RRB ALP",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=55&exam=RRB%20ALP&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 56,
+    "title": "Railway Technician – Hard Paper Set #56 (100 Questions)",
+    "exam": "Railway Technician",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=56&exam=Railway%20Technician&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 57,
+    "title": "JKSSB – Hard Paper Set #57 (100 Questions)",
+    "exam": "JKSSB",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=57&exam=JKSSB&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 58,
+    "title": "J&K Police – Hard Paper Set #58 (100 Questions)",
+    "exam": "J&K Police",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=58&exam=J%26K%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 59,
+    "title": "JKSSB Patwari – Hard Paper Set #59 (100 Questions)",
+    "exam": "JKSSB Patwari",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=59&exam=JKSSB%20Patwari&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 60,
+    "title": "J&K Forest Guard – Hard Paper Set #60 (100 Questions)",
+    "exam": "J&K Forest Guard",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=60&exam=J%26K%20Forest%20Guard&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 61,
+    "title": "Army GD / Agniveer – Hard Paper Set #61 (100 Questions)",
+    "exam": "Army GD / Agniveer",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=61&exam=Army%20GD%20/%20Agniveer&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 62,
+    "title": "Army Technical – Hard Paper Set #62 (100 Questions)",
+    "exam": "Army Technical",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=62&exam=Army%20Technical&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 63,
+    "title": "Army Clerk – Hard Paper Set #63 (100 Questions)",
+    "exam": "Army Clerk",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=63&exam=Army%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 64,
+    "title": "Navy SSR / MR – Hard Paper Set #64 (100 Questions)",
+    "exam": "Navy SSR / MR",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=64&exam=Navy%20SSR%20/%20MR&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 65,
+    "title": "IBPS Clerk – Hard Paper Set #65 (100 Questions)",
+    "exam": "IBPS Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=65&exam=IBPS%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 66,
+    "title": "SBI Clerk – Hard Paper Set #66 (100 Questions)",
+    "exam": "SBI Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=66&exam=SBI%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 67,
+    "title": "IBPS PO – Hard Paper Set #67 (100 Questions)",
+    "exam": "IBPS PO",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=67&exam=IBPS%20PO&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 68,
+    "title": "RBI Assistant – Hard Paper Set #68 (100 Questions)",
+    "exam": "RBI Assistant",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=68&exam=RBI%20Assistant&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 69,
+    "title": "State Police – Hard Paper Set #69 (100 Questions)",
+    "exam": "State Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=69&exam=State%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 70,
+    "title": "Delhi Police – Hard Paper Set #70 (100 Questions)",
+    "exam": "Delhi Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=70&exam=Delhi%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 71,
+    "title": "UP Police – Hard Paper Set #71 (100 Questions)",
+    "exam": "UP Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=71&exam=UP%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 72,
+    "title": "Other State Exams – Hard Paper Set #72 (100 Questions)",
+    "exam": "Other State Exams",
+    "group": "Other",
+    "file": "/api/pdf-sets/generate?set=72&exam=Other%20State%20Exams&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 73,
+    "title": "SSC GD – Hard Paper Set #73 (100 Questions)",
+    "exam": "SSC GD",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=73&exam=SSC%20GD&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 74,
+    "title": "SSC MTS – Hard Paper Set #74 (100 Questions)",
+    "exam": "SSC MTS",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=74&exam=SSC%20MTS&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 75,
+    "title": "SSC CHSL – Hard Paper Set #75 (100 Questions)",
+    "exam": "SSC CHSL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=75&exam=SSC%20CHSL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 76,
+    "title": "SSC CGL – Hard Paper Set #76 (100 Questions)",
+    "exam": "SSC CGL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=76&exam=SSC%20CGL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 77,
+    "title": "RRB NTPC – Hard Paper Set #77 (100 Questions)",
+    "exam": "RRB NTPC",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=77&exam=RRB%20NTPC&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 78,
+    "title": "RRB Group D – Hard Paper Set #78 (100 Questions)",
+    "exam": "RRB Group D",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=78&exam=RRB%20Group%20D&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 79,
+    "title": "RRB ALP – Hard Paper Set #79 (100 Questions)",
+    "exam": "RRB ALP",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=79&exam=RRB%20ALP&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 80,
+    "title": "Railway Technician – Hard Paper Set #80 (100 Questions)",
+    "exam": "Railway Technician",
+    "group": "Railway",
+    "file": "/api/pdf-sets/generate?set=80&exam=Railway%20Technician&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 81,
+    "title": "JKSSB – Hard Paper Set #81 (100 Questions)",
+    "exam": "JKSSB",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=81&exam=JKSSB&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 82,
+    "title": "J&K Police – Hard Paper Set #82 (100 Questions)",
+    "exam": "J&K Police",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=82&exam=J%26K%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 83,
+    "title": "JKSSB Patwari – Hard Paper Set #83 (100 Questions)",
+    "exam": "JKSSB Patwari",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=83&exam=JKSSB%20Patwari&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 84,
+    "title": "J&K Forest Guard – Hard Paper Set #84 (100 Questions)",
+    "exam": "J&K Forest Guard",
+    "group": "Jammu & Kashmir",
+    "file": "/api/pdf-sets/generate?set=84&exam=J%26K%20Forest%20Guard&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 85,
+    "title": "Army GD / Agniveer – Hard Paper Set #85 (100 Questions)",
+    "exam": "Army GD / Agniveer",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=85&exam=Army%20GD%20/%20Agniveer&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 86,
+    "title": "Army Technical – Hard Paper Set #86 (100 Questions)",
+    "exam": "Army Technical",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=86&exam=Army%20Technical&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 87,
+    "title": "Army Clerk – Hard Paper Set #87 (100 Questions)",
+    "exam": "Army Clerk",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=87&exam=Army%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 88,
+    "title": "Navy SSR / MR – Hard Paper Set #88 (100 Questions)",
+    "exam": "Navy SSR / MR",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=88&exam=Navy%20SSR%20/%20MR&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 89,
+    "title": "IBPS Clerk – Hard Paper Set #89 (100 Questions)",
+    "exam": "IBPS Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=89&exam=IBPS%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 90,
+    "title": "SBI Clerk – Hard Paper Set #90 (100 Questions)",
+    "exam": "SBI Clerk",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=90&exam=SBI%20Clerk&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 91,
+    "title": "IBPS PO – Hard Paper Set #91 (100 Questions)",
+    "exam": "IBPS PO",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=91&exam=IBPS%20PO&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 92,
+    "title": "RBI Assistant – Hard Paper Set #92 (100 Questions)",
+    "exam": "RBI Assistant",
+    "group": "Banking",
+    "file": "/api/pdf-sets/generate?set=92&exam=RBI%20Assistant&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 93,
+    "title": "State Police – Hard Paper Set #93 (100 Questions)",
+    "exam": "State Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=93&exam=State%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 94,
+    "title": "Delhi Police – Hard Paper Set #94 (100 Questions)",
+    "exam": "Delhi Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=94&exam=Delhi%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 95,
+    "title": "UP Police – Hard Paper Set #95 (100 Questions)",
+    "exam": "UP Police",
+    "group": "Police",
+    "file": "/api/pdf-sets/generate?set=95&exam=UP%20Police&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 96,
+    "title": "Other State Exams – Hard Paper Set #96 (100 Questions)",
+    "exam": "Other State Exams",
+    "group": "Other",
+    "file": "/api/pdf-sets/generate?set=96&exam=Other%20State%20Exams&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 97,
+    "title": "SSC GD – Hard Paper Set #97 (100 Questions)",
+    "exam": "SSC GD",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=97&exam=SSC%20GD&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 98,
+    "title": "SSC MTS – Hard Paper Set #98 (100 Questions)",
+    "exam": "SSC MTS",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=98&exam=SSC%20MTS&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 99,
+    "title": "SSC CHSL – Hard Paper Set #99 (100 Questions)",
+    "exam": "SSC CHSL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=99&exam=SSC%20CHSL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 100,
+    "title": "SSC CGL – Hard Paper Set #100 (100 Questions)",
+    "exam": "SSC CGL",
+    "group": "SSC",
+    "file": "/api/pdf-sets/generate?set=100&exam=SSC%20CGL&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 101,
+    "title": "JKSSB / SSC – Hard Paper Set #101 (100 Questions)",
+    "exam": "JKSSB / SSC",
+    "group": "JKSSB",
+    "file": "/api/pdf-sets/generate?set=101&exam=JKSSB%20/%20SSC&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  },
+  {
+    "id": 102,
+    "title": "Army GD / Railway – Hard Paper Set #102 (100 Questions)",
+    "exam": "Army GD / Railway",
+    "group": "Defence",
+    "file": "/api/pdf-sets/generate?set=102&exam=Army%20GD%20/%20Railway&difficulty=Hard&category=All",
+    "questions": 100,
+    "kind": "100-Question Hard Exam PDF (1 Lakh Library)",
+    "topics": "Full-Length 100 Hard MCQs (GK, J&K GK, Maths, Reasoning, Science, Computer, English) + Complete Answer Key"
+  }
+]
