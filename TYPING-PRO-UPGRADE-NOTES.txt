@@ -1,0 +1,25 @@
+SARKARI JOB UNIVERSE — TYPING TEST PRO UPGRADE
+
+Updated file:
+- public/typing-wall.html
+- public/typing-wall.js
+
+Included features:
+- Exam-oriented practice profiles for SSC CHSL, SSC CGL DEST, RRB NTPC, JKSSB, CPCT, Court/High Court, Stenographer and general practice.
+- English, Hindi Unicode and mixed-language practice passages.
+- 1, 3, 5, 10, 15, 20 minute and unlimited sessions.
+- Basic, exam-style, numbers/symbols, legal/office and advanced passages.
+- Custom passage practice.
+- Normal correction mode and strict next-character mode.
+- Live net/gross WPM, CPM, accuracy, errors and passage progress.
+- Pause/resume, finish early, reset and new passage controls.
+- Character-level correct/wrong/current highlighting.
+- Local attempt history, personal best, average speed, practice streak and CSV export.
+- Printable practice result.
+- Responsive layout for mobile and desktop.
+
+Important:
+This is a practice simulator. Exam profiles are practice guidance, not official settings or an official result/certificate. Always verify the current recruitment notification, required keyboard layout, duration and evaluation method. CGL DEST and stenography require separate task formats beyond paragraph typing.
+
+Data:
+Typing history is saved in the browser's localStorage on the current device/browser. It does not automatically sync between devices.
