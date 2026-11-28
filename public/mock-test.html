@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#155eef">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Sarkari Job Universe">
+<link rel="canonical" href="https://sarkari-jobs-fast.onrender.com/mock-test.html">
+<meta name="description" content="Real Exam CBT Mock Test Simulator for SSC GD, CHSL, CGL, JKSSB, RRB NTPC, Army GD & Banking powered by Unlimited Practice Questions & Smart Mock Tests.">
+<title>Unlimited Practice Questions &amp; Smart Mock Tests | Sarkari Job Universe</title>
+<link rel="stylesheet" href="/styles.css">
+<style>
+body{background:#f5f7fb}
+.mock-wrap{max-width:1060px;margin:30px auto 50px;padding:0 16px}
+.mock-hero{padding:28px;border-radius:22px;background:linear-gradient(120deg,#0f172a,#1e3a8a 55%,#155eef);color:#fff;box-shadow:0 14px 34px rgba(15,23,42,.15)}
+.mock-hero h1{color:#fff;font-size:clamp(26px,5vw,42px);margin:10px 0 8px}
+.mock-hero p{color:#dbeafe;line-height:1.65;margin:0}
+.mode-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 10px}
+.mode-tab{padding:11px 18px;border-radius:12px;border:1px solid #cbd5e1;background:#fff;font-weight:800;font-size:13px;color:#334155;cursor:pointer}
+.mode-tab.active{background:#155eef;color:#fff;border-color:#155eef;box-shadow:0 8px 20px rgba(21,94,239,.25)}
+.mock-form,.question-card,.result-card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:22px;margin:14px 0;box-shadow:0 10px 28px rgba(15,23,42,.05)}
+.mock-form{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mock-form label{display:grid;gap:6px;font-size:12px;font-weight:700;color:#475569}
+.mock-form input,.mock-form select{padding:12px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:#f8fafc}
+.mock-form button{grid-column:1/-1}
+.cbt-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;align-items:start}
+.sec-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.sec-tab{padding:6px 12px;border-radius:999px;border:1px solid #cbd5e1;background:#f8fafc;font-size:11.5px;font-weight:800;color:#334155;cursor:pointer}
+.sec-tab.active{background:#0f172a;color:#fff;border-color:#0f172a}
+.question-card h3{font-size:17.5px;line-height:1.55;color:#0f172a;margin:12px 0}
+.option{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;color:#1e293b;cursor:pointer;font-weight:600;font-size:13.5px;transition:.14s}
+.option:hover:not(:disabled){border-color:#155eef;background:#f8fbff}
+.option.selected{border-color:#155eef;background:#dbeafe;color:#1e3a8a}
+.option.correct{border-color:#16a34a;background:#dcfce7;color:#14532d}
+.option.wrong{border-color:#dc2626;background:#fee2e2;color:#7f1d1d}
+.mock-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.explain{padding:13px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;color:#1e3a8a;font-size:13px;margin-top:12px;line-height:1.6}
+.daily-card{border:1px solid #dbeafe;background:#fff;padding:20px;border-radius:18px;margin-top:18px}
+.progress{height:8px;background:#e2e8f0;border-radius:10px;overflow:hidden;margin:10px 0}
+.progress span{display:block;height:100%;background:linear-gradient(90deg,#155eef,#10b981);width:0}
+.palette-box{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:16px;box-shadow:0 10px 28px rgba(15,23,42,.05)}
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0;max-height:360px;overflow-y:auto}
+.pal-btn{padding:7px 4px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;font-size:11.5px;font-weight:800;cursor:pointer;text-align:center}
+.pal-btn.ans{background:#16a34a;border-color:#16a34a;color:#fff}
+.pal-btn.rev{background:#7c3aed;border-color:#7c3aed;color:#fff}
+.pal-btn.cur{outline:2px solid #0f172a;outline-offset:1px}
+.pal-btn.ok{background:#16a34a;border-color:#16a34a;color:#fff}
+.pal-btn.bad{background:#dc2626;border-color:#dc2626;color:#fff}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;color:#475569;margin-top:10px}
+.timer-bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;background:#0f172a;color:#fff;border-radius:14px;padding:12px 16px;margin-bottom:14px;font-size:13px;font-weight:700}
+.timer-clock{background:#ef4444;color:#fff;padding:4px 11px;border-radius:999px;font-variant-numeric:tabular-nums}
+.muted-note{font-size:12px;color:#64748b;line-height:1.6}
+@media(max-width:820px){.cbt-layout{grid-template-columns:1fr}.mock-form{grid-template-columns:1fr}}
+</style>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brandmark"><img src="/favicon-192x192.png" alt="Sarkari Job Universe" width="40" height="40"></span><span>Sarkari Job <b>Universe</b><small>v1.0</small></span></a>
+  <nav><a href="/">Home</a><a href="/papers.html">1 Lakh Hard PDFs</a><a href="/typing-wall.html">Typing Pro</a><a href="/student-hub.html">Student Hub</a></nav>
+</header>
+<main class="mock-wrap">
+  <section class="mock-hero">
+    <div class="eyebrow" style="color:#a7f3d0">⚡ UNLIMITED PRACTICE QUESTIONS &amp; SMART MOCK TESTS • REAL EXAM CBT</div>
+    <h1>Real-Paper CBT Mock Test</h1>
+    <p>Attempt full-length real government exam papers (SSC GD 80Q, CHSL/CGL 100Q, JKSSB 100Q, RRB NTPC 100Q, Army GD 50Q, Banking 100Q) with TCS-style color palette, sectional tabs, Mark for Review, live timer &amp; exact negative marking — OR launch Unlimited Hard Marathon tests.</p>
+  </section>
+
+  <div class="mode-tabs">
+    <button type="button" class="mode-tab active" data-mode="real">🎯 Real Exam Paper Mode (Recommended)</button>
+    <button type="button" class="mode-tab" data-mode="custom">♾️ Custom / Unlimited Hard Marathon</button>
+  </div>
+
+  <form class="mock-form" id="realSetup">
+    <label>1. Select All-India / Govt Exam Pattern (28 Exams)
+      <select id="realExam">
+        <optgroup label="SSC Central Exams">
+          <option value="SSC GD">SSC GD Constable (80 Q • 60 Min • -0.25)</option>
+          <option value="SSC CHSL">SSC CHSL 10+2 Tier-I (100 Q • 60 Min • -0.50)</option>
+          <option value="SSC CGL">SSC CGL Tier-I Hard (100 Q • 60 Min • -0.50)</option>
+          <option value="SSC MTS">SSC MTS &amp; Havaldar (90 Q • 90 Min • -1.0)</option>
+          <option value="SSC CPO">SSC CPO SI Delhi Police / CAPF (200 Q • 120 Min)</option>
+          <option value="SSC Stenographer">SSC Stenographer Grade C &amp; D (200 Q • 120 Min)</option>
+          <option value="SSC JE">SSC Junior Engineer JE Paper-I (100 Q • 120 Min)</option>
+        </optgroup>
+        <optgroup label="Jammu &amp; Kashmir Exams">
+          <option value="JKSSB">JKSSB Class-IV / MTS / Patwari (100 Q • 120 Min • -0.25)</option>
+          <option value="J&K Police">J&amp;K Police Constable / SI (100 Q • 120 Min • -0.25)</option>
+        </optgroup>
+        <optgroup label="Indian Railways (RRB)">
+          <option value="RRB NTPC">Railway RRB NTPC CBT-1 (100 Q • 90 Min • -0.33)</option>
+          <option value="RRB Group D">Railway RRB Group D CBT (100 Q • 90 Min • -0.33)</option>
+          <option value="RRB ALP / Technician">Railway RRB ALP &amp; Technician (75 Q • 60 Min)</option>
+        </optgroup>
+        <optgroup label="Banking (IBPS / SBI / RBI)">
+          <option value="IBPS Clerk / PO">IBPS Clerk &amp; PO Prelims (100 Q • 60 Min • -0.25)</option>
+          <option value="SBI Clerk / PO">SBI Clerk &amp; PO Prelims (100 Q • 60 Min • -0.25)</option>
+          <option value="Banking">All-India Banking Mix Prelims (100 Q • 60 Min)</option>
+        </optgroup>
+        <optgroup label="Defence &amp; Paramilitary">
+          <option value="Army GD">Indian Army Agniveer GD (50 Q • 60 Min • -0.50)</option>
+          <option value="Air Force Agniveer">Indian Air Force Agniveervayu (50 Q • 45 Min)</option>
+          <option value="Navy SSR / MR">Indian Navy Agniveer SSR / MR (100 Q • 60 Min)</option>
+          <option value="BSF / CRPF / Assam Rifles">BSF / CRPF / CISF / Assam Rifles (100 Q)</option>
+        </optgroup>
+        <optgroup label="Police, UPSC &amp; State Exams">
+          <option value="Delhi Police">Delhi Police Constable Executive (100 Q • 90 Min)</option>
+          <option value="UP Police">UP Police Constable / SI (150 Q • 120 Min)</option>
+          <option value="State Police">All-India State Police Constable (100 Q • 120 Min)</option>
+          <option value="DSSSB MTS">Delhi DSSSB MTS &amp; Clerical (200 Q • 120 Min)</option>
+          <option value="UPSC CSE Prelims">UPSC Civil Services IAS GS-I (100 Q • 120 Min)</option>
+          <option value="UPSC NDA">UPSC NDA &amp; NA GAT Practice (150 Q • 150 Min)</option>
+          <option value="UPSC CDS">UPSC CDS GK &amp; English (120 Q • 120 Min)</option>
+          <option value="UPSSSC PET">UPSSSC PET / Inter Level (100 Q • 120 Min)</option>
+          <option value="UPTET / CTET">UPTET / CTET / KVS Teaching (100 Q • No Neg)</option>
+        </optgroup>
+      </select>
+    </label>
+    <label>2. Exam Language (Medium)
+      <select id="realLang">
+        <option value="en" selected>English Medium</option>
+        <option value="hi">Hindi Medium (हिन्दी)</option>
+      </select>
+    </label>
+    <label>3. Difficulty &amp; Paper Set
+      <select id="realDiff">
+        <option value="Hard" selected>Hard (Real Exam Level)</option>
+        <option value="Medium">Medium</option>
+        <option value="Easy">Easy</option>
+      </select>
+    </label>
+    <input id="realPaperNo" type="hidden" value="">
+    <button class="btn primary" type="submit">🚀 Start Real Exam Mock Test Now →</button>
+  </form>
+
+  <form class="mock-form hidden" id="setup">
+    <label>Exam<select id="exam"><option>SSC GD</option><option>SSC MTS</option><option>SSC CHSL</option><option>SSC CGL</option><option>JKSSB</option><option>Railway</option><option>Banking</option><option>UPSC</option><option>Army GD</option></select></label>
+    <label>Subject / Topic<select id="topic"><option>General Knowledge (Mixed)</option><option>Mathematics</option><option>Reasoning</option><option>English</option><option>General Science</option><option>Computer Awareness</option><option>Jammu &amp; Kashmir GK</option></select></label>
+    <label>Difficulty<select id="difficulty"><option>Easy</option><option>Medium</option><option selected>Hard</option></select></label>
+    <label>Questions<select id="count"><option value="10">10 Questions</option><option value="25">25 Questions</option><option value="50">50 Questions</option><option value="100" selected>100 Questions</option><option value="200">200 Questions</option><option value="500">500 Questions</option><option value="all">Unlimited Marathon (All Available)</option></select></label>
+    <label>Negative Marking<select id="negMark"><option value="0">None (0)</option><option value="0.25" selected>-0.25 per wrong (SSC/JKSSB)</option><option value="0.33">-0.33 per wrong (Railway)</option><option value="0.50">-0.50 per wrong (CHSL/Army)</option></select></label>
+    <label>Timer<select id="timerMins"><option value="0">No timer (Unlimited)</option><option value="20">20 minutes</option><option value="45">45 minutes</option><option value="60" selected>60 minutes</option><option value="90">90 minutes</option><option value="120">120 minutes</option></select></label>
+    <button class="btn primary" type="submit">⚡ Generate Hard Mock Test →</button>
+  </form>
+
+  <div id="testArea" aria-live="polite"></div>
+
+  <section class="daily-card">
+    <div class="eyebrow blue">ADMIN PUBLISHED MOCK TESTS</div>
+    <h2 style="margin:6px 0 10px;font-size:22px">Available Exam Tests</h2>
+    <div id="publishedTests">Loading tests…</div>
+  </section>
+
+  <section class="daily-card">
+    <div class="eyebrow blue">QUESTION OF THE DAY</div>
+    <h3 id="dailyQ">Loading daily question…</h3>
+    <div id="dailyOptions"></div>
+    <p id="dailyExplain" class="muted-note"></p>
+  </section>
+</main>
+<script src="/mock-test.js" defer></script>
+</body>
+</html>
