@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sarkari-jobs-fast.onrender.com/sitemap.xml
